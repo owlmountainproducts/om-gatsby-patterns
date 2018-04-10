@@ -1,0 +1,81 @@
+.home-body-wrap .main {
+  padding: 0 0 2rem;
+
+  // In text.scss
+  h2 {
+    @extend %homepage-h2;
+
+    // In links.scss
+    a {
+      @extend %home-header-links;
+    }
+  }
+
+  // In entry-meta.scss
+  .date-updated,
+  .byline {
+    @extend %entry-meta;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .post-thumbnail img {
+    min-width: 100%;
+  }
+}
+
+.home .site-header .email-input-line {
+  display: none;
+}
+
+.above-fold {
+  @include makeRow($no-padding: true);
+
+  margin: 0 1rem;
+  max-width: 1210px;
+
+  @include breakpoint($medium) {
+    margin: 0 2.75rem;
+    padding: 0;
+  }
+
+  @include breakpoint($large) {
+    margin: 0 7.75rem;
+  }
+
+  @include breakpoint(1440px) {
+    margin: 0 auto;
+  }
+}
+
+.hero-latest {
+  @include makeColumn($size: 12, $offset: 0);
+  @include makeColumn(md, $size: 9, $offset: 0);
+
+  padding: 0 0 1rem;
+
+  @include breakpoint($medium) {
+    padding: 1rem 0;
+  }
+}
+
+.hero-latest .post {
+  margin: 0;
+}
+
+.front-page-promo-wrapper {
+  @include makeColumn($size: 12, $offset: 0);
+  @include makeColumn(md, $size: 3, $offset: 0);
+
+  padding: 1rem 0;
+
+  @include breakpoint($medium) {
+    padding: 1rem 0 1rem 0.5rem;
+  }
+}
+
+.front-category-more {
+  @extend %primary-button;
+}

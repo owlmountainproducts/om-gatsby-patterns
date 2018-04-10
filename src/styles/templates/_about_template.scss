@@ -1,0 +1,93 @@
+.about-page-body-wrap {
+  .main {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .wysiwyg p,
+  .wysiwyg h1,
+  .wysiwyg h2,
+  .wysiwyg h3,
+  .wysiwyg h4,
+  .wysiwyg h5 {
+    max-width: 800px;
+    margin: 0.5rem auto;
+  }
+
+  .wysiwyg p:nth-child(1) {
+    max-width: 1000px;
+  }
+
+  .team-and-categories-section {
+    max-width: 1000px;
+    border-top: 3px solid $om-medium-grey;
+    margin: 3rem 0 0;
+    padding: 1rem 0 0;
+  }
+
+  .author-list-title {
+    margin: 1rem 0 0;
+  }
+
+  .author-list-ul {
+    padding: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .author-list-ul li {
+    display: inline-block;
+    margin: 1rem;
+  }
+
+  .author-list-ul img {
+    width: 218px;
+    height: 218px;
+  }
+
+  .author-list-ul .author-name {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .author-list-ul .author-name a,
+  .about-category-list-li li a {
+    color: $text-color;
+    font-family: $secondary-font;
+    font-size: 1.05rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .about-category-list-title {
+    margin-top: 2rem;
+  }
+
+  .about-category-list :nth-child(n) {
+    list-style-type: none;
+    line-height: 1.45rem;
+  }
+
+  .about-category-list {
+    padding-left: 0;
+  }
+
+  .about-category-list ul {
+    padding-left: 0;
+  }
+
+  .about-category-list-li li {
+    font-size: 1.05rem;
+  }
+
+  .about-seperator {
+    @include breakpoint($medium) {
+      margin-top: 4rem;
+    }
+  }
+
+  .about-authors-and-categories {
+    max-width: 800px;
+    margin: auto;
+  }
+}

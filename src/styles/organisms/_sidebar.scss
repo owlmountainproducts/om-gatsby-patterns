@@ -1,0 +1,56 @@
+.sidebar {
+  border: 1px solid $om-sidebar-grey;
+  margin: auto;
+
+  @include breakpoint($medium) {
+    margin: 0;
+    width: 340px;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-family: $secondary-font;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: $small-point-size;
+  }
+
+  .mc_embed_signup {
+    margin: 1.5rem 0;
+  }
+
+  .email-input-line {
+    width: 308px;
+  }
+
+  .email-capture-box {
+    width: 166px;
+  }
+
+  .email-submit-button {
+    width: 94px;
+  }
+
+  .sidebar-widget-wrapper {
+    padding: 1rem 0;
+  }
+}
+
+.sidebar-primary-top {
+  background-color: $om-sidebar-grey;
+  padding: 1.5rem 0 0;
+}
+
+.sidebar-primary-bottom {
+  padding: 1rem 2rem 2.5rem;
+
+  @include breakpoint($medium) {
+    padding: 1rem 1.5rem 2.5rem;
+  }
+}

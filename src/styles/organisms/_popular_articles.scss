@@ -1,0 +1,57 @@
+.popular-articles-wrapper {
+  padding: 1rem 0 0;
+  margin: 0;
+}
+
+.most-popular-section {
+  @extend %standard-margins;
+
+  margin-top: 1.25rem;
+
+  a {
+    color: $text-color;
+  }
+}
+
+// swp classes defined by Social Warfare Plugin
+.swp_widget_box {
+  @include makeRow($no-padding: true);
+}
+
+.swp_popular_posts_title {
+  display: none;
+}
+
+.swp_popular_post {
+  @include makeColumn($size: 12, $offset: 0);
+  @include makeColumn(md, $size: 4, $offset: 0);
+
+  text-align: left;
+}
+
+.swp_pop_thumb,
+.swp_popularity {
+  float: none;
+  margin: 0;
+  // !important overrides Social Warfare Plugin Styling
+  width: 90% !important;
+  height: auto !important;
+  padding-left: 1rem;
+}
+
+// In text.scss
+.swp_popularity b {
+  @extend %homepage-h2;
+
+  // In links.scss
+  @extend %home-header-links;
+}
+
+// In entry-meta.scss
+.swp_pop_count {
+  @extend %entry-meta;
+
+  color: $text-color;
+  margin: 0.5rem 0;
+  font-family: $secondary-font;
+}

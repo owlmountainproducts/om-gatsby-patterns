@@ -1,0 +1,15 @@
+.front-page-section-header {
+  @extend %standard-margins;
+
+  border-bottom: 2px solid $text-color;
+  padding: 0 0 0.25rem;
+  font-style: italic;
+}
+
+.front-page-section-header-paginated {
+  @extend %standard-margins;
+
+  border-bottom: 2px solid $text-color;
+  padding: 2rem 0 0.25rem;
+  font-style: italic;
+}

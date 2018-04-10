@@ -1,0 +1,12 @@
+// FIXME: Move .video-container somewhere better
+%iframe {
+  width: 280px;
+
+  @include breakpoint(500px) {
+    width: 500px;
+  }
+}
+
+.video-container iframe {
+  @extend %iframe;
+}

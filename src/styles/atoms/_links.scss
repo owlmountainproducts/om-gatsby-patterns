@@ -1,0 +1,16 @@
+%home-header-links {
+  color: $text-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+%footer-links {
+  color: $text-on-dark;
+  text-decoration: none;
+
+  &:hover {
+    color: $white;
+  }
+}

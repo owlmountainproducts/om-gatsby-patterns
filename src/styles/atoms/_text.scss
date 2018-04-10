@@ -1,0 +1,90 @@
+@mixin header($size) {
+  font-size: $size;
+  font-family: $primary-font;
+  font-weight: 800;
+}
+
+h1 {
+  @include header(2rem);
+
+  font-family: $secondary-font;
+  margin: 0.5rem 0;
+
+  @include breakpoint($large) {
+    font-size: 2.65rem;
+  }
+}
+
+%category-h1 {
+  @include header(2.25rem);
+
+  font-family: $secondary-font;
+  margin: 0.5rem 0;
+
+  @include breakpoint($large) {
+    font-size: 2.8rem;
+  }
+}
+
+h2,
+%extension-h2 {
+  @include header(1.5rem);
+
+  font-family: $secondary-font;
+  padding: 0.5rem 0 0;
+
+  @include breakpoint($large) {
+    font-size: 1.75rem;
+  }
+}
+
+%homepage-h2 {
+  font-family: $secondary-font;
+  font-size: 1.25rem;
+
+  @include breakpoint($medium) {
+    font-size: 1.5rem;
+  }
+
+  @include breakpoint($large) {
+    font-size: 1.6rem;
+  }
+}
+
+h3,
+%extension-h3 {
+  @include header(1.25rem);
+
+  @include breakpoint($large) {
+    font-size: 1.35rem;
+  }
+}
+
+h4 {
+  @include header(1.1rem);
+
+  @include breakpoint($large) {
+    font-size: 1.05rem;
+  }
+}
+
+h5 {
+  @include header(1.1rem);
+
+  @include breakpoint($large) {
+    font-size: 1.05rem;
+  }
+}
+
+h6 {
+  @include header($small-point-size);
+}
+
+p,
+%extension-p {
+  font-family: $primary-font;
+  font-size: 1.0625rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+  color: #222;
+}

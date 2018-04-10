@@ -1,0 +1,133 @@
+.facebook-share-button .share-button-inner {
+  background-color: rgb(59, 89, 152);
+}
+
+.pinterest-share-button .share-button-inner {
+  background-color: rgb(203, 33, 40);
+}
+
+.whatsapp-share-button .share-button-inner {
+  background-color: rgb(44, 183, 66);
+}
+
+.email-share-button .share-button-inner {
+  background-color: rgb(127, 127, 127);
+}
+
+.SocialMediaShareButton {
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+    cursor: pointer;
+  }
+}
+
+// Article Top Social Specific
+.top-social {
+  .social-share-bar {
+    margin: 1rem 0;
+  }
+
+  .SocialMediaShareButton {
+    display: inline;
+    padding: 0 0.125rem;
+  }
+
+  .SocialMediaShareButton div {
+    display: inline;
+  }
+
+  .SocialMediaShareCount {
+    color: $white;
+  }
+
+  .share-button-inner {
+    padding: 17px 0.4rem 0;
+
+    @include breakpoint($medium) {
+      padding: 17px 1rem 0;
+    }
+  }
+
+  .facebook-share-button .share-button-inner {
+    @include breakpoint($medium) {
+      padding: 17px 3rem 0;
+    }
+  }
+
+  .pinterest-share-button .share-button-inner {
+    @include breakpoint($medium) {
+      padding: 17px 3rem 0;
+    }
+  }
+}
+
+// Sticky Social Specific
+#sticky-social {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @include breakpoint($medium) {
+    top: 0;
+    bottom: 40%;
+    right: auto;
+  }
+}
+
+.sticky-hidden {
+  display: none;
+}
+
+.sticky-visible {
+  display: block;
+
+  .social-share-bar {
+    display: flex;
+    width: 100%;
+    background-color: $om-medium-grey;
+
+    @include breakpoint($medium) {
+      display: block;
+      position: relative;
+      top: 40%;
+    }
+  }
+
+  .SocialMediaShareButton {
+    display: inline-flex;
+    flex-basis: 25%;
+    width: 25%;
+
+    @include breakpoint($medium) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .share-button-inner {
+    display: flex;
+    flex-direction: row;
+    height: 1rem;
+    padding: 0 1rem 1rem;
+    width: 100%;
+  }
+
+  .share-button-inner div {
+    padding-left: 1rem;
+    line-height: 2.1rem;
+  }
+
+  .SocialMediaShareCount {
+    display: none;
+
+    @include breakpoint($medium) {
+      display: block;
+      color: $white;
+    }
+  }
+}

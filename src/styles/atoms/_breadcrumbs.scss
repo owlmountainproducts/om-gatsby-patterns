@@ -1,0 +1,21 @@
+.breadcrumb {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb li {
+  display: inline;
+  padding: 0 0.5rem 0 0;
+  font-size: $xtra-small-point-size;
+  font-family: $secondary-font;
+  font-weight: bold;
+}
+
+.breadcrumb li:last-child {
+  display: none;
+}
+
+.breadcrumb li a {
+  color: $text-color;
+}

@@ -1,0 +1,83 @@
+@mixin coreButton($textColor, $bgColor, $borderColor) {
+  font-size: $base-font-size;
+  font-family: $secondary-font;
+  color: $textColor;
+  background-color: $bgColor;
+  border: 1px solid $borderColor;
+  width: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  align-items: flex-start;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  height: auto;
+  margin-bottom: 0.5rem;
+  white-space: normal;
+  border-radius: 2px;
+  max-width: 20rem;
+  font-weight: bold;
+
+  &:hover {
+    background-color: darken($bgColor, 10%);
+    border: 1px solid darken($bgColor, 10%);
+  }
+}
+
+// inspired by http://codepen.io/bhongy/pen/EaChf
+// @mixin iconButton($icon-value, $icon-size:125%, $vertical-align:-10%, $include-text:false) {
+//  line-height: $icon-size;
+
+//  @mixin fontAwesomeIcon($icon-value, $icon-size) {
+//    vertical-align: $vertical-align;
+//  }
+
+//  @if $include-text {
+//    &::before {
+//      margin-right: 0.5em;
+//    }
+//  }
+//}
+
+/* --------  Extends Core Buttons  -------- */
+
+%primary-button {
+  @include coreButton($white, $cta-color, $cta-color);
+}
+
+%amazon-button {
+  @include coreButton($white, $amazon-orange, $amazon-orange);
+
+  padding: 0.6rem 2rem;
+  display: list-item;
+  max-width: 60%;
+  margin: auto;
+}
+
+%secondary-button {
+  @include coreButton($white, $cta-color, $cta-color);
+}
+
+%tertiary-button {
+  @include coreButton($cta-color, $white, $cta-color);
+}
+
+/* ----------  Mixins Icon Buttons  -------- */
+
+@mixin primary-icon-button($fa-icon-value) {
+  @extend %primary-button;
+
+  @include iconButton($fa-icon-value);
+}
+
+@mixin secondary-icon-button($fa-icon-value) {
+  @extend %secondary-button;
+
+  @include iconButton($fa-icon-value);
+}
+
+@mixin tertiary-icon-button($fa-icon-value) {
+  @extend %tertiary-button;
+
+  @include iconButton($fa-icon-value);
+}

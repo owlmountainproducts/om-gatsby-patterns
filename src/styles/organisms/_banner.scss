@@ -1,0 +1,73 @@
+.banner {
+  width: 100%;
+  margin: 1rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  @include breakpoint($medium) {
+    height: 10rem;
+  }
+}
+
+.banner-img {
+  margin: 0;
+  display: none;
+
+  @include breakpoint($medium) {
+    margin: -500px 0px;
+    display: block;
+  }
+}
+
+.banner-text {
+  z-index: 100;
+  left: 1rem;
+  top: 1.5rem;
+  margin: auto;
+  text-align: left;
+  border: 8px solid #f5efd9;
+  padding: 1rem;
+
+  @include breakpoint($medium) {
+    position: absolute;
+    left: 2.5rem;
+    top: 1rem;
+    width: 65%;
+    border: none;
+    padding: 0;
+  }
+
+  @include breakpoint($large) {
+    top: 1.25rem;
+    width: 50%;
+  }
+}
+
+.banner-header {
+  margin: 0;
+  color: $text-color;
+
+  @include breakpoint($medium) {
+    font-size: 3rem;
+    color: #fff;
+  }
+}
+
+.banner-subheader {
+  margin: 0;
+  color: $text-color;
+
+  @include breakpoint($medium) {
+    color: #fff;
+  }
+}
+
+.home-body-wrap .main .banner a {
+  color: $text-color;
+  text-decoration: underline;
+
+  @include breakpoint($medium) {
+    color: #fff;
+  }
+}

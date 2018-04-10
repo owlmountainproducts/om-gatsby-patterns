@@ -1,0 +1,71 @@
+.email-capture-box {
+  height: $email-input-height;
+  background-color: $white;
+  border: 1px solid $om-medium-grey;
+  font-size: $smaller-point-size;
+  font-family: $secondary-font;
+  font-weight: bold;
+  border-radius: 0;
+  width: 100%;
+  padding: 0 0.25rem;
+}
+
+.email-submit-button {
+  @extend %secondary-button;
+
+  height: $email-input-height + 2;
+  width: 100%;
+  padding: 6px;
+  font-size: $small-point-size;
+  border-radius: 0;
+}
+
+// single input line.
+.single-input-line {
+  .email-input-line {
+    position: relative;
+    min-width: 304px;
+    height: 45px;
+
+    @include breakpoint($medium) {
+      width: 550px;
+    }
+  }
+
+  .envelope-icon {
+    position: absolute;
+    left: 0;
+    background-color: $white;
+    width: 23px;
+    height: $email-input-height - 12px;
+    padding: 0 4px 0;
+    margin: 6px 0 6px 4px;
+  }
+
+  .envelope-icon svg {
+    font-size: 20px;
+    color: $placeholder-text-color;
+  }
+
+  .email-capture-box {
+    width: 182px;
+    padding: 0 10px 0 39px;
+    border-radius: 2px 0 0 2px;
+
+    @include breakpoint($medium) {
+      width: 323px;
+    }
+  }
+
+  .email-submit-button {
+    position: absolute;
+    width: 94px;
+    top: 0;
+    right: 0;
+    border-radius: 0 2px 2px 0;
+
+    @include breakpoint($medium) {
+      width: 180px;
+    }
+  }
+}

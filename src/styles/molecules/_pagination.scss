@@ -1,0 +1,10 @@
+.pagination-wrapper {
+  text-align: center;
+  margin: 3rem;
+}
+
+.page-button {
+  @extend %primary-button;
+  // FIXME: Potential issues on small screen mobile with button overflow
+  margin: 0.5rem;
+}

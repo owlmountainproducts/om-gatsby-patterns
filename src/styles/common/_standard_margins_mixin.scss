@@ -1,0 +1,51 @@
+/** Standard Margins Mixin */
+%standard-margins {
+  max-width: 1200px;
+  margin: 0 1rem;
+
+  @include breakpoint($medium) {
+    margin: 0 4.5rem;
+  }
+
+  @include breakpoint($large) {
+    margin: 0 7.75rem;
+  }
+
+  @include breakpoint(1440px) {
+    margin: 0 auto;
+  }
+}
+
+%standard-padding {
+  max-width: 1200px;
+  padding: 0 1rem;
+
+  @include breakpoint($medium) {
+    padding: 0 4.5rem;
+  }
+
+  @include breakpoint($large) {
+    padding: 0 7.75rem;
+  }
+
+  @include breakpoint(1440px) {
+    padding: 0 auto;
+  }
+}
+
+%header-inner-widths {
+  padding: $header-padding-small;
+  max-width: 1200px;
+
+  @include breakpoint($medium) {
+    padding: $header-padding-medium;
+  }
+
+  @include breakpoint($large) {
+    padding: $header-padding-large;
+  }
+
+  @include breakpoint(1440px) {
+    margin: 0 auto;
+  }
+}

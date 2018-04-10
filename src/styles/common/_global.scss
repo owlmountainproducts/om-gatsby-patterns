@@ -1,0 +1,42 @@
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  @extend %primary-font-regular;
+
+  // display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  // FIXME: Remove after adding autoprefixer
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  margin: 0;
+  background-color: #fff;
+}
+
+.body-outer-wrap {
+  background-color: #fff;
+}
+
+code {
+  display: block;
+  margin: 1rem 0;
+  background: $charcoal;
+  color: $white;
+  padding: 2rem;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  flex: 1;
+}

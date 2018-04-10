@@ -1,0 +1,35 @@
+.post {
+  @include makeRow($no-padding: true);
+
+  margin: 1.5rem 0;
+}
+
+.post-thumbnail {
+  @include makeColumn($size: 12, $offset: 0);
+  @include makeColumn(md, $size: 5, $offset: 0);
+}
+
+.post-info {
+  @include makeColumn($size: 12, $offset: 0);
+  @include makeColumn(md, $size: 7, $offset: 0);
+}
+
+.entry-title .post-info {
+  @include breakpoint($medium) {
+    margin-top: 0;
+  }
+
+  @include breakpoint($large) {
+    margin-top: 1rem;
+  }
+}
+
+.entry-title {
+  @include breakpoint($medium) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.post-info .entry-summary {
+  margin: 0.5rem 0;
+}
