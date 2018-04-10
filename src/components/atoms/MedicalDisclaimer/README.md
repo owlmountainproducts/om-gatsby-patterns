@@ -1,5 +1,5 @@
-An example medical disclosure.
+An example medical disclaimer.
 
 ```
-<MedicalDisclosure logoIcon="https://cdn1.wellnessappliances.com/wp-content/uploads/2018/03/15214129/Group-icon.png" />
+<MedicalDisclaimer logoIcon="https://cdn1.wellnessappliances.com/wp-content/uploads/2018/03/15214129/Group-icon.png" />
 ```
