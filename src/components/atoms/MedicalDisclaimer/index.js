@@ -1,15 +1,14 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 
 /**
  * MOLECULE: The `<MedicalDisclaimer>` creates a medical disclaimer block.
  *
  */
-const MedicalDisclaimer = ({ logoIcon }) => (
+const MedicalDisclaimer = ({ logoIcon, alt }) => (
   <section className="medical-disclaimer-wrapper">
     <div className="disclosure-img">
-      <img src={logoIcon} />
+      <img src={logoIcon} alt={alt} />
     </div>
     <div className="disclosure-body">
       <h3 className="disclosure-title">No Medical Advice</h3>
@@ -28,6 +27,11 @@ const MedicalDisclaimer = ({ logoIcon }) => (
 MedicalDisclaimer.propTypes = {
   /** The Logo Img that gets inserted into disclaimer. */
   logoIcon: PropTypes.string.isRequired,
+  alt: PropTypes.string,
+};
+
+MedicalDisclaimer.defaultProps = {
+  alt: 'website logo',
 };
 
 export default MedicalDisclaimer;

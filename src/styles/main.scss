@@ -27,37 +27,36 @@
 @import 'atoms/entry_meta';
 @import 'atoms/buttons';
 @import 'atoms/input_field';
+@import 'atoms/disqus';
 
 /** Molecules */
 @import 'molecules/mailchimp_single_line_input';
+@import 'molecules/pagination';
+@import 'molecules/article_listing_horizontal';
+@import 'molecules/article_listing_vertical';
+@import 'molecules/article_listing_featured';
 
 /**
 @import 'molecules/social_buttons';
 @import 'molecules/breadcrumbs';
-@import 'molecules/post_navigation_or_pagination';
 @import 'molecules/header_category_top_navigation_bar';
 @import 'molecules/main_navjs_navigation';
-@import 'molecules/blog_roll_post';
 @import 'molecules/text_and_image_callout';
-@import 'molecules/comments';
-@import 'molecules/pagination';
 @import 'molecules/related_posts';
 @import 'molecules/table_of_contents';
 @import 'molecules/social_share_bar';*/
 
-/** Organisms 
+/** Organisms
 @import 'organisms/site_header';
 @import 'organisms/full_email_block';
-@import 'organisms/featured_article';
 @import 'organisms/popular_articles';
-@import 'organisms/front_page_blog_roll';
 @import 'organisms/sidebar';
 @import 'organisms/site_footer';
 @import 'organisms/tinymce';
 @import 'organisms/comments';
 @import 'organisms/banner'; */
 
-/** Templates 
+/** Templates
 @import 'templates/category';
 @import 'templates/post';
 @import 'templates/search';

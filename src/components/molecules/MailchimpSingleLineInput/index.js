@@ -6,8 +6,10 @@ import Icon from '../../atoms/Icon';
 import InputField from '../../atoms/InputField';
 
 /**
- * MOLECULE: The `<MailchimpSingleLineInput>` molecule creates an email form to sign up for a Mailchimp newsletter.
- * NOTE: the submit input is provided by Mailchimp and advised not to change. See Inline comment below.
+ * MOLECULE: The `<MailchimpSingleLineInput>` molecule creates an email
+ * form to sign up for a Mailchimp newsletter.
+ * NOTE: the submit input is provided by Mailchimp and advised not to
+ * change. See Inline comment below.
  *
  */
 const MailchimpSingleLineInput = ({ mailchimpUrl }) => (

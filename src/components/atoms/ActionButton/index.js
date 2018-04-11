@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 
 /**
@@ -7,18 +6,12 @@ import PropTypes from 'prop-types';
  *
  */
 const ActionButton = ({
-  id,
-  className,
-  buttonText,
-  type,
-  disabled,
-  children,
-  text,
+  id, className, text, type, disabled, children,
 }) => (
   <button
-    id="{id}"
-    className="action-button {className}"
-    type="{type}"
+    id={id}
+    className={`action-button ${className}`}
+    type={type}
     disabled={disabled}
   >
     {children || text}
@@ -36,6 +29,17 @@ ActionButton.propTypes = {
   type: PropTypes.string,
   /** The */
   disabled: PropTypes.bool,
+  /** The */
+  text: PropTypes.string,
+};
+
+ActionButton.defaultProps = {
+  className: '',
+  id: '',
+  text: '',
+  type: '',
+  disabled: false,
+  children: '',
 };
 
 export default ActionButton;
