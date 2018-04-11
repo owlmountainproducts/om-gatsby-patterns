@@ -28,9 +28,12 @@
 @import 'atoms/buttons';
 @import 'atoms/input_field';
 
-/** Molecules 
+/** Molecules */
+@import 'molecules/mailchimp_single_line_input';
+
+
+/**
 @import 'molecules/social_buttons';
-@import 'molecules/email_input';
 @import 'molecules/breadcrumbs';
 @import 'molecules/post_navigation_or_pagination';
 @import 'molecules/header_category_top_navigation_bar';

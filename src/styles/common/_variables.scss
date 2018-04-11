@@ -46,20 +46,21 @@ $primary-button-color: rgb(0, 53, 0);
 $action-button-color: rgb(0, 53, 0); 
 $secondary-button-color: rgb(0, 110, 0); 
 $tertiary-button-color: rgb(0, 175, 0); 
+$placeholder-text-color: $om-medium-dark-grey;
 
 $disclosure-title: 1.05rem;
 $header-font: $secondary-font;
 $input-field-height: 30px;
+
 /**
 $charcoal: $om-dark-grey;
-$placeholder-text-color: $om-medium-dark-grey;
 $sidebar-grey: #efefef;
 
 /** Box Model  */
 $spacer: 2rem;
 
-/** Email Molecule  
-$email-input-height: 37px;
+/** Email Molecule */
+$email-input-height: 35px;
 
 /** Header & Nav  
 $header-medium-breakpoint: 1025px;

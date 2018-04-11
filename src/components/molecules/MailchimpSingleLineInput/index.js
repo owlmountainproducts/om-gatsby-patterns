@@ -6,11 +6,11 @@ import Icon from '../../atoms/Icon';
 import InputField from '../../atoms/InputField';
 
 /**
- * MOLECULE: The `<MailChimpEmailInput>` molecule creates an email form to sign up for a Mailchimp newsletter.
+ * MOLECULE: The `<MailchimpSingleLineInput>` molecule creates an email form to sign up for a Mailchimp newsletter.
  * NOTE: the submit input is provided by Mailchimp and advised not to change. See Inline comment below.
  * 
  */
-const MailChimpEmailInput = ({ mailchimpUrl }) => (
+const MailchimpSingleLineInput = ({ mailchimpUrl }) => (
   <form
     action={mailchimpUrl}
     method="post"
@@ -21,15 +21,16 @@ const MailChimpEmailInput = ({ mailchimpUrl }) => (
     noValidate="true"
   >
     <div id="mc_embed_signup_scroll">
-      <div className="email-input-line">
-        <Icon>
+      <div className="email-input-line single-input-line">
+        <Icon
+          className="email-envelope">
           <FontAwesome.FaEnvelopeO />
         </Icon>
         <InputField
           type="email"
           defaultValue=""
           name="EMAIL"
-          className="email-capture-box"
+          className="mailchimp-capture-box"
           id="mce-EMAIL"
           placeholder="ENTER YOUR EMAIL"
           required
@@ -59,9 +60,9 @@ const MailChimpEmailInput = ({ mailchimpUrl }) => (
   </form>
 );
 
-MailChimpEmailInput.propTypes = {
+MailchimpSingleLineInput.propTypes = {
   /** The Mailchimp signup URL. */
   mailchimpUrl: PropTypes.string.isRequired,
 };
 
-export default MailChimpEmailInput;
+export default MailchimpSingleLineInput;
