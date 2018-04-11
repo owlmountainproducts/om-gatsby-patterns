@@ -42,11 +42,23 @@
 /* --------  Extends Core Buttons  -------- */
 
 %primary-button {
-  @include coreButton($white, $cta-color, $cta-color);
+  @include coreButton($white, $primary-button-color, $primary-button-color);
+}
+
+%secondary-button {
+  @include coreButton($white, $secondary-button-color, $secondary-button-color);
+}
+
+%tertiary-button {
+  @include coreButton($white, $tertiary-button-color, $tertiary-button-color);
+}
+
+%action-button {
+  @include coreButton($white, $action-button-color, $action-button-color);
 }
 
 %amazon-button {
-  @include coreButton($white, $amazon-orange, $amazon-orange);
+  @include coreButton($white, $amazon-cta, $amazon-cta);
 
   padding: 0.6rem 2rem;
   display: list-item;
@@ -54,15 +66,30 @@
   margin: auto;
 }
 
-%secondary-button {
-  @include coreButton($white, $cta-color, $cta-color);
+/* --------  Base Button Classes  -------- */
+
+.primary-button {
+  @extend %primary-button;
 }
 
-%tertiary-button {
-  @include coreButton($cta-color, $white, $cta-color);
+.secondary-button {
+  @extend %secondary-button;
 }
 
-/* ----------  Mixins Icon Buttons  -------- */
+.tertiary-button {
+  @extend %tertiary-button;
+}
+
+.action-button {
+  @extend %action-button;
+}
+
+.amazon-button {
+  @extend %amazon-button;
+}
+
+
+/* ----------  Mixins Icon Buttons  --------
 
 @mixin primary-icon-button($fa-icon-value) {
   @extend %primary-button;
@@ -81,3 +108,4 @@
 
   @include iconButton($fa-icon-value);
 }
+ ----------------------------------------- */

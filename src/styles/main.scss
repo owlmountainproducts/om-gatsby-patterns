@@ -1,10 +1,10 @@
 /** Global */
+@import 'common/typography';
 @import 'common/variables';
 @import 'common/vendor';
 @import 'common/flex_grid';
-@import 'common/typography';
 @import 'common/global';
-@import 'common/standard_margins_mixin';
+/**@import 'common/standard_margins_mixin';
 
 /** Import everything from autoload */
 // @import "./autoload/**/*";
@@ -17,33 +17,33 @@
  */
 // @import "~some-node-module";
 
-/** Atom */
-@import 'atoms/buttons';
+/** Utility Files */
 @import 'atoms/text';
-@import 'atoms/forms';
-@import 'atoms/social_buttons';
-@import 'atoms/wp_classes';
 @import 'atoms/links';
-@import 'atoms/email_input';
-@import 'atoms/front_page_section_header';
-@import 'atoms/iframe';
-@import 'atoms/breadcrumbs';
+@import 'atoms/wp_classes';
 
-/** Molecules */
-@import 'molecules/entry_meta';
+/** Atoms */
+@import 'atoms/affiliate_and_medical_disclosure';
+@import 'atoms/entry_meta';
+@import 'atoms/buttons';
+@import 'atoms/input_field';
+
+/** Molecules 
+@import 'molecules/social_buttons';
+@import 'molecules/email_input';
+@import 'molecules/breadcrumbs';
 @import 'molecules/post_navigation_or_pagination';
 @import 'molecules/header_category_top_navigation_bar';
 @import 'molecules/main_navjs_navigation';
 @import 'molecules/blog_roll_post';
-@import 'molecules/disclosures_shortcodes';
 @import 'molecules/text_and_image_callout';
 @import 'molecules/comments';
 @import 'molecules/pagination';
 @import 'molecules/related_posts';
 @import 'molecules/table_of_contents';
-@import 'molecules/social_share_bar';
+@import 'molecules/social_share_bar';*/
 
-/** Organisms */
+/** Organisms 
 @import 'organisms/site_header';
 @import 'organisms/full_email_block';
 @import 'organisms/featured_article';
@@ -53,9 +53,9 @@
 @import 'organisms/site_footer';
 @import 'organisms/tinymce';
 @import 'organisms/comments';
-@import 'organisms/banner';
+@import 'organisms/banner'; */
 
-/** Templates */
+/** Templates 
 @import 'templates/category';
 @import 'templates/post';
 @import 'templates/search';
@@ -64,4 +64,4 @@
 @import 'templates/home';
 @import 'templates/about_template';
 @import 'templates/wordpress_hacks';
-@import 'templates/split_test_modifications';
+@import 'templates/split_test_modifications'; */

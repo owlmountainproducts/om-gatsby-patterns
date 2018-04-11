@@ -1,4 +1,4 @@
-/** Site Specific Colors & Options */
+/** Site Specific Colors & Options 
 // used for top-header, homepage email-capture, social icons.
 $primary-color: #2782d0;
 
@@ -9,7 +9,6 @@ $secondary-color: #faf8f2;
 $tertiary-color: $secondary-color;
 
 $cta-color: #ea7317;
-$link-hover-color: $cta-color;
 $wa-blue: #2782d0;
 $header-icon-color: #4c4c4c;
 
@@ -18,38 +17,51 @@ $medium-break-pt-logo-height: 60px;
 // Typical is 6px 0 0;
 $medium-break-pt-logo-margins: 6px 0 0;
 
-/** Footer Logo */
+/** Footer Logo 
 // Large is 80px;
 $footer-medium-break-pt-logo-height: 55px;
 // Large is -5px 0;
 $footer-medium-break-pt-logo-margins: 6px 0 0;
 
 /** Colors */
-$om-light-grey: #f6f6f6;
-$om-medium-grey: #ddd;
-$om-sidebar-grey: #efefef;
-$om-medium-dark-grey: #757575;
-$om-dark-grey: #272a2b;
-
 $black: #000;
 $white: #fff;
 $page-white: #fffffd;
-$charcoal: $om-dark-grey;
-$placeholder-text-color: $om-medium-dark-grey;
+
+$om-light-grey: #f6f6f6;
+$om-medium-light-grey: rgb(197, 197, 197);
+$om-medium-grey: rgb(175, 174, 174);
+$om-medium-dark-grey: #757575;
+$om-dark-grey: #272a2b;
 
 /** Specific Colors */
+$global-code-background: #272a2b;
 $text-color: #222;
+$affiliate-disclosure-bk-color: $om-medium-light-grey;
+$medical-disclaimer-bk-color: $om-medium-light-grey;
 $text-on-dark: #f5f5f5;
-$amazon-orange: #faa81a;
-$medical-disclaimer-bk-color: $om-medium-grey;
+$link-hover-color: blue;
+$amazon-cta: #faa81a;
+$primary-button-color: rgb(0, 53, 0); 
+$action-button-color: rgb(0, 53, 0); 
+$secondary-button-color: rgb(0, 110, 0); 
+$tertiary-button-color: rgb(0, 175, 0); 
+
+$disclosure-title: 1.05rem;
+$header-font: $secondary-font;
+$input-field-height: 30px;
+/**
+$charcoal: $om-dark-grey;
+$placeholder-text-color: $om-medium-dark-grey;
+$sidebar-grey: #efefef;
 
 /** Box Model  */
 $spacer: 2rem;
 
-/** Email Molecule  */
+/** Email Molecule  
 $email-input-height: 37px;
 
-/** Header & Nav  */
+/** Header & Nav  
 $header-medium-breakpoint: 1025px;
 $header-visible-nav-breakpoint: 1248px;
 $header-right-visible-breakpoint: 1035px;
@@ -58,17 +70,17 @@ $header-padding-small: 0 3px;
 $header-padding-medium: 0 2.75rem;
 $header-padding-large: 0 7.75rem;
 
-/** Three Up Cards  */
+/** Three Up Cards  
 $md-card-padding: 0 1rem;
 $lg-card-padding: 0 2rem;
 
-/** Search */
+/** Search 
 $search-form-max-width: 970px;
 
-/** Single */
+/** Single 
 $entry-content-max-width: 650px;
 $entry-comment-max-width: 680px;
 $entry-content-left-offset: 1.5rem;
 
-/** Page */
-$page-width: 980px;
+/** Page 
+$page-width: 980px; */

@@ -2,9 +2,9 @@
 
 // Font Sizes
 $base-font-size: 16px;
-$small-point-size: $base-font-size * 0.925;
-$smaller-point-size: $base-font-size * 0.825;
-$xtra-small-point-size: $base-font-size * 0.77;
+$type2-point-size: $base-font-size * 0.925;
+$type3-point-size: $base-font-size * 0.825;
+$type4-point-size: $base-font-size * 0.77;
 
 // Font Families
 $primary-font: 'Roboto', sans-serif;
@@ -14,13 +14,11 @@ $secondary-font: 'Roboto', sans-serif;
 
 %primary-font-regular {
   font-family: $primary-font;
-  color: $text-color;
   -webkit-font-smoothing: antialiased;
 }
 
 %secondary-font-regular {
   font-family: $secondary-font;
-  color: $text-color;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -29,13 +27,11 @@ $secondary-font: 'Roboto', sans-serif;
 %primary-font-bold {
   font-family: $primary-font;
   font-weight: 700;
-  color: $text-color;
   -webkit-font-smoothing: antialiased;
 }
 
 %secondary-font-bold {
   font-family: $secondary-font;
   font-weight: 700;
-  color: $text-color;
   -webkit-font-smoothing: antialiased;
 }

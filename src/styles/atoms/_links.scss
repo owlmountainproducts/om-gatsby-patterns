@@ -1,12 +1,13 @@
-%home-header-links {
+%text-color-link {
   color: $text-color;
+  text-decoration: none;
 
   &:hover {
     color: $link-hover-color;
   }
 }
 
-%footer-links {
+%text-on-dark-link {
   color: $text-on-dark;
   text-decoration: none;
 

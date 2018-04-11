@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import FaEnvelopeO from 'react-icons/lib/fa/envelope-o';
+import * as FontAwesome from 'react-icons/lib/fa'
+
+import Icon from '../../atoms/Icon';
+import InputField from '../../atoms/InputField';
 
 /**
- * ATOM: The `<EmailInput>` atom creates an email form to sign up for a Mailchimp newsletter.
- * FIXME: Should be a molecule or organism, also renamed to something more
- * clearly coupled with Mailchimp.
+ * MOLECULE: The `<MailChimpEmailInput>` molecule creates an email form to sign up for a Mailchimp newsletter.
+ * NOTE: the submit input is provided by Mailchimp and advised not to change. See Inline comment below.
+ * 
  */
-const EmailInput = ({ mailchimpUrl }) => (
+const MailChimpEmailInput = ({ mailchimpUrl }) => (
   <form
     action={mailchimpUrl}
     method="post"
@@ -19,10 +22,10 @@ const EmailInput = ({ mailchimpUrl }) => (
   >
     <div id="mc_embed_signup_scroll">
       <div className="email-input-line">
-        <div className="envelope-icon">
-          <FaEnvelopeO />
-        </div>
-        <input
+        <Icon>
+          <FontAwesome.FaEnvelopeO />
+        </Icon>
+        <InputField
           type="email"
           defaultValue=""
           name="EMAIL"
@@ -56,9 +59,9 @@ const EmailInput = ({ mailchimpUrl }) => (
   </form>
 );
 
-EmailInput.propTypes = {
+MailChimpEmailInput.propTypes = {
   /** The Mailchimp signup URL. */
   mailchimpUrl: PropTypes.string.isRequired,
 };
 
-export default EmailInput;
+export default MailChimpEmailInput;

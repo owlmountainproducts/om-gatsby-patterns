@@ -2,14 +2,13 @@
 .medical-disclaimer-wrapper {
   @include makeRow($no-padding: true);
 
-  background-color: $tertiary-color;
-  border-radius: 6px;
+  border-radius: 5px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0.5rem auto;
 }
 
 .affiliate-disclosure-wrapper {
-  margin: 0 auto 1rem;
+  background-color: $affiliate-disclosure-bk-color;
 }
 
 .medical-disclaimer-wrapper {
@@ -32,14 +31,14 @@
 
 .disclosure-title {
   margin: 0.25rem 0;
-  font-size: 1.05rem;
+  font-size: $disclosure-title;
   color: darken($om-medium-dark-grey, 10%);
 }
 
 .disclosure-text {
   margin: 0;
   font-family: $secondary-font;
-  font-size: $small-point-size;
+  font-size: $type2-point-size;
   font-weight: bold;
   line-height: 1.25rem;
   color: $om-medium-dark-grey;

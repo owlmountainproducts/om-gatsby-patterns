@@ -1,0 +1,13 @@
+.input-field {
+  height: $input-field-height;
+  font-size: 1rem;
+
+  ::placeholder,
+  ::-webkit-input-placeholder,
+  ::-moz-placeholder,
+  :-ms-input-placeholder,
+  :-moz-placeholder {
+    font-size: 0.5rem;
+    color: green;
+  }
+}

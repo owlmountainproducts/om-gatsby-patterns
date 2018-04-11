@@ -1,7 +1,7 @@
 %entry-meta {
   display: inline;
   font-family: $secondary-font;
-  font-size: $xtra-small-point-size;
+  font-size: $type3-point-size;
   font-weight: 800;
 }
 
@@ -11,6 +11,6 @@
 
   // In links.scss
   a {
-    @extend %home-header-links;
+    @extend %text-color-link;
   }
 }
