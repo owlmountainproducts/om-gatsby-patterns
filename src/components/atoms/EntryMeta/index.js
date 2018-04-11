@@ -1,22 +1,39 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link'
-import slugify from 'slugify'
+import Link from 'gatsby-link';
+import slugify from 'slugify';
 
 /**
  * MOLECULE: The `<EntryMeta>` is for displaying author and date information.
  *
  */
 const EntryMeta = ({ author, lastUpdated, includeLink }) => (
-	<div className="entry-meta"> 
-		{includeLink &&
-			<p className="byline author vcard">{new Date(lastUpdated).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} | by <Link to={`/author/${slugify(author, {lower: true})}/`}>{author}</Link></p>
-		}
-		{!includeLink &&
-			<p className="byline author vcard">{new Date(lastUpdated).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} | by {author}</p>
-		}
-	</div>
-)
+  <div className="entry-meta">
+    {includeLink && (
+      <p className="byline author vcard">
+        {new Date(lastUpdated).toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        })}{' '}
+        | by{' '}
+        <Link to={`/author/${slugify(author, { lower: true })}/`}>
+          {author}
+        </Link>
+      </p>
+    )}
+    {!includeLink && (
+      <p className="byline author vcard">
+        {new Date(lastUpdated).toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        })}{' '}
+        | by {author}
+      </p>
+    )}
+  </div>
+);
 
 EntryMeta.propTypes = {
   /** The */

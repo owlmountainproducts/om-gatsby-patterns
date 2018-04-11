@@ -1,12 +1,20 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * ATOM: The `<InputField>` atom creates a link wrapper that acts either like an internal or external link.
  *
  */
-const InputField = ({type, defaultValue, name, className, id, placeholder, required}) => (
-    <input
+const InputField = ({
+  type,
+  defaultValue,
+  name,
+  className,
+  id,
+  placeholder,
+  required,
+}) => (
+  <input
     type={type}
     defaultValue={defaultValue}
     name={name}
@@ -15,25 +23,23 @@ const InputField = ({type, defaultValue, name, className, id, placeholder, requi
     placeholder={placeholder}
     required={required}
   />
-)
-
+);
 
 InputField.propTypes = {
-    /** The */
-    type: PropTypes.string.isRequired,
-    /** The */
-    defaultValue: PropTypes.string.isRequired,
-    /** The */
-    name: PropTypes.string.isRequired,
-    /** The */
-    className: PropTypes.string,
-    /** The */
-    id: PropTypes.string,
-    /** The */
-    placeholder: PropTypes.string,
-    /** The */
-    required: PropTypes.bool.isRequired
-
+  /** The */
+  type: PropTypes.string.isRequired,
+  /** The */
+  defaultValue: PropTypes.string.isRequired,
+  /** The */
+  name: PropTypes.string.isRequired,
+  /** The */
+  className: PropTypes.string,
+  /** The */
+  id: PropTypes.string,
+  /** The */
+  placeholder: PropTypes.string,
+  /** The */
+  required: PropTypes.bool.isRequired,
 };
 
 export default InputField;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import * as FontAwesome from 'react-icons/lib/fa'
+import * as FontAwesome from 'react-icons/lib/fa';
 
 import Icon from '../../atoms/Icon';
 import InputField from '../../atoms/InputField';
@@ -8,7 +8,7 @@ import InputField from '../../atoms/InputField';
 /**
  * MOLECULE: The `<MailchimpSingleLineInput>` molecule creates an email form to sign up for a Mailchimp newsletter.
  * NOTE: the submit input is provided by Mailchimp and advised not to change. See Inline comment below.
- * 
+ *
  */
 const MailchimpSingleLineInput = ({ mailchimpUrl }) => (
   <form
@@ -22,8 +22,7 @@ const MailchimpSingleLineInput = ({ mailchimpUrl }) => (
   >
     <div id="mc_embed_signup_scroll">
       <div className="email-input-line single-input-line">
-        <Icon
-          className="email-envelope">
+        <Icon className="email-envelope">
           <FontAwesome.FaEnvelopeO />
         </Icon>
         <InputField
