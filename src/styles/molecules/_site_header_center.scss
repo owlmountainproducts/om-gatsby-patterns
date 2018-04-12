@@ -1,0 +1,68 @@
+// Both HeaderLayered and HeaderTucked use these
+.header-wrapper {
+  background-color: #deceb2;
+  height: $header-height;
+  border-bottom: $header-bottom-border;
+  display: flex;
+}
+
+.site-header-icon {
+  color: $header-icon-color;
+  font-size: 1.45rem;
+  line-height: $header-height;
+}
+
+#menu-icon {
+  padding: 0 0.75rem;
+  font-size: 2.5rem;
+  color: $header-icon-color;
+  text-decoration: none;
+
+  @include breakpoint($header-visible-nav-breakpoint) {
+    display: block;
+  }
+}
+
+// Want to vertically center this. This is where I Am.
+.logo {
+  max-height: $header-height - 10;
+  max-width: 245px;
+  margin: auto 0;
+
+  @include breakpoint($medium) {
+    max-width: none;
+  }
+}
+
+// Header Email
+.site-header .single-input-line {
+  display: inline-block;
+  margin: 0 1.75rem 0 0;
+}
+
+// Header Right Icons
+.header-right-icons {
+  display: inline-block;
+}
+
+.header-search {
+  width: 160px;
+  line-height: $header-height;
+}
+
+.fb-icon svg,
+.pinterest-icon svg,
+.youtube-icon svg,
+.search-icon svg {
+  color: $header-icon-color;
+  font-size: 1.45rem;
+  padding: 0 0.5rem;
+}
+
+.fb-icon svg {
+  padding: 0 0.75rem 0 0;
+}
+
+.search-icon svg {
+  padding: 0 0 0 0.75rem;
+}

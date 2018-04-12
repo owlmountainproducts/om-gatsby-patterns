@@ -10,12 +10,7 @@ $tertiary-color: $secondary-color;
 
 $cta-color: #ea7317;
 $wa-blue: #2782d0;
-$header-icon-color: #4c4c4c;
 
-// Typical is 55px;
-$medium-break-pt-logo-height: 60px;
-// Typical is 6px 0 0;
-$medium-break-pt-logo-margins: 6px 0 0;
 
 /** Footer Logo
 // Large is 80px;
@@ -63,7 +58,7 @@ $spacer: 2rem;
 /** Email Molecule */
 $email-input-height: 35px;
 
-/** Header & Nav
+/** Header & Nav */
 $header-medium-breakpoint: 1025px;
 $header-visible-nav-breakpoint: 1248px;
 $header-right-visible-breakpoint: 1035px;
@@ -71,6 +66,13 @@ $header-height: 69px;
 $header-padding-small: 0 3px;
 $header-padding-medium: 0 2.75rem;
 $header-padding-large: 0 7.75rem;
+$header-icon-color: #4c4c4c;
+$header-bottom-border: none;
+
+// Typical is 55px;
+$medium-break-pt-logo-height: 60px;
+// Typical is 6px 0 0;
+$medium-break-pt-logo-margins: 6px 0 0;
 
 /** Three Up Cards
 $md-card-padding: 0 1rem;

@@ -1,8 +1,7 @@
 // TODO: Style for mobile. Currently just hiding on mobile.
 .action-with-image-box {
-  @include makeRow($no-padding: true);
-
-  display: none;
+  display: flex;
+  height: 270px;
 
   @include breakpoint(450px) {
     display: flex;
@@ -10,90 +9,26 @@
 }
 
 .awib-text-wrapper {
-  @include makeColumn($size: 12, $offset: 0);
-  @include makeColumn(md, $size: 7, $offset: 0);
-
-  padding: 0;
-
   @include breakpoint($medium) {
     padding: 1.25rem 0;
   }
 }
 
-.text-and-image-text-inner {
+.awib-text-inner {
   border: 8px solid #f5efd9;
   padding: 1rem 2rem;
+  min-height: 181px;
 
   @include breakpoint($medium) {
     border-right: 0;
   }
 }
 
-.text-and-image-img-wrapper {
-  @include makeColumn($size: 12, $offset: 0);
-  @include makeColumn(md, $size: 5, $offset: 0);
-
-  display: none;
-  padding: 0;
-  overflow: hidden;
-  background-image: url('https://cdn1.wellnessappliances.com/wp-content/uploads/2018/03/19000725/livingroom.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 1px solid $om-medium-grey;
-
-  @include breakpoint($medium) {
-    display: block;
-  }
-}
-
-.text-and-image-callout {
-  font-size: 1.5rem;
+.awib-header {
   font-style: italic;
   margin: 0.5rem 0;
 }
 
-.text-and-image-subcallout {
-  font-size: 1.25rem;
-  margin: 0.5rem 0;
-}
-
-.text-and-image-cta-row {
-  margin: 2rem 0 1rem;
-}
-
-.text-and-image-box-button {
-  @extend %primary-button;
-  margin: 0.5rem 0 1rem;
-  padding: 0.5rem 2rem;
-  display: block;
-  max-width: 220px;
-
-  @include breakpoint(1235px) {
-    margin: 2rem 1rem 2rem 0;
-    display: inline;
-    max-width: none;
-    padding: 0.5rem 4rem;
-  }
-}
-
-.text-and-image-cta-row .single-input-line {
-  .email-input-line {
-    max-width: 325px;
-
-    @include breakpoint($medium) {
-      max-width: 304px;
-    }
-  }
-
-  .email-capture-box {
-    @include breakpoint($medium) {
-      width: 162px;
-    }
-  }
-
-  .email-submit-button {
-    @include breakpoint($medium) {
-      width: 94px;
-    }
-  }
+.awib-img {
+  height: 270px;
 }
