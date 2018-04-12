@@ -1,4 +1,4 @@
-/** Site Specific Colors & Options 
+/** Site Specific Colors & Options
 // used for top-header, homepage email-capture, social icons.
 $primary-color: #2782d0;
 
@@ -17,7 +17,7 @@ $medium-break-pt-logo-height: 60px;
 // Typical is 6px 0 0;
 $medium-break-pt-logo-margins: 6px 0 0;
 
-/** Footer Logo 
+/** Footer Logo
 // Large is 80px;
 $footer-medium-break-pt-logo-height: 55px;
 // Large is -5px 0;
@@ -47,6 +47,7 @@ $action-button-color: rgb(0, 53, 0);
 $secondary-button-color: rgb(0, 110, 0);
 $tertiary-button-color: rgb(0, 175, 0);
 $placeholder-text-color: $om-medium-dark-grey;
+$email-mat-color: #2277ca;
 
 $disclosure-title: 1.05rem;
 $header-font: $secondary-font;
@@ -62,7 +63,7 @@ $spacer: 2rem;
 /** Email Molecule */
 $email-input-height: 35px;
 
-/** Header & Nav  
+/** Header & Nav
 $header-medium-breakpoint: 1025px;
 $header-visible-nav-breakpoint: 1248px;
 $header-right-visible-breakpoint: 1035px;
@@ -71,17 +72,17 @@ $header-padding-small: 0 3px;
 $header-padding-medium: 0 2.75rem;
 $header-padding-large: 0 7.75rem;
 
-/** Three Up Cards  
+/** Three Up Cards
 $md-card-padding: 0 1rem;
 $lg-card-padding: 0 2rem;
 
-/** Search 
+/** Search
 $search-form-max-width: 970px;
 
-/** Single 
+/** Single
 $entry-content-max-width: 650px;
 $entry-comment-max-width: 680px;
 $entry-content-left-offset: 1.5rem;
 
-/** Page 
+/** Page
 $page-width: 980px; */

@@ -3,7 +3,7 @@
 
   margin: 1.5rem 0;
 
-  .article-listing-image {
+  .article-listing-image-wrapper {
     @include makeColumn($size: 12, $offset: 0);
     @include makeColumn(md, $size: 5, $offset: 0);
   }

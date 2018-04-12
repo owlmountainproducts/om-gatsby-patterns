@@ -8,7 +8,6 @@ import EntryMeta from '../../atoms/EntryMeta';
 /**
  * MOLECULE: The `<ArticleListing>` creates __.
  * TODO: Use gatsby-image with all images, remove switch logic
- * TODO: Abstract together with `FeaturedArticle`?
  *
  */
 const ArticleListing = ({
@@ -21,9 +20,10 @@ const ArticleListing = ({
   excerpt,
   useGatsbyImage,
   className,
+  featuredArticle,
 }) => (
   <article className={`article-listing ${className}`}>
-    <div className="article-listing-image">
+    <div className="article-listing-image-wrapper">
       {useGatsbyImage ? (
         <Link to={`/${slug}/`}>
           <Img sizes={imageFiles} alt={imageText} />
@@ -35,6 +35,9 @@ const ArticleListing = ({
       )}
     </div>
     <div className="article-listing-text">
+      {featuredArticle && (
+        <p className="featured-article-tag">Featured Article</p>
+      )}
       <h3 className="article-listing-title">
         <Link
           className="article-listing-title-link"
@@ -73,11 +76,14 @@ ArticleListing.propTypes = {
   excerpt: PropTypes.string,
   /** The  */
   className: PropTypes.string,
+  /** The  */
+  featuredArticle: PropTypes.bool,
 };
 
 ArticleListing.defaultProps = {
   className: '',
   excerpt: '',
+  featuredArticle: false,
 };
 
 export default ArticleListing;

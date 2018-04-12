@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /**
- * ATOM: The `<Icon>` atom creates __.
+ * ATOM: The `<IconWrapper>` atom creates __.
  *
  */
-const Icon = ({ id, className, children }) => (
+const IconWrapper = ({ id, className, children }) => (
   <div id={id} className={`icon ${className}`}>
     {children}
   </div>
 );
 
-Icon.propTypes = {
+IconWrapper.propTypes = {
   /** The */
   id: PropTypes.string,
   /** The */
@@ -20,10 +20,10 @@ Icon.propTypes = {
   children: PropTypes.string,
 };
 
-Icon.defaultProps = {
+IconWrapper.defaultProps = {
   className: '',
   id: '',
   children: '',
 };
 
-export default Icon;
+export default IconWrapper;

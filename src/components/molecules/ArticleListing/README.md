@@ -39,5 +39,6 @@ An example ArticleListing Featured molecule.
   imageText="Bug Out vs. Get Home Bags"
   authorName="SurvivalWoman"
   lastUpdated="April 23, 2018"
-  useGatsbyImage={false} />
+  useGatsbyImage={false}
+  featuredArticle={true} />
 ```

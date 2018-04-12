@@ -1,0 +1,62 @@
+.full-email-mat {
+  background-color: $email-mat-color;
+  padding: 1.25rem 2rem;
+  width: 25rem;
+  margin: 0 auto;
+
+  @include breakpoint($medium) {
+    padding: 1.2rem;
+    box-shadow: 0 2px 3px 1px $om-medium-grey;
+  }
+}
+
+.full-email-mat-header {
+  color: $white;
+  text-align: left;
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+  font-style: italic;
+}
+
+.full-email-mat-cta-text {
+  color: $white;
+  font-family: $secondary-font;
+  text-align: left;
+  font-size: $type2-point-size;
+}
+
+.full-email-mat-email-input {
+}
+
+.full-email-mat-privacy-link-wrapper {
+  margin: 0.3rem 0 0;
+}
+
+.full-email-mat-privacy-link {
+  color: $white;
+  text-align: left;
+  text-decoration: underline;
+  font-family: $secondary-font;
+  font-size: $type2-point-size;
+}
+
+.full-email-mat-audience-callout {
+  text-align: center;
+}
+
+.full-email-mat-audience-number {
+  color: $white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem 0 0.4rem;
+  padding: 1.15rem 0 0;
+  border-top: 1px solid $white;
+}
+
+.full-email-mat-audience-descriptor {
+  color: $white;
+  font-weight: lighter;
+  padding: 0;
+  margin: 0.35rem 0 0;
+  font-style: italic;
+}

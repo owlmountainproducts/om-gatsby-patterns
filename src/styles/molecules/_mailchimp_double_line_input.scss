@@ -1,7 +1,5 @@
-.single-line-input {
-  display: flex;
-  width: 100%;
-  min-width: 304px;
+.double-line-input {
+  text-align: center;
 
   .email-input-field-wrapper {
     display: flex;
@@ -27,9 +25,10 @@
   .email-submit-button {
     @extend %secondary-button;
 
+    max-width: none;
     height: $email-input-height + 4;
-    width: 6rem;
     font-size: $type2-point-size;
     border-radius: 0;
+    margin: 10px 0 0;
   }
 }

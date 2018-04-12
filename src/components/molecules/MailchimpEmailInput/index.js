@@ -2,17 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import * as FontAwesome from 'react-icons/lib/fa';
 
-import Icon from '../../atoms/Icon';
+import IconWrapper from '../../atoms/IconWrapper';
 import InputField from '../../atoms/InputField';
 
 /**
- * MOLECULE: The `<MailchimpSingleLineInput>` molecule creates an email
+ * MOLECULE: The `<MailchimpEmailInput>` molecule creates an email
  * form to sign up for a Mailchimp newsletter.
  * NOTE: the submit input is provided by Mailchimp and advised not to
  * change. See Inline comment below.
  *
  */
-const MailchimpSingleLineInput = ({ mailchimpUrl }) => (
+const MailchimpEmailInput = ({ mailchimpUrl, className }) => (
   <form
     action={mailchimpUrl}
     method="post"
@@ -23,19 +23,23 @@ const MailchimpSingleLineInput = ({ mailchimpUrl }) => (
     noValidate="true"
   >
     <div id="mc_embed_signup_scroll">
-      <div className="email-input-line single-input-line">
-        <Icon className="email-envelope">
-          <FontAwesome.FaEnvelopeO />
-        </Icon>
-        <InputField
-          type="email"
-          defaultValue=""
-          name="EMAIL"
-          className="mailchimp-capture-box"
-          id="mce-EMAIL"
-          placeholder="ENTER YOUR EMAIL"
-          required
-        />
+      <div className={`email-input-line ${className}`}>
+        <div className="email-input-field-wrapper">
+          <label htmlFor="mce-EMAIL">
+            <IconWrapper className="email-envelope">
+              <FontAwesome.FaEnvelopeO />
+            </IconWrapper>
+          </label>
+          <InputField
+            type="email"
+            defaultValue=""
+            name="EMAIL"
+            className="mailchimp-capture-box"
+            id="mce-EMAIL"
+            placeholder="ENTER YOUR EMAIL"
+            required
+          />
+        </div>
         {/* real people should not fill this in and expect good things -
           * do not remove this or risk form bot signups
           */}
@@ -61,9 +65,15 @@ const MailchimpSingleLineInput = ({ mailchimpUrl }) => (
   </form>
 );
 
-MailchimpSingleLineInput.propTypes = {
+MailchimpEmailInput.propTypes = {
   /** The Mailchimp signup URL. */
   mailchimpUrl: PropTypes.string.isRequired,
+  /** The */
+  className: PropTypes.string,
 };
 
-export default MailchimpSingleLineInput;
+MailchimpEmailInput.defaultProps = {
+  className: '',
+};
+
+export default MailchimpEmailInput;
