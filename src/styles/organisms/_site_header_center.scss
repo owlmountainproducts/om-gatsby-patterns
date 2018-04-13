@@ -3,7 +3,19 @@
   background-color: #deceb2;
   height: $header-height;
   border-bottom: $header-bottom-border;
+}
+
+.header-inner {
+  padding: $header-inner-padding-small;
   display: flex;
+
+  @include breakpoint($medium) {
+    padding: $header-inner-padding-medium;
+  }
+
+  @include breakpoint($large) {
+    padding: $header-inner-padding-large;
+  }
 }
 
 .site-header-icon {
@@ -13,17 +25,21 @@
 }
 
 #menu-icon {
-  padding: 0 0.75rem;
+  padding: 0 0.75rem 0 0;
   font-size: 2.5rem;
   color: $header-icon-color;
   text-decoration: none;
 
   @include breakpoint($header-visible-nav-breakpoint) {
-    display: block;
+    display: none;
   }
 }
 
-// Want to vertically center this. This is where I Am.
+.logo-wrapper {
+  margin: auto 0;
+  height: $header-height - 10;
+}
+
 .logo {
   max-height: $header-height - 10;
   max-width: 245px;
@@ -34,35 +50,30 @@
   }
 }
 
-// Header Email
-.site-header .single-input-line {
-  display: inline-block;
-  margin: 0 1.75rem 0 0;
+// Header Right Items. See W3C's recomended use of
+// margin-left: https://www.w3.org/TR/css-flexbox-1/#auto-margins
+.header-email-capture-wrapper {
+  margin: auto 0;
+  margin-left: auto;
+  display: none;
+
+  @include breakpoint($header-right-visible-breakpoint) {
+    display: block;
+  }
 }
 
-// Header Right Icons
 .header-right-icons {
-  display: inline-block;
+  display: 0;
+
+  @include breakpoint($header-right-visible-breakpoint) {
+    display: flex;
+  }
 }
 
-.header-search {
-  width: 160px;
-  line-height: $header-height;
-}
+.header-right-icons .site-header-icon {
+  padding: 0 0.75rem;
 
-.fb-icon svg,
-.pinterest-icon svg,
-.youtube-icon svg,
-.search-icon svg {
-  color: $header-icon-color;
-  font-size: 1.45rem;
-  padding: 0 0.5rem;
-}
-
-.fb-icon svg {
-  padding: 0 0.75rem 0 0;
-}
-
-.search-icon svg {
-  padding: 0 0 0 0.75rem;
+  &:last-child {
+    padding: 0 0 0 0.75rem;
+  }
 }

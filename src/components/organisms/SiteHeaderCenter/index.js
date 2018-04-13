@@ -11,21 +11,28 @@ import MailchimpEmailInput from '../../molecules/MailchimpEmailInput';
  *
  */
 const SiteHeaderCenter = ({
-  alt, logo, fbUrl, pinterestUrl, youtubeUrl,
+  alt,
+  logo,
+  fbUrl,
+  pinterestUrl,
+  youtubeUrl,
+  mailchimpUrl,
 }) => (
   <div className="header-wrapper">
-    <IconWrapper id="menu-icon" className="site-header-icon">
-      <FontAwesome.FaBars />
-    </IconWrapper>
-    <Link to="/">
-      <img className="logo" src={logo} alt={alt} />
-    </Link>
-    <MailchimpEmailInput
-      className="single-line-input"
-      mailchimpUrl="https://wellnessappliances.us2.list-manage.com/subscribe/post?u=10dbfb95b10b0055960e52187&amp;id=143b2e5389"
-    />
-    <div className="header-right-icons">
-      <div className="header-search">
+    <div className="header-inner">
+      <IconWrapper id="menu-icon" className="site-header-icon">
+        <FontAwesome.FaBars />
+      </IconWrapper>
+      <Link to="/" className="logo-wrapper">
+        <img className="logo" src={logo} alt={alt} />
+      </Link>
+      <div className="header-email-capture-wrapper">
+        <MailchimpEmailInput
+          className="single-line-input header-email-capture"
+          mailchimpUrl={mailchimpUrl}
+        />
+      </div>
+      <div className="header-right-icons">
         <a className="fb-icon-link" href={fbUrl}>
           <IconWrapper className="site-header-icon">
             <FontAwesome.FaFacebook />
@@ -62,6 +69,8 @@ SiteHeaderCenter.propTypes = {
   pinterestUrl: PropTypes.string.isRequired,
   /** The */
   youtubeUrl: PropTypes.string.isRequired,
+  /** The */
+  mailchimpUrl: PropTypes.string.isRequired,
 };
 
 export default SiteHeaderCenter;

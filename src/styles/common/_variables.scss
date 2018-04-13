@@ -59,16 +59,17 @@ $spacer: 2rem;
 $email-input-height: 35px;
 
 /** Header & Nav */
-$header-medium-breakpoint: 1025px;
+$header-inner-padding: 0 4rem;
 $header-visible-nav-breakpoint: 1248px;
-$header-right-visible-breakpoint: 1035px;
+$header-right-visible-breakpoint: 700px;
 $header-height: 69px;
-$header-padding-small: 0 3px;
-$header-padding-medium: 0 2.75rem;
-$header-padding-large: 0 7.75rem;
-$header-icon-color: #4c4c4c;
+$header-inner-padding-small: 0 3px;
+$header-inner-padding-medium: 0 2.75rem;
+$header-inner-padding-large: 0 7.75rem;
 $header-bottom-border: none;
+$header-icon-color: #4c4c4c;
 
+/**
 // Typical is 55px;
 $medium-break-pt-logo-height: 60px;
 // Typical is 6px 0 0;
