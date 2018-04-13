@@ -18,21 +18,14 @@ const ArticleListing = ({
   authorName,
   lastUpdated,
   excerpt,
-  useGatsbyImage,
   className,
   featuredArticle,
 }) => (
   <article className={`article-listing ${className}`}>
     <div className="article-listing-image-wrapper">
-      {useGatsbyImage ? (
-        <Link to={`/${slug}/`}>
-          <Img sizes={imageFiles} alt={imageText} />
-        </Link>
-      ) : (
-        <Link to={`/${slug}/`}>
-          <img src={imageFiles} alt={imageText} />
-        </Link>
-      )}
+      <Link to={`/${slug}/`}>
+        <Img sizes={imageFiles} alt={imageText} />
+      </Link>
     </div>
     <div className="article-listing-text">
       {featuredArticle && (
@@ -70,8 +63,6 @@ ArticleListing.propTypes = {
   authorName: PropTypes.string.isRequired,
   /** The  */
   lastUpdated: PropTypes.string.isRequired,
-  /** The  */
-  useGatsbyImage: PropTypes.bool.isRequired,
   /** The  */
   excerpt: PropTypes.string,
   /** The  */

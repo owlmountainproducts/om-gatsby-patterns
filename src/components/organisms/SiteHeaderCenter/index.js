@@ -12,7 +12,7 @@ import MailchimpEmailInput from '../../molecules/MailchimpEmailInput';
  */
 const SiteHeaderCenter = ({
   alt,
-  logo,
+  logoImg,
   fbUrl,
   pinterestUrl,
   youtubeUrl,
@@ -24,7 +24,7 @@ const SiteHeaderCenter = ({
         <FontAwesome.FaBars />
       </IconWrapper>
       <Link to="/" className="logo-wrapper">
-        <img className="logo" src={logo} alt={alt} />
+        <img className="logo" src={logoImg} alt={alt} />
       </Link>
       <div className="header-email-capture-wrapper">
         <MailchimpEmailInput
@@ -60,9 +60,7 @@ const SiteHeaderCenter = ({
 
 SiteHeaderCenter.propTypes = {
   /** The */
-  alt: PropTypes.string.isRequired,
-  /** The */
-  logo: PropTypes.string.isRequired,
+  logoImg: PropTypes.string.isRequired,
   /** The */
   fbUrl: PropTypes.string.isRequired,
   /** The */
@@ -71,6 +69,12 @@ SiteHeaderCenter.propTypes = {
   youtubeUrl: PropTypes.string.isRequired,
   /** The */
   mailchimpUrl: PropTypes.string.isRequired,
+  /** The */
+  alt: PropTypes.string,
+};
+
+SiteHeaderCenter.defaultProps = {
+  alt: 'website logo',
 };
 
 export default SiteHeaderCenter;

@@ -20,7 +20,6 @@
 /** Utility Atoms */
 @import 'atoms/text';
 @import 'atoms/links';
-@import 'atoms/wp_classes';
 
 /** Atoms */
 @import 'atoms/affiliate_and_medical_disclosure';
@@ -29,6 +28,7 @@
 @import 'atoms/input_field';
 @import 'atoms/disqus';
 @import 'atoms/social_share_buttons';
+@import 'atoms/list_with_title';
 
 /** Molecules */
 @import 'molecules/mailchimp_single_line_input';
@@ -40,8 +40,6 @@
 @import 'molecules/action_with_image_box';
 
 /**
-@import 'molecules/titlle_with_list';
-
 @import 'molecules/related_posts';
 @import 'molecules/primary_nav';
 @import 'molecules/top_nav';
@@ -54,14 +52,13 @@
 @import 'organisms/site_header_center';
 
 /**
-@import 'organisms/sidebar';
 @import 'organisms/site_footer';
 
+@import 'organisms/sidebar';
 
 @import 'organisms/primary_nav_bar';
 @import 'organisms/site_header';
 @import 'organisms/popular_articles';
-@import 'organisms/tinymce';
 
 /** Templates
 @import 'templates/category';
