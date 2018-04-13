@@ -28,6 +28,7 @@
 @import 'atoms/buttons';
 @import 'atoms/input_field';
 @import 'atoms/disqus';
+@import 'atoms/social_share_buttons';
 
 /** Molecules */
 @import 'molecules/mailchimp_single_line_input';
@@ -39,13 +40,10 @@
 @import 'molecules/action_with_image_box';
 
 /**
-@import 'molecules/main_navjs_navigation';
-@import 'molecules/sticky_header';
 
-@import 'molecules/social_share_bar';
-@import 'molecules/social_buttons';
 @import 'molecules/related_posts';
 
+@import 'molecules/primary_nav';
 @import 'molecules/top_nav';
 @import 'organisms/banner';
 @import 'molecules/table_of_contents';
@@ -56,6 +54,7 @@
 @import 'organisms/site_header_center';
 
 /**
+@import 'organisms/primary_nav_bar';
 @import 'organisms/site_header';
 @import 'organisms/popular_articles';
 @import 'organisms/sidebar';

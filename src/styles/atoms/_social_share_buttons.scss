@@ -26,11 +26,7 @@
 }
 
 // Article Top Social Specific
-.top-social {
-  .social-share-bar {
-    margin: 1rem 0;
-  }
-
+.top-social-buttons {
   .SocialMediaShareButton {
     display: inline;
     padding: 0 0.125rem;
@@ -73,8 +69,7 @@
   right: 0;
 
   @include breakpoint($medium) {
-    top: 0;
-    bottom: 40%;
+    top: 40%;
     right: auto;
   }
 }
@@ -86,7 +81,7 @@
 .sticky-visible {
   display: block;
 
-  .social-share-bar {
+  .social-share-buttons {
     display: flex;
     width: 100%;
     background-color: $om-medium-grey;
@@ -94,7 +89,6 @@
     @include breakpoint($medium) {
       display: block;
       position: relative;
-      top: 40%;
     }
   }
 
