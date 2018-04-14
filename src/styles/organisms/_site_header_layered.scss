@@ -1,0 +1,134 @@
+/**
+
+.subnav {
+  .topnav div ul .menu-item a,
+  .topnav .email-hook,
+  .topnav .nav-wrapper {
+    display: none;
+
+    @include breakpoint($header-visible-nav-breakpoint) {
+      display: block;
+    }
+  }
+
+  .topnav {
+    display: block;
+    overflow: hidden;
+    background-color: $top-nav-bg-color;
+    width: 100%;
+
+    @include breakpoint($header-visible-nav-breakpoint) {
+      background-color: #2d8dd6;
+      border-bottom: 1px solid $om-medium-grey;
+      box-shadow: 0 1px 7px $om-medium-grey;
+    }
+  }
+
+  .topnav.responsive .email-hook,
+  .topnav.responsive .nav-wrapper {
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    border-bottom: 5px solid lighten($top-nav-bg-color, 10%);
+  }
+
+  .topnav.responsive a,
+  .topnav.responsive div ul .menu-item a {
+    float: none;
+    display: block;
+    text-align: left;
+
+    @include breakpoint($header-visible-nav-breakpoint) {
+      display: inline-block;
+      padding: 0.5rem 0;
+    }
+  }
+
+  .nav-wrapper {
+    //@extend %header-inner-widths;
+
+    margin: 0 auto;
+  }
+
+  .nav {
+    @include makeRow($no-padding: true);
+
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    display: block;
+
+    @include breakpoint($header-visible-nav-breakpoint) {
+      display: flex;
+    }
+  }
+
+  .header-inner .menu-item {
+    @include makeColumn($size: 12, $offset: 0);
+    @include makeColumn(md, $size: 4, $offset: 0);
+
+    display: inline;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .topnav a,
+  .topnav .menu-item a {
+    font-size: 1.02rem;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    font-family: $secondary-font;
+    font-weight: bold;
+    padding: 0.7rem 1rem;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+    }
+
+    @include breakpoint($header-visible-nav-breakpoint) {
+      color: $white;
+      background-color: #2d8dd6;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $white;
+      }
+    }
+  }
+
+  .header-inner .sub-menu {
+    padding-left: 30px;
+  }
+
+  .header-inner .sub-menu .menu-item a {
+    color: $white;
+    font-size: $base-font-size;
+    border-bottom: none;
+    padding: 0.5rem 0;
+
+    @include breakpoint($header-medium-breakpoint) {
+      padding: 0.1rem 0;
+    }
+  }
+}
+
+// Tucked Menu Specific
+.tucked .subnav .topnav {
+  @include breakpoint($header-visible-nav-breakpoint) {
+    display: inline;
+  }
+}
+
+.tucked .subnav .nav {
+  @include breakpoint($header-visible-nav-breakpoint) {
+    padding: 0.825rem 3rem;
+  }
+}
+
+*/

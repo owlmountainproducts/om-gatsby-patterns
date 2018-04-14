@@ -15,3 +15,12 @@
     color: $white;
   }
 }
+
+%category-nav-link {
+  color: $category-nav-link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $category-nav-link-hover-color;
+  }
+}
