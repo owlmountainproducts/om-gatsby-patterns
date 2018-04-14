@@ -1,3 +1,29 @@
+.primary-nav {
+  .category-nav-ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  .category-nav-item {
+    padding: 0 1rem;
+
+    &:first-child {
+      padding: 0 1rem 0 0;
+    }
+
+    &:last-child {
+      padding: 0 0 0 1rem;
+    }
+  }
+
+  .category-nav-item-link {
+    text-decoration: none;
+  }
+}
+
+/**
+
 .subnav {
   .topnav div ul .menu-item a,
   .topnav .email-hook,
@@ -12,7 +38,7 @@
   .topnav {
     display: block;
     overflow: hidden;
-    background-color: $primary-color;
+    background-color: $top-nav-bg-color;
     width: 100%;
 
     @include breakpoint($header-visible-nav-breakpoint) {
@@ -29,7 +55,7 @@
 
   .topnav.responsive {
     position: relative;
-    border-bottom: 5px solid lighten($primary-color, 10%);
+    border-bottom: 5px solid lighten($top-nav-bg-color, 10%);
   }
 
   .topnav.responsive a,
@@ -45,7 +71,7 @@
   }
 
   .nav-wrapper {
-    @extend %header-inner-widths;
+    //@extend %header-inner-widths;
 
     margin: 0 auto;
   }
@@ -128,3 +154,5 @@
     padding: 0.825rem 3rem;
   }
 }
+
+*/

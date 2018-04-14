@@ -38,10 +38,10 @@
 @import 'molecules/article_listing_vertical';
 @import 'molecules/article_listing_featured';
 @import 'molecules/action_with_image_box';
+@import 'molecules/category_nav';
 
 /**
 @import 'molecules/related_posts';
-@import 'molecules/primary_nav';
 @import 'molecules/top_nav';
 @import 'organisms/banner';
 @import 'molecules/table_of_contents';
@@ -50,10 +50,9 @@
 /** Organisms */
 @import 'organisms/full_email_mat';
 @import 'organisms/site_header_center';
-
-/**
 @import 'organisms/site_footer';
 
+/**
 @import 'organisms/sidebar';
 
 @import 'organisms/primary_nav_bar';

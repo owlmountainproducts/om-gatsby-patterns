@@ -19,33 +19,31 @@ const SiteFooter = ({
   siteTitle,
   hasMedicalDisclaimer,
 }) => (
-  <footer>
-    <div className="footer">
-      <div className="footer-inner">
-        <div className="footer-wrapper-1">
-          <ListWithTitle ClassName="footer-menu" header="RESOURCES" />
-        </div>
-        <div className="footer-wrapper-2">
-          <ListWithTitle ClassName="footer-menu" header="POPULAR READS" />
-        </div>
-        <div className="footer-wrapper-3">
-          <ListWithTitle ClassName="footer-menu" header="CATEGORIES" />
-        </div>
-        <div className="footer-wrapper-4">
-          <Link to="/">
-            <img className="footer-logo" src={logoimg} alt={alt} />
-          </Link>
-          <p>
-            {addressLine01}
-            <br />
-            {addressLine02}
-            <br />Email Support: {mainEmail}
-          </p>
-        </div>
+  <footer className="footer">
+    <div className="footer-inner">
+      <div className="footer-wrapper footer-wrapper-1">
+        <ListWithTitle ClassName="footer-menu" header="RESOURCES" />
+      </div>
+      <div className="footer-wrapper footer-wrapper-2">
+        <ListWithTitle ClassName="footer-menu" header="POPULAR READS" />
+      </div>
+      <div className="footer-wrapper footer-wrapper-3">
+        <ListWithTitle ClassName="footer-menu" header="CATEGORIES" />
+      </div>
+      <div className="footer-wrapper footer-wrapper-4">
+        <Link to="/">
+          <img className="footer-logo" src={logoimg} alt={alt} />
+        </Link>
+        <p>
+          {addressLine01}
+          <br />
+          {addressLine02}
+          <br />Email Support: {mainEmail}
+        </p>
       </div>
     </div>
     <div className="legal-line-wrapper">
-      <div className="legal-line">
+      <div className="legal-line-inner">
         <p>
           Copyright {copyrightYear} {legalEntity} &middot; All rights reserved.{' '}
           {siteTitle} is a service mark of {legalEntity}
@@ -54,9 +52,9 @@ const SiteFooter = ({
           <Link to="/privacy-policy/">Privacy Policy</Link> |{' '}
           <Link to="/dmca/">DMCA</Link> |{' '}
           {hasMedicalDisclaimer && (
-            <Link to="/medical-disclaimer/">Medical Disclaimer | </Link>
+            <Link to="/medical-disclaimer/">Medical Disclaimer |</Link>
           )}
-          <Link to="/affiliate-disclosure/">Affiliate Disclosure</Link>
+          <Link to="/affiliate-disclosure/"> Affiliate Disclosure</Link>
         </p>
         <p>
           The information presented here is to be helpful to our readers for

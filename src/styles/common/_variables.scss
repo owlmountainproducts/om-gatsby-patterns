@@ -11,13 +11,6 @@ $tertiary-color: $secondary-color;
 $cta-color: #ea7317;
 $wa-blue: #2782d0;
 
-
-/** Footer Logo
-// Large is 80px;
-$footer-medium-break-pt-logo-height: 55px;
-// Large is -5px 0;
-$footer-medium-break-pt-logo-margins: 6px 0 0;
-
 /** Colors */
 $black: #000;
 $white: #fff;
@@ -43,6 +36,7 @@ $secondary-button-color: rgb(0, 110, 0);
 $tertiary-button-color: rgb(0, 175, 0);
 $placeholder-text-color: $om-medium-dark-grey;
 $email-mat-color: #2277ca;
+$top-nav-bg-color: $om-medium-light-grey;
 
 $disclosure-title: 1.05rem;
 $header-font: $secondary-font;
@@ -68,6 +62,14 @@ $header-inner-padding-medium: 0 2.75rem;
 $header-inner-padding-large: 0 7.75rem;
 $header-bottom-border: none;
 $header-icon-color: #4c4c4c;
+$header-medium-breakpoint: 1100px;
+
+/** Footer Logo */
+$footer-bg-color: $om-dark-grey;
+// Large is 80px;
+$footer-medium-break-pt-logo-height: 55px;
+// Large is -5px 0;
+$footer-medium-break-pt-logo-margins: 6px 0 0;
 
 /**
 // Typical is 55px;
