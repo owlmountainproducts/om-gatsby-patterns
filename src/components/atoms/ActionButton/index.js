@@ -43,7 +43,7 @@ ActionButton.propTypes = {
   /** The */
   href: PropTypes.string,
   /** The */
-  onClick: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 ActionButton.defaultProps = {
