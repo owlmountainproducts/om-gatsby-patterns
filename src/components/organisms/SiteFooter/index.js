@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
+import { getCopyrightDate } from '../../../utils';
 import ListWithTitle from '../../atoms/ListWithTitle';
 
 /**
@@ -14,7 +15,6 @@ const SiteFooter = ({
   addressLine01,
   addressLine02,
   mainEmail,
-  copyrightYear,
   legalEntity,
   siteTitle,
   hasMedicalDisclaimer,
@@ -45,7 +45,7 @@ const SiteFooter = ({
     <div className="legal-line-wrapper">
       <div className="legal-line-inner">
         <p>
-          Copyright {copyrightYear} {legalEntity} &middot; All rights reserved.{' '}
+          © {getCopyrightDate()} {legalEntity} &middot; All rights reserved.{' '}
           {siteTitle} is a service mark of {legalEntity}
           <br />
           <Link to="/terms-of-use/">Terms of Use</Link> |{' '}
@@ -79,8 +79,6 @@ SiteFooter.propTypes = {
   addressLine02: PropTypes.string.isRequired,
   /** The */
   mainEmail: PropTypes.string.isRequired,
-  /** The */
-  copyrightYear: PropTypes.number.isRequired,
   /** The */
   legalEntity: PropTypes.string.isRequired,
   /** The */

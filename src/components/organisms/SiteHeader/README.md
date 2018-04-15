@@ -1,6 +1,6 @@
-An example SiteHeaderLayered.
+An example SiteHeader.
 
 ```
-<SiteHeaderLayered
+<SiteHeader
   topNav={true} />
 ```

@@ -9,10 +9,10 @@ import IconWrapper from '../../atoms/IconWrapper';
 import MailchimpEmailInput from '../../molecules/MailchimpEmailInput';
 
 /**
- * Organism: The `<SiteHeaderLayered>` organism creates ___.
+ * Organism: The `<SiteHeader>` organism creates ___.
  *
  */
-class SiteHeaderLayered extends React.Component {
+class SiteHeader extends React.Component {
   constructor(props) {
     super(props);
 
@@ -100,7 +100,7 @@ class SiteHeaderLayered extends React.Component {
   }
 }
 
-SiteHeaderLayered.propTypes = {
+SiteHeader.propTypes = {
   /** The */
   logoImg: PropTypes.string.isRequired,
   /** The */
@@ -117,9 +117,9 @@ SiteHeaderLayered.propTypes = {
   topNav: PropTypes.bool,
 };
 
-SiteHeaderLayered.defaultProps = {
+SiteHeader.defaultProps = {
   alt: 'website logo',
   topNav: false,
 };
 
-export default SiteHeaderLayered;
+export default SiteHeader;
