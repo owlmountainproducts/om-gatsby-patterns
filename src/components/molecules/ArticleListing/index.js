@@ -19,7 +19,7 @@ const ArticleListing = ({
   lastUpdated,
   excerpt,
   className,
-  featuredArticle,
+  isFeaturedArticle,
 }) => (
   <article className={`article-listing ${className}`}>
     <div className="article-listing-image-wrapper">
@@ -28,7 +28,7 @@ const ArticleListing = ({
       </Link>
     </div>
     <div className="article-listing-text">
-      {featuredArticle && (
+      {isFeaturedArticle && (
         <p className="featured-article-tag">Featured Article</p>
       )}
       <h3 className="article-listing-title">
@@ -68,13 +68,13 @@ ArticleListing.propTypes = {
   /** The  */
   className: PropTypes.string,
   /** The  */
-  featuredArticle: PropTypes.bool,
+  isFeaturedArticle: PropTypes.bool,
 };
 
 ArticleListing.defaultProps = {
   className: '',
   excerpt: '',
-  featuredArticle: false,
+  isFeaturedArticle: false,
 };
 
 export default ArticleListing;
