@@ -37,10 +37,10 @@
 @import 'molecules/article_listing_vertical';
 @import 'molecules/article_listing_featured';
 @import 'molecules/action_with_image_box';
+@import 'molecules/h1_banner';
 
 /**
 @import 'molecules/related_posts';
-@import 'organisms/banner';
 @import 'molecules/table_of_contents';
 @import 'molecules/breadcrumbs'; */
 
@@ -56,6 +56,7 @@
 @import 'organisms/sidebar'; */
 
 /** Templates */
+@import 'templates/home_page';
 
 /**
 @import 'templates/category';

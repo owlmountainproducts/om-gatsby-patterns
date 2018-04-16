@@ -19,16 +19,15 @@
 
 .footer-inner {
   @include makeRow($no-padding: true);
-
-  width: 100%;
-  max-width: 1280px;
+  max-width: $site-max-width;
   margin: 0 auto;
-  padding: 2rem 3rem;
+  width: 100%;
+  padding: 2rem 0;
   font-family: $secondary-font;
 }
 
 .footer-wrapper {
-  padding: 0.5rem 1.25rem 0 0;
+  padding: 0 1.25rem 0 0;
 }
 
 .footer-wrapper-1 {
@@ -77,9 +76,9 @@
 }
 
 .legal-line-inner {
-  text-align: left;
-  max-width: 1184px;
+  max-width: $site-max-width;
   margin: 0 auto;
+  text-align: left;
   padding: 1rem 3rem;
 }
 

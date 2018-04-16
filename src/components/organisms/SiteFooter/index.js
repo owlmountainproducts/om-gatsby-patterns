@@ -45,8 +45,8 @@ const SiteFooter = ({
     <div className="legal-line-wrapper">
       <div className="legal-line-inner">
         <p>
-          © {getCopyrightDate()} {legalEntity} &middot; All rights reserved.{' '}
-          {siteTitle} is a service mark of {legalEntity}
+          © {getCopyrightDate()} &middot; All rights reserved. {siteTitle} is a
+          service mark of {legalEntity}
           <br />
           <Link to="/terms-of-use/">Terms of Use</Link> |{' '}
           <Link to="/privacy-policy/">Privacy Policy</Link> |{' '}

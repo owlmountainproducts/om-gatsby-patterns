@@ -1,8 +1,5 @@
 .above-the-fold {
   @include makeRow($no-padding: true);
-
-  max-width: 1240px;
-  margin: 0 auto;
 }
 
 .above-the-fold-article-listing {
