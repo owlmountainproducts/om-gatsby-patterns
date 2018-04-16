@@ -1,12 +1,5 @@
-.page-body-wrap .main,
-.page-template-template-search .main {
+.page-template-wrapper {
   padding: 2rem 1rem;
-  max-width: $page-width;
+  max-width: $site-max-width;
   margin: 0 auto;
-}
-
-.page-body-wrap .main li,
-.page-template-template-search .main li,
-.page-template-template-about .main li {
-  padding: 0.5rem 0;
 }

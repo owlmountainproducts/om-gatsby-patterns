@@ -16,26 +16,15 @@ class SiteHeader extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      showMenu: false,
+    this.navResponsiveMain = () => {
+      const primaryNav = document.getElementById('nav-toggle-object');
+
+      if (primaryNav.className === 'primary-nav-wrapper') {
+        primaryNav.className = 'primary-nav-wrapper nav-responsive';
+      } else {
+        primaryNav.className = 'primary-nav-wrapper';
+      }
     };
-
-    this.showMenu = this.showMenu.bind(this);
-    this.closeMenu = this.closeMenu.bind(this);
-  }
-
-  showMenu(event) {
-    event.preventDefault();
-
-    this.setState({ showMenu: true }, () => {
-      document.addEventListener('click', this.closeMenu);
-    });
-  }
-
-  closeMenu() {
-    this.setState({ showMenu: false }, () => {
-      document.removeEventListener('click', this.closeMenu);
-    });
   }
 
   render() {
@@ -48,7 +37,10 @@ class SiteHeader extends React.Component {
         )}
         <div className="header-center-wrapper">
           <div className="header-center-inner">
-            <ActionButton className="naked-button" onClick={this.showMenu}>
+            <ActionButton
+              className="naked-button"
+              onClick={this.navResponsiveMain}
+            >
               <IconWrapper id="menu-icon" className="site-header-icon">
                 <FontAwesome.FaBars />
               </IconWrapper>
@@ -90,11 +82,12 @@ class SiteHeader extends React.Component {
             </div>
           </div>
         </div>
-        {this.state.showMenu ? (
-          <div className="primary-nav-wrapper">
-            <CategoryNav className="primary-nav" />
-          </div>
-        ) : null}
+        <div
+          id="nav-toggle-object"
+          className="primary-nav-wrapper nav-responsive"
+        >
+          <CategoryNav className="primary-nav" />
+        </div>
       </div>
     );
   }

@@ -28,6 +28,7 @@
 @import 'atoms/social_share_buttons';
 @import 'atoms/list_with_title';
 @import 'atoms/category_nav';
+@import 'atoms/lists';
 
 /** Molecules */
 @import 'molecules/mailchimp_single_line_input';
@@ -56,6 +57,7 @@
 @import 'organisms/sidebar'; */
 
 /** Templates */
+@import 'templates/page';
 @import 'templates/home_page';
 
 /**
@@ -63,8 +65,4 @@
 @import 'templates/post';
 @import 'templates/search';
 @import 'templates/404';
-@import 'templates/page';
-@import 'templates/home';
-@import 'templates/about_template';
-@import 'templates/wordpress_hacks';
-@import 'templates/split_test_modifications'; */
+@import 'templates/about_template'; */

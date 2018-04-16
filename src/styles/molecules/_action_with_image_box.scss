@@ -1,11 +1,7 @@
-// TODO: Style for mobile. Currently just hiding on mobile.
+// TODO: Style for mobile. Currently just hiding image on mobile.
 .action-with-image-box {
   display: flex;
   height: 270px;
-
-  @include breakpoint(450px) {
-    display: flex;
-  }
 }
 
 .awib-text-wrapper {
@@ -31,4 +27,9 @@
 
 .awib-img {
   height: 270px;
+  display: none;
+
+  @include breakpoint($medium) {
+    display: flex;
+  }
 }

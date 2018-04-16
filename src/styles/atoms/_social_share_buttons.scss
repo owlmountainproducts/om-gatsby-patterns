@@ -59,6 +59,12 @@
       padding: 17px 3rem 0;
     }
   }
+
+  .whatsapp-share-button {
+    @include breakpoint($medium) {
+      display: none;
+    }
+  }
 }
 
 // Sticky Social Specific
@@ -122,6 +128,12 @@
     @include breakpoint($medium) {
       display: block;
       color: $white;
+    }
+  }
+
+  .whatsapp-share-button {
+    @include breakpoint($medium) {
+      display: none;
     }
   }
 }

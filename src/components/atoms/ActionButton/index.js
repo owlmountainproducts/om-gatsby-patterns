@@ -12,11 +12,9 @@ const ActionButton = ({
   type,
   disabled,
   children,
-  href,
   onClick,
 }) => (
   <button
-    href={href}
     id={id}
     className={`action-button ${className}`}
     type={type}
@@ -41,8 +39,6 @@ ActionButton.propTypes = {
   /** The */
   text: PropTypes.string,
   /** The */
-  href: PropTypes.string,
-  /** The */
   onClick: PropTypes.func,
 };
 
@@ -53,7 +49,6 @@ ActionButton.defaultProps = {
   type: '',
   disabled: false,
   children: '',
-  href: '',
   onClick: '',
 };
 

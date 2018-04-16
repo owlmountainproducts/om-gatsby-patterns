@@ -14,17 +14,20 @@ import H1Banner from '../../molecules/H1Banner';
  */
 const HomePage = ({ articles, categoryArticles }) => (
   <div>
-    <SiteHeader />
+    <SiteHeader
+      logoImg="https://cdn1.wellnessappliances.com/wp-content/uploads/2018/04/13175200/wa_logo.png"
+      alt="wellness appliances logo"
+    />
     <div className="home-page">
       <H1Banner
-        header="Reviews For Healthful Living"
-        imgSrc="https://cdn1.wellnessappliances.com/wp-content/uploads/2018/03/01133650/Diffuser-Aromatherapy-Aroma-Oil-Essential-Oils-1958549.jpg"
+        header="Reviews For Living Well."
+        imgSrc="https://cdn1.wellnessappliances.com/wp-content/uploads/2018/03/19001418/Kitchen.jpg"
         imgAlt="kitchen scene"
       >
         <p className="h1-banner-children">
-          this is a teriffic component this is a teriffic component this is a
-          teriffic component this is a teriffic component this is a teriffic
-          component this is a teriffic component
+          We believe a healthy life is a happy life. We actively research and
+          review products that contribute to healthful living. About Us and Our
+          Mission.
         </p>
       </H1Banner>
       <AboveTheFold />
