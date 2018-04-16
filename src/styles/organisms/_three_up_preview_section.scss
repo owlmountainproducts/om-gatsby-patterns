@@ -1,13 +1,18 @@
-.three-up-category-prev {
+.three-up-preview-section {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.three-up-category-prev-title {
+.three-up-preview-section-title {
   font-style: italic;
 }
 
-.three-up-category-prev-description {
+.three-up-preview-section-hr {
+  margin: 0 0 0.5rem;
+  border: 1px solid $text-color;
+}
+
+.three-up-preview-section-description {
   max-width: $content-max-width / 3 * 2;
 }
 

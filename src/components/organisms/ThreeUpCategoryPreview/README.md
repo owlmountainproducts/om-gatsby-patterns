@@ -1,5 +1,0 @@
-An example ThreeUpCategoryPreview.
-
-```
-<ThreeUpCategoryPreview />
-```

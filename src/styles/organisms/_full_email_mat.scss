@@ -1,8 +1,6 @@
 .full-email-mat {
   background-color: $email-mat-color;
   padding: 1.25rem 2rem;
-  width: 25rem;
-  margin: 0 auto;
 
   @include breakpoint($medium) {
     padding: 1.2rem;

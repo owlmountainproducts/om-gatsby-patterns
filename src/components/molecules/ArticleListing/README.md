@@ -36,6 +36,6 @@ An example ArticleListing Featured molecule.
   imageFiles="https://cdn1.backdoorsurvival.com/app/uploads/2018/02/27085612/The-Best-Survival-Fishing-Kits-wide.png"
   imageText="best survival fishing kits"
   authorName="SurvivalWoman"
-  lastUpdated="April 23, 2018"
-  featuredArticle={true} />
+  lastUpdated="April 24, 2018"
+  isFeaturedArticle={true} />
 ```

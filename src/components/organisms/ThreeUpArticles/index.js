@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import ArticleListing from '../../molecules/ArticleListing';
 
@@ -6,45 +7,28 @@ import ArticleListing from '../../molecules/ArticleListing';
  * ATOM: The `<ThreeUpArticles>` creates __.
  *
  */
-const ThreeUpArticles = () => (
+const ThreeUpArticles = ({ articles }) => (
   <ul className="three-up-articles-ul">
-    <li className="three-up-articles-li">
-      <ArticleListing
-        className="article_listing_vertical"
-        slug="/"
-        title="Bug Out vs. Get Home Bags"
-        imageFiles="https://cdn1.backdoorsurvival.com/app/uploads/2018/04/11050003/Bug-Out-Vs.-Get-Home-Bags-wide.png"
-        imageText="Bug Out vs. Get Home Bags"
-        authorName="SurvivalWoman"
-        lastUpdated="April 23, 2018"
-        excerpt="Sometimes it is easy for people to assume that an emergency bag is an emergency bag. The truth is that it is very important to distinguish your purpose when designing a bag. Lets get started by comparing the major difference in a bug out versus a get home bag."
-      />
-    </li>
-    <li className="three-up-articles-li">
-      <ArticleListing
-        className="article_listing_vertical"
-        slug="/"
-        title="Bug Out vs. Get Home Bags"
-        imageFiles="https://cdn1.backdoorsurvival.com/app/uploads/2018/04/11050003/Bug-Out-Vs.-Get-Home-Bags-wide.png"
-        imageText="Bug Out vs. Get Home Bags"
-        authorName="SurvivalWoman"
-        lastUpdated="April 23, 2018"
-        excerpt="Sometimes it is easy for people to assume that an emergency bag is an emergency bag. The truth is that it is very important to distinguish your purpose when designing a bag. Lets get started by comparing the major difference in a bug out versus a get home bag."
-      />
-    </li>
-    <li className="three-up-articles-li">
-      <ArticleListing
-        className="article_listing_vertical"
-        slug="/"
-        title="Bug Out vs. Get Home Bags"
-        imageFiles="https://cdn1.backdoorsurvival.com/app/uploads/2018/04/11050003/Bug-Out-Vs.-Get-Home-Bags-wide.png"
-        imageText="Bug Out vs. Get Home Bags"
-        authorName="SurvivalWoman"
-        lastUpdated="April 23, 2018"
-        excerpt="Sometimes it is easy for people to assume that an emergency bag is an emergency bag. The truth is that it is very important to distinguish your purpose when designing a bag. Lets get started by comparing the major difference in a bug out versus a get home bag."
-      />
-    </li>
+    {articles.map(article => (
+      <li key={article.node.id} className="three-up-articles-li">
+        <ArticleListing
+          className="article_listing_vertical"
+          slug={article.node.slug}
+          title={article.node.title}
+          imageFiles={article.node.featured_media.source_url}
+          imageText={article.node.featured_media.alt_text}
+          authorName={article.node.author.name}
+          lastUpdated={article.node.date}
+          excerpt={article.node.yoast.metadesc}
+        />
+      </li>
+    ))}
   </ul>
 );
+
+ThreeUpArticles.propTypes = {
+  /** The */
+  articles: PropTypes.arrayOf.isRequired,
+};
 
 export default ThreeUpArticles;
