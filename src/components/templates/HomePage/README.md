@@ -15,7 +15,23 @@ An example HomePage.
         },
       ]
     }
-  } categoryArticles={
+  }
+  listItems={
+    {
+     items: [
+        {
+          title: 'List Item 01',
+        },
+        {
+          title: 'List Item 02',
+        },
+        {
+          title: 'List Item 03',
+        },
+      ]
+    }
+  }
+  categoryArticles={
   [
     {
       node: {

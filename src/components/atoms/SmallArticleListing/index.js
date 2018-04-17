@@ -13,8 +13,9 @@ const SmallArticleListing = ({
   altText,
   title,
   metadesc,
+  className,
 }) => (
-  <Link to={`/${slug}/`} className="sidebar-related-post">
+  <Link to={`/${slug}/`} className={`small-article-listing ${className}`}>
     {featuredMedia && <img src={sourceUrl} alt={altText} />}
     <h4>{title}</h4>
     <p>{metadesc}</p>
@@ -34,11 +35,14 @@ SmallArticleListing.propTypes = {
   title: PropTypes.string.isRequired,
   /** The  */
   metadesc: PropTypes.string,
+  /** The  */
+  className: PropTypes.string,
 };
 
 SmallArticleListing.defaultProps = {
   featuredMedia: false,
-  metadesc: ' ',
+  metadesc: '',
+  className: '',
 };
 
 export default SmallArticleListing;

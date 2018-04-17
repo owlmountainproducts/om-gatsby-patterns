@@ -40,9 +40,9 @@
 @import 'molecules/article_listing_featured';
 @import 'molecules/action_with_image_box';
 @import 'molecules/h1_banner';
+@import 'molecules/related_articles';
 
 /**
-@import 'molecules/related_posts';
 @import 'molecules/table_of_contents';
 @import 'molecules/breadcrumbs'; */
 
@@ -53,9 +53,7 @@
 @import 'organisms/three_up_articles';
 @import 'organisms/three_up_preview_section';
 @import 'organisms/above_the_fold';
-
-/**
-@import 'organisms/sidebar'; */
+@import 'organisms/sidebar';
 
 /** Templates */
 @import 'templates/page';
