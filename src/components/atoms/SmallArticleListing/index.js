@@ -6,24 +6,39 @@ import Link from 'gatsby-link';
  * ATOM: The `<SmallArticleListing>` creates __.
  *
  */
-const SmallArticleListing = ({ post }) => (
-  <article>
-    <Link to={`/${post.slug}/`} className="sidebar-related-post">
-      {post.featured_media && (
-        <img
-          src={post.featured_media.source_url}
-          alt={post.featured_media.alt_text}
-        />
-      )}
-      <h4>{post.title}</h4>
-      <p>{post.yoast.metadesc}</p>
-    </Link>
-  </article>
+const SmallArticleListing = ({
+  slug,
+  featuredMedia,
+  sourceUrl,
+  altText,
+  title,
+  metadesc,
+}) => (
+  <Link to={`/${slug}/`} className="sidebar-related-post">
+    {featuredMedia && <img src={sourceUrl} alt={altText} />}
+    <h4>{title}</h4>
+    <p>{metadesc}</p>
+  </Link>
 );
 
 SmallArticleListing.propTypes = {
   /** The  */
-  post: PropTypes.arrayOf.isRequired,
+  slug: PropTypes.string.isRequired,
+  /** The  */
+  featuredMedia: PropTypes.bool,
+  /** The  */
+  sourceUrl: PropTypes.string.isRequired,
+  /** The  */
+  altText: PropTypes.string.isRequired,
+  /** The  */
+  title: PropTypes.string.isRequired,
+  /** The  */
+  metadesc: PropTypes.string,
+};
+
+SmallArticleListing.defaultProps = {
+  featuredMedia: false,
+  metadesc: ' ',
 };
 
 export default SmallArticleListing;
