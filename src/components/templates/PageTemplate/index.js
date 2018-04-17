@@ -1,5 +1,4 @@
 import React from 'react';
-
 import SocialShareButtons from '../../atoms/SocialShareButtons';
 
 import SiteHeader from '../../organisms/SiteHeader';

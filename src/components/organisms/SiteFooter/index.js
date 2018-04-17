@@ -17,18 +17,31 @@ const SiteFooter = ({
   mainEmail,
   legalEntity,
   siteTitle,
+  listItems,
   hasMedicalDisclaimer,
 }) => (
   <footer className="footer">
     <div className="footer-inner">
       <div className="footer-wrapper footer-wrapper-1">
-        <ListWithTitle ClassName="footer-menu" header="RESOURCES" />
+        <ListWithTitle
+          ClassName="footer-menu"
+          header="RESOURCES"
+          listItems={listItems}
+        />
       </div>
       <div className="footer-wrapper footer-wrapper-2">
-        <ListWithTitle ClassName="footer-menu" header="POPULAR READS" />
+        <ListWithTitle
+          ClassName="footer-menu"
+          header="POPULAR READS"
+          listItems={listItems}
+        />
       </div>
       <div className="footer-wrapper footer-wrapper-3">
-        <ListWithTitle ClassName="footer-menu" header="CATEGORIES" />
+        <ListWithTitle
+          ClassName="footer-menu"
+          header="CATEGORIES"
+          listItems={listItems}
+        />
       </div>
       <div className="footer-wrapper footer-wrapper-4">
         <Link to="/">
@@ -85,6 +98,8 @@ SiteFooter.propTypes = {
   siteTitle: PropTypes.string.isRequired,
   /** The */
   hasMedicalDisclaimer: PropTypes.bool,
+  /** The */
+  listItems: PropTypes.arrayOf.isRequired,
 };
 
 SiteFooter.defaultProps = {

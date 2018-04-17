@@ -1,7 +1,21 @@
 An example HomePage.
 
 ```
-<HomePage categoryArticles={
+<HomePage navItems={
+    {
+     items: [
+        {
+          title: 'Nav Item 01',
+        },
+        {
+          title: 'Nav Item 02',
+        },
+        {
+          title: 'Nav Item 03',
+        },
+      ]
+    }
+  } categoryArticles={
   [
     {
       node: {

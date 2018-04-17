@@ -2,5 +2,22 @@ An example ListWithTitle.
 
 ```
 <ListWithTitle
-  header="Popular Articles" />
+  className="footer-menu"
+  header="Popular Articles"
+  menu={["bingo", "bongo", "bob"]}
+  listItems={
+    {
+     items: [
+        {
+          title: 'List Item 01',
+        },
+        {
+          title: 'List Item 02',
+        },
+        {
+          title: 'List Item 03',
+        },
+      ]
+    }
+  } />
 ```

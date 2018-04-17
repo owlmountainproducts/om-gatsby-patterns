@@ -9,5 +9,20 @@ An example SiteFooter.
   mainEmail="hello@wellnessappliances.com"
   legalEntity="OMC V4M LLC."
   siteTitle="Wellness Appliances"
-  hasMedicalDisclaimer={true} />
+  hasMedicalDisclaimer={true}
+  listItems={
+    {
+     items: [
+        {
+          title: 'List Item 01',
+        },
+        {
+          title: 'List Item 02',
+        },
+        {
+          title: 'List Item 03',
+        },
+      ]
+    }
+  } />
 ```
