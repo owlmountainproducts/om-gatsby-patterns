@@ -12,7 +12,9 @@ import H1Banner from '../../molecules/H1Banner';
  * MOLECULE: The `<HomePage>` creates __.
  *
  */
-const HomePage = ({ articles, categoryArticles, navItems }) => (
+const HomePage = ({
+  articles, categoryArticles, navItems, listItems,
+}) => (
   <div>
     <SiteHeader
       logoImg="https://cdn1.wellnessappliances.com/wp-content/uploads/2018/04/13175200/wa_logo.png"
@@ -43,7 +45,7 @@ const HomePage = ({ articles, categoryArticles, navItems }) => (
       <ThreeUpPreviewSection categoryArticles={categoryArticles} />
       <ThreeUpPreviewSection categoryArticles={categoryArticles} />
     </div>
-    <SiteFooter />
+    <SiteFooter listItems={listItems} />
   </div>
 );
 
@@ -54,6 +56,8 @@ HomePage.propTypes = {
   categoryArticles: PropTypes.arrayOf.isRequired,
   /** The  */
   navItems: PropTypes.arrayOf.isRequired,
+  /** The  */
+  listItems: PropTypes.arrayOf.isRequired,
 };
 
 export default HomePage;

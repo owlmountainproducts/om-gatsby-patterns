@@ -8,7 +8,7 @@ import SiteFooter from '../../organisms/SiteFooter';
  * MOLECULE: The `<Page404>` creates __.
  *
  */
-const Page404 = ({ navItems }) => (
+const Page404 = ({ navItems, listItems }) => (
   <div>
     <SiteHeader
       logoImg="https://cdn1.wellnessappliances.com/wp-content/uploads/2018/04/13175200/wa_logo.png"
@@ -23,13 +23,15 @@ const Page404 = ({ navItems }) => (
         </div>
       </div>
     </article>
-    <SiteFooter />
+    <SiteFooter listItems={listItems} />
   </div>
 );
 
 Page404.propTypes = {
   /** The  */
   navItems: PropTypes.arrayOf.isRequired,
+  /** The  */
+  listItems: PropTypes.arrayOf.isRequired,
 };
 
 export default Page404;

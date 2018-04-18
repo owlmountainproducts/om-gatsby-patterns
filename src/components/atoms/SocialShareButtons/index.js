@@ -31,8 +31,11 @@ const SocialShareButtons = ({
       >
         <div className="share-button-inner">
           <PinterestIcon size={30} />
-          <PinterestShareCount url={url} className="pinterest-share-count">
-            {count => count}
+          <PinterestShareCount
+            url={`${url}/`}
+            className="pinterest-share-count"
+          >
+            {shareCount => (shareCount > 3 ? shareCount : null)}
           </PinterestShareCount>
         </div>
       </PinterestShareButton>
@@ -45,7 +48,7 @@ const SocialShareButtons = ({
       <div className="share-button-inner">
         <FacebookIcon size={30} />
         <FacebookShareCount url={url} className="facebook-share-count">
-          {count => count}
+          {shareCount => (shareCount > 3 ? shareCount : null)}
         </FacebookShareCount>
       </div>
     </FacebookShareButton>

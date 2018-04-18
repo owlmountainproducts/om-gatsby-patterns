@@ -1,6 +1,7 @@
 import React from 'react';
-import SocialShareButtons from '../../atoms/SocialShareButtons';
+import PropTypes from 'prop-types';
 
+import SocialShareButtons from '../../atoms/SocialShareButtons';
 import SiteHeader from '../../organisms/SiteHeader';
 import SiteFooter from '../../organisms/SiteFooter';
 
@@ -8,11 +9,12 @@ import SiteFooter from '../../organisms/SiteFooter';
  * MOLECULE: The `<PageTemplate>` creates __.
  *
  */
-const PageTemplate = () => (
+const PageTemplate = ({ navItems, listItems }) => (
   <div>
     <SiteHeader
       logoImg="https://cdn1.wellnessappliances.com/wp-content/uploads/2018/04/13175200/wa_logo.png"
       alt="wellness appliances logo"
+      navItems={navItems}
     />
     <article className="page-template-wrapper">
       <h1>Page Title</h1>
@@ -29,8 +31,15 @@ const PageTemplate = () => (
         </div>
       </div>
     </article>
-    <SiteFooter />
+    <SiteFooter listItems={listItems} />
   </div>
 );
+
+PageTemplate.propTypes = {
+  /** The  */
+  navItems: PropTypes.arrayOf.isRequired,
+  /** The  */
+  listItems: PropTypes.arrayOf.isRequired,
+};
 
 export default PageTemplate;
