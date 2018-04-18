@@ -7,12 +7,15 @@ import slugify from 'slugify';
  * MOLECULE: The `<CategoryNav>` molecule creates ___.
  *
  */
-const CategoryNav = ({ navItems, className, id }) => (
+const CategoryNav = ({ id, className, navItems }) => (
   <nav id={id} className={className}>
     <ul className="category-nav-ul">
       {navItems.items.map(item => (
         <li key={item.order} className="category-nav-item">
-          <Link to={`/category/${slugify(item.title, { lower: true })}/`} className="category-nav-item-link">
+          <Link
+            to={`/category/${slugify(item.title, { lower: true })}/`}
+            className="category-nav-item-link"
+          >
             {item.title}
           </Link>
         </li>

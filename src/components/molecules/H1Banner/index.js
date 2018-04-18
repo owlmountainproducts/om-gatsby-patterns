@@ -7,10 +7,10 @@ import PropTypes from 'prop-types';
  * See https://www.gatsbyjs.org/packages/gatsby-image/#sizes-queries
  */
 const H1Banner = ({
-  header, imgSrc, children, imgAlt,
+  header, src, imageText, children,
 }) => (
   <div className="h1-banner">
-    <img className="h1-banner-img" src={imgSrc} alt={imgAlt} />
+    <img className="h1-banner-img" src={src} alt={imageText} />
     <div className="h1-banner-text-wrapper">
       <h1 className="h1-banner-header">{header}</h1>
       {children}
@@ -22,11 +22,11 @@ H1Banner.propTypes = {
   /** The header */
   header: PropTypes.string.isRequired,
   /** The background image */
-  imgSrc: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
   /** The p text in the banner */
   children: PropTypes.string,
   /** The p text in the banner */
-  imgAlt: PropTypes.string.isRequired,
+  imageText: PropTypes.string.isRequired,
 };
 
 H1Banner.defaultProps = {

@@ -10,14 +10,19 @@ import ListWithTitle from '../../atoms/ListWithTitle';
  *
  */
 const SiteFooter = ({
-  logoimg,
+  src,
   alt,
   addressLine01,
   addressLine02,
   mainEmail,
   legalEntity,
   siteTitle,
-  listItems,
+  footer01Title,
+  footer02Title,
+  footer03Title,
+  footer01Items,
+  footer02Items,
+  footer03Items,
   hasMedicalDisclaimer,
 }) => (
   <footer className="footer">
@@ -25,27 +30,27 @@ const SiteFooter = ({
       <div className="footer-wrapper footer-wrapper-1">
         <ListWithTitle
           ClassName="footer-menu"
-          header="RESOURCES"
-          listItems={listItems}
+          title={footer01Title}
+          listItems={footer01Items}
         />
       </div>
       <div className="footer-wrapper footer-wrapper-2">
         <ListWithTitle
           ClassName="footer-menu"
-          header="POPULAR READS"
-          listItems={listItems}
+          title={footer02Title}
+          listItems={footer02Items}
         />
       </div>
       <div className="footer-wrapper footer-wrapper-3">
         <ListWithTitle
           ClassName="footer-menu"
-          header="CATEGORIES"
-          listItems={listItems}
+          title={footer03Title}
+          listItems={footer03Items}
         />
       </div>
       <div className="footer-wrapper footer-wrapper-4">
         <Link to="/">
-          <img className="footer-logo" src={logoimg} alt={alt} />
+          <img className="footer-logo" src={src} alt={alt} />
         </Link>
         <p>
           {addressLine01}
@@ -83,7 +88,7 @@ const SiteFooter = ({
 
 SiteFooter.propTypes = {
   /** The */
-  logoimg: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
   /** The */
   alt: PropTypes.string,
   /** The */
@@ -99,7 +104,17 @@ SiteFooter.propTypes = {
   /** The */
   hasMedicalDisclaimer: PropTypes.bool,
   /** The */
-  listItems: PropTypes.arrayOf.isRequired,
+  footer01Items: PropTypes.arrayOf.isRequired,
+  /** The */
+  footer02Items: PropTypes.arrayOf.isRequired,
+  /** The */
+  footer03Items: PropTypes.arrayOf.isRequired,
+  /** The */
+  footer01Title: PropTypes.arrayOf.isRequired,
+  /** The */
+  footer02Title: PropTypes.arrayOf.isRequired,
+  /** The */
+  footer03Title: PropTypes.arrayOf.isRequired,
 };
 
 SiteFooter.defaultProps = {

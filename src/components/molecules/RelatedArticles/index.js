@@ -7,21 +7,21 @@ import SmallArticleListing from '../../atoms/SmallArticleListing';
  * ATOM: The `<RelatedArticles>` creates __.
  *
  */
-const RelatedArticles = ({ posts, className }) => (
+const RelatedArticles = ({ relatedArticles, className }) => (
   <div className={`related-articles ${className}`}>
     <div className="related-articles-header-wrapper">
       <h3 className="related-articles-header">Related Articles</h3>
     </div>
     <div className="related-articles-list">
-      {posts.map(post => (
-        <div key={post.id} className="related-article-wrapper">
+      {relatedArticles.map(relatedArticle => (
+        <div key={relatedArticle.id} className="related-article-wrapper">
           <SmallArticleListing
-            slug={post.slug}
-            featuredMedia={post.featured_media}
-            sourceUrl={post.featured_media.source_url}
-            altText={post.featured_media.alt_text}
-            title={post.title}
-            metadesc={post.yoast.metadesc}
+            slug={relatedArticle.slug}
+            featuredMedia={relatedArticle.featured_media}
+            src={relatedArticle.featured_media.source_url}
+            imageText={relatedArticle.featured_media.alt_text}
+            title={relatedArticle.title}
+            excerpt={relatedArticle.yoast.metadesc}
           />
         </div>
       ))}
@@ -31,7 +31,7 @@ const RelatedArticles = ({ posts, className }) => (
 
 RelatedArticles.propTypes = {
   /** The */
-  posts: PropTypes.arrayOf.isRequired,
+  relatedArticles: PropTypes.arrayOf.isRequired,
   /** The */
   className: PropTypes.string,
 };

@@ -11,6 +11,8 @@ import EntryMeta from '../../atoms/EntryMeta';
  *
  */
 const ArticleListing = ({
+  id,
+  className,
   slug,
   title,
   imageFiles,
@@ -18,11 +20,10 @@ const ArticleListing = ({
   authorName,
   lastUpdated,
   excerpt,
-  className,
   isFeaturedArticle,
   useGatsbyImage,
 }) => (
-  <article className={`article-listing ${className}`}>
+  <article id={id} className={`article-listing ${className}`}>
     <div className="article-listing-image-wrapper">
       {useGatsbyImage ? (
         <Link to="/">
@@ -78,9 +79,12 @@ ArticleListing.propTypes = {
   isFeaturedArticle: PropTypes.bool,
   /** The  */
   useGatsbyImage: PropTypes.bool,
+  /** The  */
+  id: PropTypes.bool,
 };
 
 ArticleListing.defaultProps = {
+  id: '',
   className: '',
   excerpt: '',
   isFeaturedArticle: false,

@@ -32,7 +32,10 @@ class SiteHeader extends React.Component {
       <div className="site-header">
         {this.props.topNav && (
           <div className="top-nav-wrapper">
-            <CategoryNav className="top-nav" navItems={this.props.navItems} />
+            <CategoryNav
+              className="top-nav"
+              navItems={this.props.topNavItems}
+            />
           </div>
         )}
         <div className="header-center-wrapper">
@@ -86,7 +89,10 @@ class SiteHeader extends React.Component {
           id="nav-toggle-object"
           className="primary-nav-wrapper nav-responsive"
         >
-          <CategoryNav className="primary-nav" navItems={this.props.navItems} />
+          <CategoryNav
+            className="primary-nav"
+            navItems={this.props.primaryNavItems}
+          />
         </div>
       </div>
     );
@@ -109,7 +115,9 @@ SiteHeader.propTypes = {
   /** The */
   topNav: PropTypes.bool,
   /** The */
-  navItems: PropTypes.arrayOf.isRequired,
+  topNavItems: PropTypes.arrayOf.isRequired,
+  /** The */
+  primaryNavItems: PropTypes.arrayOf.isRequired,
 };
 
 SiteHeader.defaultProps = {

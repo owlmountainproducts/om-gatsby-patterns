@@ -7,13 +7,13 @@ import PropTypes from 'prop-types';
  *
  */
 const InputField = ({
+  id,
+  className,
   type,
   defaultValue,
   name,
-  className,
-  id,
   placeholder,
-  required,
+  isrequired,
 }) => (
   <input
     type={type}
@@ -22,7 +22,7 @@ const InputField = ({
     className={`input-field ${className}`}
     id={id}
     placeholder={placeholder}
-    required={required}
+    isrequired={isrequired}
   />
 );
 
@@ -34,7 +34,7 @@ InputField.propTypes = {
   /** The */
   name: PropTypes.string.isRequired,
   /** The */
-  required: PropTypes.bool.isRequired,
+  isrequired: PropTypes.bool.isRequired,
   /** The */
   className: PropTypes.string,
   /** The */

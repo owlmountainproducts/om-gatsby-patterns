@@ -7,10 +7,10 @@ import Link from 'gatsby-link';
  *
  */
 const ListWithTitle = ({
-  className, header, listItems, id,
+  id, className, title, listItems,
 }) => (
   <nav id={id} className={`list-with-title ${className}`}>
-    <h3 className="list-with-title-header">{header}</h3>
+    <h3 className="list-with-title-header">{title}</h3>
     <ul className="list-with-title-ul">
       {listItems.items.map(item => (
         <li key={item.order}>
@@ -25,7 +25,7 @@ ListWithTitle.propTypes = {
   /** The */
   className: PropTypes.string,
   /** The */
-  header: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   /** The */
   id: PropTypes.string,
   /** The */

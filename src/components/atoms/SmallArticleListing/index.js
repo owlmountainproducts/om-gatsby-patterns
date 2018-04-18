@@ -7,18 +7,23 @@ import Link from 'gatsby-link';
  *
  */
 const SmallArticleListing = ({
-  slug,
-  featuredMedia,
-  sourceUrl,
-  altText,
-  title,
-  metadesc,
+  id,
   className,
+  slug,
+  title,
+  featuredMedia,
+  src,
+  imageText,
+  excerpt,
 }) => (
-  <Link to={`/${slug}/`} className={`small-article-listing ${className}`}>
-    {featuredMedia && <img src={sourceUrl} alt={altText} />}
+  <Link
+    id={id}
+    className={`small-article-listing ${className}`}
+    to={`/${slug}/`}
+  >
+    {featuredMedia && <img src={src} alt={imageText} />}
     <h4>{title}</h4>
-    <p>{metadesc}</p>
+    <p>{excerpt}</p>
   </Link>
 );
 
@@ -28,21 +33,24 @@ SmallArticleListing.propTypes = {
   /** The  */
   featuredMedia: PropTypes.bool,
   /** The  */
-  sourceUrl: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
   /** The  */
-  altText: PropTypes.string.isRequired,
+  imageText: PropTypes.string.isRequired,
   /** The  */
   title: PropTypes.string.isRequired,
   /** The  */
-  metadesc: PropTypes.string,
+  excerpt: PropTypes.string,
   /** The  */
   className: PropTypes.string,
+  /** The  */
+  id: PropTypes.string,
 };
 
 SmallArticleListing.defaultProps = {
   featuredMedia: false,
-  metadesc: '',
+  excerpt: '',
   className: '',
+  id: '',
 };
 
 export default SmallArticleListing;

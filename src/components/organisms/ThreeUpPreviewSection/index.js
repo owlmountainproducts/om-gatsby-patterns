@@ -9,15 +9,15 @@ import ThreeUpArticles from '../ThreeUpArticles';
  *
  */
 const ThreeUpPreviewSection = ({
-  categoryArticles,
+  ArticlesList,
   isPopularPosts,
-  popularArticlesTitle,
+  popularArticlesHeader,
 }) => (
   <div className="three-up-preview-section">
     <div className="three-up-preview-section-inner">
       {isPopularPosts && (
         <h2 className="three-up-preview-section-title">
-          {popularArticlesTitle}
+          {popularArticlesHeader}
         </h2>
       )}
       {!isPopularPosts && (
@@ -32,7 +32,7 @@ const ThreeUpPreviewSection = ({
           and learn as you go.
         </p>
       )}
-      <ThreeUpArticles articles={categoryArticles} />
+      <ThreeUpArticles articles={ArticlesList} />
       {!isPopularPosts && (
         <div className="more-in-category-button-wrapper">
           <Link to="/">
@@ -48,16 +48,16 @@ const ThreeUpPreviewSection = ({
 
 ThreeUpPreviewSection.propTypes = {
   /** The */
-  categoryArticles: PropTypes.arrayOf.isRequired,
+  ArticlesList: PropTypes.arrayOf.isRequired,
   /** The */
   isPopularPosts: PropTypes.bool,
   /** The */
-  popularArticlesTitle: PropTypes.string,
+  popularArticlesHeader: PropTypes.string,
 };
 
 ThreeUpPreviewSection.defaultProps = {
   isPopularPosts: false,
-  popularArticlesTitle: 'Popular Reads',
+  popularArticlesHeader: 'Popular Reads',
 };
 
 export default ThreeUpPreviewSection;

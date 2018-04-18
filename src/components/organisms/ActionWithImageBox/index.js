@@ -15,7 +15,10 @@ const ActionWithImageBox = ({
       <div className="awib-text-inner">
         <h3 className="awib-header">{header}</h3>
         <p className="awib-subheader">{subheader}</p>
-        <MailchimpEmailInput className="single-line-input" />
+        <MailchimpEmailInput
+          className="single-line-input"
+          mailchimpUrl="https://wellnessappliances.us2.list-manage.com/subscribe/post?u=10dbfb95b10b0055960e52187&amp;id=143b2e5389"
+        />
       </div>
     </div>
     <img src={img} className="awib-img" alt={alt} />
