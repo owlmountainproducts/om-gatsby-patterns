@@ -80,7 +80,7 @@ An example WP Category ThreeUpPreviewSection.
 An example Popular Posts ThreeUpPreviewSection.
 
 ```
-<ThreeUpPreviewSection isPopularPosts={true} ArticlesList={
+<ThreeUpPreviewSection isPopularPosts={true} articlesList={
   [
     {
       node: {
