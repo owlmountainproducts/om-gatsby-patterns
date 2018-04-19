@@ -30,6 +30,7 @@
 @import 'atoms/category_nav';
 @import 'atoms/lists';
 @import 'atoms/small_article_listing';
+@import 'atoms/table_of_contents_toggle';
 
 /** Molecules */
 @import 'molecules/mailchimp_single_line_input';
@@ -43,7 +44,7 @@
 @import 'molecules/related_articles';
 
 /**
-@import 'molecules/table_of_contents';
+;
 @import 'molecules/breadcrumbs'; */
 
 /** Organisms */
@@ -54,14 +55,3 @@
 @import 'organisms/three_up_preview_section';
 @import 'organisms/above_the_fold';
 @import 'organisms/sidebar';
-
-/** Templates */
-@import 'templates/page';
-@import 'templates/home_page';
-@import 'templates/404';
-
-/**
-@import 'templates/category';
-@import 'templates/post';
-@import 'templates/search';
-@import 'templates/about_template'; */

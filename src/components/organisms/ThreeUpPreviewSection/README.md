@@ -1,7 +1,8 @@
 An example WP Category ThreeUpPreviewSection.
 
 ```
-<ThreeUpPreviewSection isPopularPosts={false} categoryArticles={
+<ThreeUpPreviewSection isPopularPosts={false}
+ articlesList={
   [
     {
       node: {
@@ -16,6 +17,13 @@ An example WP Category ThreeUpPreviewSection.
         author: {
           name: 'Melissa',
         },
+        categories: [
+          {
+            name: 'Essential Oils',
+            slug: '/',
+            description: 'Practical ways to incorporate essential oils into daily life. Plenty of tips and DIY suggestions for using EOs for health, wellness, and first aid purposes. As with everything preparedness related start slow and learn as you go.',
+          },
+        ],
         date: 'March 14, 2018',
         yoast: {
           metadesc:
@@ -72,7 +80,7 @@ An example WP Category ThreeUpPreviewSection.
 An example Popular Posts ThreeUpPreviewSection.
 
 ```
-<ThreeUpPreviewSection isPopularPosts={true} categoryArticles={
+<ThreeUpPreviewSection isPopularPosts={true} ArticlesList={
   [
     {
       node: {

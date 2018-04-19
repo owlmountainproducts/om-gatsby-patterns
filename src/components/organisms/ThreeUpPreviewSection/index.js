@@ -9,7 +9,7 @@ import ThreeUpArticles from '../ThreeUpArticles';
  *
  */
 const ThreeUpPreviewSection = ({
-  ArticlesList,
+  articlesList,
   isPopularPosts,
   popularArticlesHeader,
 }) => (
@@ -21,23 +21,22 @@ const ThreeUpPreviewSection = ({
         </h2>
       )}
       {!isPopularPosts && (
-        <h2 className="three-up-preview-section-title">Essential Oils</h2>
+        <h2 className="three-up-preview-section-title">
+          {articlesList[0].node.categories[0].name}
+        </h2>
       )}
       {isPopularPosts && <hr className="three-up-preview-section-hr" />}
       {!isPopularPosts && (
         <p className="three-up-preview-section-description">
-          Practical ways to incorporate essential oils into daily life. Plenty
-          of tips and DIY suggestions for using EOs for health, wellness, and
-          first aid purposes. As with everything preparedness related start slow
-          and learn as you go.
+          {articlesList[0].node.categories[0].description}
         </p>
       )}
-      <ThreeUpArticles articles={ArticlesList} />
+      <ThreeUpArticles articles={articlesList} />
       {!isPopularPosts && (
         <div className="more-in-category-button-wrapper">
-          <Link to="/">
+          <Link to={articlesList[0].node.categories[0].slug}>
             <p className="primary-button more-in-category-button">
-              More Essential Oils
+              More {articlesList[0].node.categories[0].name}
             </p>
           </Link>
         </div>
@@ -48,7 +47,7 @@ const ThreeUpPreviewSection = ({
 
 ThreeUpPreviewSection.propTypes = {
   /** The */
-  ArticlesList: PropTypes.arrayOf.isRequired,
+  articlesList: PropTypes.arrayOf.isRequired,
   /** The */
   isPopularPosts: PropTypes.bool,
   /** The */

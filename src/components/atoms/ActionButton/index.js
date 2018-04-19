@@ -10,7 +10,7 @@ const ActionButton = ({
   className,
   text,
   type,
-  disabled,
+  isDisabled,
   children,
   onClick,
 }) => (
@@ -18,7 +18,7 @@ const ActionButton = ({
     id={id}
     className={`action-button ${className}`}
     type={type}
-    disabled={disabled}
+    disabled={isDisabled}
     onClick={onClick}
   >
     {children || text}
@@ -35,7 +35,7 @@ ActionButton.propTypes = {
   /** The */
   type: PropTypes.string,
   /** The */
-  disabled: PropTypes.bool,
+  isDisabled: PropTypes.bool,
   /** The */
   text: PropTypes.string,
   /** The */
@@ -47,7 +47,7 @@ ActionButton.defaultProps = {
   id: '',
   text: '',
   type: '',
-  disabled: false,
+  isDisabled: false,
   children: '',
   onClick: '',
 };

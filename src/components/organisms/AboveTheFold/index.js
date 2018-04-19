@@ -8,7 +8,12 @@ import FullEmailMat from '../FullEmailMat';
  * MOLECULE: The `<AboveTheFold>` creates __.
  *
  */
-const AboveTheFold = ({ featuredArticle, emailMat }) => (
+const AboveTheFold = ({
+  featuredArticle,
+  emailMatHeader,
+  emailMatAudienceNumber,
+  emailMatAudienceDescriptor,
+}) => (
   <div className="above-the-fold">
     <div className="above-the-fold-article-listing">
       <ArticleListing
@@ -24,9 +29,9 @@ const AboveTheFold = ({ featuredArticle, emailMat }) => (
     </div>
     <div className="above-the-fold-article-email-mat">
       <FullEmailMat
-        header={emailMat.header}
-        audienceNumber={emailMat.audienceNumber}
-        audienceDescriptor={emailMat.audienceDescriptor}
+        header={emailMatHeader}
+        audienceNumber={emailMatAudienceNumber}
+        audienceDescriptor={emailMatAudienceDescriptor}
       />
     </div>
   </div>
@@ -36,7 +41,11 @@ AboveTheFold.propTypes = {
   /** The */
   featuredArticle: PropTypes.arrayOf.isRequired,
   /** The */
-  emailMat: PropTypes.arrayOf.isRequired,
+  emailMatHeader: PropTypes.arrayOf.isRequired,
+  /** The */
+  emailMatAudienceNumber: PropTypes.arrayOf.isRequired,
+  /** The */
+  emailMatAudienceDescriptor: PropTypes.arrayOf.isRequired,
 };
 
 export default AboveTheFold;

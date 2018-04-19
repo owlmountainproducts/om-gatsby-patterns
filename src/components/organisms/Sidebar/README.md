@@ -2,7 +2,7 @@ An example Sidebar.
 
 ```
 <Sidebar
-posts={
+relatedArticles={
   [
     {
       id: 1,

@@ -48,7 +48,7 @@ SmallArticleListing.propTypes = {
 
 SmallArticleListing.defaultProps = {
   featuredMedia: false,
-  excerpt: '',
+  excerpt: null,
   className: '',
   id: '',
 };

@@ -3,7 +3,7 @@ An example sidebar RelatedArticles.
 ```
 <RelatedArticles
 className="sidebar-related-articles"
-posts={
+relatedArticles={
   [
     {
       id: 1,
@@ -68,7 +68,7 @@ An example body RelatedArticles.
 ```
 <RelatedArticles
 className="body-related-articles"
-posts={
+relatedArticles={
   [
     {
       id: 1,

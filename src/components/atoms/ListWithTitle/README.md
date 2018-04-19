@@ -3,8 +3,7 @@ An example ListWithTitle.
 ```
 <ListWithTitle
   className="footer-menu"
-  header="Popular Articles"
-  menu={["bingo", "bongo", "bob"]}
+  title="Popular Articles"
   listItems={
     {
      items: [

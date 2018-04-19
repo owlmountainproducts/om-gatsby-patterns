@@ -1,60 +1,49 @@
-/** Site Specific Colors & Options
-// used for top-header, homepage email-capture, social icons.
-$primary-color: #2782d0;
-
-// used for background-color of site header.
-$secondary-color: #faf8f2;
-
-// used background-color of affiliate, medical disclosures in articles.
-$tertiary-color: $secondary-color;
-
-$cta-color: #ea7317;
-$wa-blue: #2782d0;*/
-
+/** global */
 $site-max-width: 1240px;
+$global-code-background: #272a2b;
+$content-max-width: 1200px;
+$header-font: $secondary-font;
+// box model
+$spacer: 2rem;
 
-/** Colors */
+/** fixed colors */
 $black: #000;
 $white: #fff;
 $page-white: #fffffd;
 
-$om-light-grey: #f6f6f6;
-$om-medium-light-grey: rgb(197, 197, 197);
-$om-medium-grey: rgb(175, 174, 174);
+$om-light-grey: #ececec;
+$om-medium-light-grey: rgb(170, 170, 170);
+$om-medium-grey: rgb(131, 131, 131);
 $om-medium-dark-grey: #757575;
 $om-dark-grey: #272a2b;
 
-/** Specific Colors */
-$global-code-background: #272a2b;
+/** specific brand colors */
 $text-color: #222;
-$affiliate-disclosure-bk-color: $om-medium-light-grey;
-$medical-disclaimer-bk-color: $om-medium-light-grey;
 $text-on-dark: #f5f5f5;
 $link-hover-color: blue;
 $amazon-cta: #faa81a;
+
+/** button colors */
 $primary-button-color: rgb(0, 53, 0);
-$action-button-color: rgb(0, 53, 0);
 $secondary-button-color: rgb(0, 110, 0);
 $tertiary-button-color: rgb(0, 175, 0);
-$placeholder-text-color: $om-medium-dark-grey;
-$email-mat-color: #2277ca;
-$top-nav-bg-color: $om-medium-light-grey;
-$sidebar-bg-color: $om-medium-light-grey;
+$action-button-color: rgb(0, 53, 0);
 
-$content-max-width: 1200px;
+/** atoms */
 $disclosure-title: 1.05rem;
-$header-font: $secondary-font;
+$affiliate-disclosure-bk-color: $om-medium-light-grey;
+$medical-disclaimer-bk-color: $om-medium-light-grey;
+$placeholder-text-color: $om-medium-dark-grey;
 $input-field-height: 30px;
 
-/**
-$charcoal: $om-dark-grey;
-$sidebar-grey: #efefef;
-
-/** Box Model  */
-$spacer: 2rem;
-
-/** Email Molecule */
+/** molecules */
 $email-input-height: 35px;
+
+/** organisms */
+$email-mat-bg-color: #2277ca;
+$top-nav-bg-color: $om-medium-light-grey;
+$sidebar-top-bg-color: $om-medium-light-grey;
+$sidebar-border-color: green;
 
 /** Header & Nav */
 $header-inner-padding: 0 4rem;

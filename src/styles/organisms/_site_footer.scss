@@ -57,7 +57,7 @@
   border-top: 1px solid $text-on-dark;
 
   @include breakpoint($medium) {
-    padding: 1rem 0 0 2rem;
+    padding: 0 0 0 2rem;
     margin: 0;
     border-top: none;
     border-left: 1px solid $text-on-dark;

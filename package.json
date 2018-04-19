@@ -1,5 +1,6 @@
 {
   "name": "styleguide",
+  "version": "0.0.1",
   "private": true,
   "description": "Gatsby example site demoing living-style-guide",
   "author": "scott.eckenthal@gmail.com",
