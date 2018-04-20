@@ -26,10 +26,16 @@
   color: $text-color;
 }
 
+// if using icons
 .sticky-header .icon-bar {
   margin-left: auto;
 }
 
 .sticky-header .icon-bar-icon {
   line-height: $sticky-header-height - 8;
+}
+
+// if using share buttons
+.sticky-header .social-share-buttons {
+  margin: auto 0 auto auto;
 }

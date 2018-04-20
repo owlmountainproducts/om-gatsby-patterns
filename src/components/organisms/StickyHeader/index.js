@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
-import IconBar from '../../molecules/IconBar';
+import SocialShareButtons from '../../atoms/SocialShareButtons';
 
 /**
  * MOLECULE: The `<StickyHeader>` creates __.
@@ -15,7 +15,12 @@ const StickyHeader = ({ article, siteMeta }) => (
         <img className="logo" src={siteMeta.logoSrc} alt={siteMeta.logoText} />
       </Link>
       <p className="sticky-header-article-title">{article.title}</p>
-      <IconBar siteMeta={siteMeta} />
+      <SocialShareButtons
+        className="top-social-buttons"
+        title={article.title}
+        url={article.slug}
+        featuredImage={article.featured_media.source_url}
+      />
     </div>
   </div>
 );
