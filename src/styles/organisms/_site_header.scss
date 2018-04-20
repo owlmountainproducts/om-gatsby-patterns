@@ -1,29 +1,23 @@
-// Both HeaderLayered and HeaderTucked use these
-.header-center-wrapper {
-  background-color: #deceb2;
-  height: $header-height;
-  border-bottom: $header-bottom-border;
-}
-
-.header-center-inner {
-  padding: $header-inner-padding-small;
-  display: flex;
-  max-width: $site-max-width;
-  margin: 0 auto;
+%header-widths {
+  max-width: $header-sm-max-width;
 
   @include breakpoint($medium) {
-    padding: $header-inner-padding-medium;
+    max-width: $header-md-max-width;
   }
 
   @include breakpoint($large) {
-    padding: $header-inner-padding-large;
+    max-width: $header-lg-max-width;
   }
 }
 
-.site-header-icon {
-  color: $header-icon-color;
-  font-size: 1.45rem;
-  line-height: $header-height;
+.header-center-wrapper {
+  background-color: $header-center-bg-color;
+  height: $header-height;
+  border-bottom: $header-center-bottom-border;
+}
+
+.header-center-inner {
+  display: flex;
 }
 
 #menu-icon {
@@ -41,12 +35,21 @@
 .logo-wrapper {
   margin: auto 0;
   height: $header-height - 10;
+
+  @include breakpoint($header-visible-nav-breakpoint) {
+    margin: $header-logo-wrapper-margin;
+    height: $header-logo-height;
+  }
 }
 
 .logo {
-  max-height: $header-height - 10;
+  height: $header-height - 10;
   max-width: 245px;
   margin: auto 0;
+
+  @include breakpoint($header-visible-nav-breakpoint) {
+    height: $header-logo-height;
+  }
 
   @include breakpoint($medium) {
     max-width: none;
@@ -73,18 +76,13 @@
   }
 }
 
+.site-header .icon-bar-icon {
+  line-height: $header-height;
+}
+
 .top-nav-wrapper {
-  background-color: gray;
-  padding: $header-inner-padding-small;
+  background-color: $top-nav-bg-color;
   display: none;
-
-  @include breakpoint($medium) {
-    padding: $header-inner-padding-medium;
-  }
-
-  @include breakpoint($large) {
-    padding: $header-inner-padding-large;
-  }
 
   @include breakpoint($header-visible-nav-breakpoint) {
     display: block;
@@ -92,16 +90,14 @@
 }
 
 .primary-nav-wrapper {
-  background-color: gray;
-  padding: $header-inner-padding-small;
+  background-color: $primary-nav-bg-color;
+}
 
-  @include breakpoint($medium) {
-    padding: $header-inner-padding-medium;
-  }
-
-  @include breakpoint($large) {
-    padding: $header-inner-padding-large;
-  }
+.top-nav-wrapper .category-nav,
+.primary-nav-wrapper .category-nav,
+.header-center-inner {
+  @extend %header-widths;
+  margin: 0 auto;
 }
 
 .nav-responsive {

@@ -22,8 +22,12 @@
   max-width: $site-max-width;
   margin: 0 auto;
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem 3rem;
   font-family: $secondary-font;
+
+  @include breakpoint($large) {
+    padding: 2rem 0;
+  }
 }
 
 .footer-wrapper {
@@ -55,6 +59,7 @@
 
   margin: 1rem 0;
   border-top: 1px solid $text-on-dark;
+  padding: 2rem 0 0;
 
   @include breakpoint($medium) {
     padding: 0 0 0 2rem;
@@ -65,8 +70,8 @@
 }
 
 .footer-logo {
-  height: $footer-medium-break-pt-logo-height;
-  margin: $footer-medium-break-pt-logo-margins;
+  height: $footer-logo-height;
+  margin: $footer-logo-margin;
 }
 
 .legal-line-wrapper {

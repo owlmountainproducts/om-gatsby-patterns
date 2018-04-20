@@ -52,8 +52,8 @@ class SiteHeader extends React.Component {
             <Link to="/" className="logo-wrapper">
               <img
                 className="logo"
-                src={this.props.logoImg}
-                alt={this.props.alt}
+                src={this.props.siteMeta.logoSrc}
+                alt={this.props.siteMeta.logoText}
               />
             </Link>
             <div className="header-email-capture-wrapper">
@@ -81,13 +81,9 @@ class SiteHeader extends React.Component {
 
 SiteHeader.propTypes = {
   /** The */
-  logoImg: PropTypes.string.isRequired,
-  /** The */
   mailchimpUrl: PropTypes.string.isRequired,
   /** The  */
   siteMeta: PropTypes.arrayOf.isRequired,
-  /** The */
-  alt: PropTypes.string,
   /** The */
   topNav: PropTypes.bool,
   /** The */
@@ -97,7 +93,6 @@ SiteHeader.propTypes = {
 };
 
 SiteHeader.defaultProps = {
-  alt: 'website logo',
   topNav: false,
 };
 

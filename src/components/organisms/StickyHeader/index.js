@@ -14,7 +14,7 @@ const StickyHeader = ({ article, siteMeta }) => (
       <Link to="/" className="logo-wrapper">
         <img className="logo" src={siteMeta.logoSrc} alt={siteMeta.logoText} />
       </Link>
-      <p>{article.title}</p>
+      <p className="sticky-header-article-title">{article.title}</p>
       <IconBar siteMeta={siteMeta} />
     </div>
   </div>

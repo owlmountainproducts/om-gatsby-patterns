@@ -8,7 +8,7 @@ import slugify from 'slugify';
  *
  */
 const CategoryNav = ({ id, className, navItems }) => (
-  <nav id={id} className={className}>
+  <nav id={id} className={`category-nav ${className}`}>
     <ul className="category-nav-ul">
       {navItems.items.map(item => (
         <li key={item.order} className="category-nav-item">

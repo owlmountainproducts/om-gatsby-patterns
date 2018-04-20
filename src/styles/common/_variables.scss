@@ -29,43 +29,54 @@ $secondary-button-color: rgb(0, 110, 0);
 $tertiary-button-color: rgb(0, 175, 0);
 $action-button-color: rgb(0, 53, 0);
 
-/** atoms */
+/** disclosures */
 $disclosure-title: 1.05rem;
 $affiliate-disclosure-bk-color: $om-medium-light-grey;
 $medical-disclaimer-bk-color: $om-medium-light-grey;
+
+/** email &input components */
 $placeholder-text-color: $om-medium-dark-grey;
 $input-field-height: 30px;
-
-/** molecules */
 $email-input-height: 35px;
-
-/** organisms */
 $email-mat-bg-color: #2277ca;
-$top-nav-bg-color: $om-medium-light-grey;
+
+/** sidebar */
 $sidebar-top-bg-color: $om-medium-light-grey;
 $sidebar-border-color: green;
 
-/** Header & Nav */
-$header-inner-padding: 0 4rem;
-$header-visible-nav-breakpoint: 1248px;
-$header-right-visible-breakpoint: 700px;
-$header-height: 69px;
-$header-inner-padding-small: 0 3px;
-$header-inner-padding-medium: 0 2.75rem;
-$header-inner-padding-large: 0 7.75rem;
-$header-bottom-border: none;
+/** header colors */
+$top-nav-bg-color: $om-medium-light-grey;
+$primary-nav-bg-color: $om-medium-light-grey;
+$header-center-bg-color: #deceb2;
+$header-center-bottom-border: none;
 $header-icon-color: #4c4c4c;
 $category-nav-link-color: green;
 $category-nav-link-hover-color: blue;
+
+/** header font sizes */
 $topnav-font-size: 0.85rem;
 $primarynav-font-size: 1rem;
-$header-inner-padding: 0 4rem;
+
+/** header heights */
+$header-height: 69px;
 $sticky-header-height: 60px;
 
-/** Footer */
+/** header widths */
+$header-sm-max-width: 700px;
+$header-md-max-width: 900px;
+$header-lg-max-width: $site-max-width;
+$header-visible-nav-breakpoint: 1248px;
+$header-right-visible-breakpoint: 700px;
+
+/** header logo height (uncomment fitted or blown-out option) */
+// fitted:
+$header-logo-height: $header-height - 10;
+$header-logo-wrapper-margin: auto 0;
+// blown-out:
+//$header-logo-wrapper-height: $header-height + 15;
+//$header-logo-wrapper-margin: -10px 0;
+
+/** footer */
 $footer-bg-color: $om-dark-grey;
-// Logo Size
-// Large is 80px;
-$footer-medium-break-pt-logo-height: 55px;
-// Large is -5px 0;
-$footer-medium-break-pt-logo-margins: 6px 0 0;
+$footer-logo-height: 80px;
+$footer-logo-margin: -5px 0;
