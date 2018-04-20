@@ -21,9 +21,9 @@ IconWrapper.propTypes = {
 };
 
 IconWrapper.defaultProps = {
-  className: '',
-  id: '',
-  children: '',
+  className: null,
+  id: null,
+  children: null,
 };
 
 export default IconWrapper;

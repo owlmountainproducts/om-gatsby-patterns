@@ -1,0 +1,25 @@
+.article-header {
+  border-bottom: 3px solid $om-light-grey;
+
+  max-width: 45rem;
+  margin: 0 auto;
+
+  .info-share-bar {
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  .top-social-buttons {
+    margin-left: auto;
+  }
+
+  .date-updated,
+  .byline {
+    font-size: $type2-point-size;
+
+    // In links.scss
+    a {
+      color: $link-hover-color;
+    }
+  }
+}

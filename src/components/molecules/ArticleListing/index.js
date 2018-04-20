@@ -84,9 +84,9 @@ ArticleListing.propTypes = {
 };
 
 ArticleListing.defaultProps = {
-  id: '',
-  className: '',
-  excerpt: '',
+  id: null,
+  className: null,
+  excerpt: null,
   isFeaturedArticle: false,
   useGatsbyImage: false,
 };

@@ -37,7 +37,7 @@ ActionWithImageBox.propTypes = {
 };
 
 ActionWithImageBox.defaultProps = {
-  subheader: '',
+  subheader: null,
 };
 
 export default ActionWithImageBox;

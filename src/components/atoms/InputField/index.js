@@ -44,9 +44,9 @@ InputField.propTypes = {
 };
 
 InputField.defaultProps = {
-  className: '',
-  id: '',
-  placeholder: '',
+  className: null,
+  id: null,
+  placeholder: null,
 };
 
 export default InputField;

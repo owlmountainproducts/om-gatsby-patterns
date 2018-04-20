@@ -33,8 +33,8 @@ ListWithTitle.propTypes = {
 };
 
 ListWithTitle.defaultProps = {
-  className: '',
-  id: '',
+  className: null,
+  id: null,
 };
 
 export default ListWithTitle;

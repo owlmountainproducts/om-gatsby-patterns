@@ -34,7 +34,7 @@ CategoryNav.propTypes = {
 };
 
 CategoryNav.defaultProps = {
-  id: '',
+  id: null,
 };
 
 export default CategoryNav;

@@ -79,9 +79,9 @@ SocialShareButtons.propTypes = {
 };
 
 SocialShareButtons.defaultProps = {
-  featuredImage: '',
-  className: '',
-  id: '',
+  featuredImage: null,
+  className: null,
+  id: null,
 };
 
 export default SocialShareButtons;

@@ -43,13 +43,13 @@ ActionButton.propTypes = {
 };
 
 ActionButton.defaultProps = {
-  className: '',
-  id: '',
-  text: '',
-  type: '',
+  className: null,
+  id: null,
+  text: null,
+  type: null,
   isDisabled: false,
-  children: '',
-  onClick: '',
+  children: null,
+  onClick: null,
 };
 
 export default ActionButton;

@@ -37,7 +37,7 @@ RelatedArticles.propTypes = {
 };
 
 RelatedArticles.defaultProps = {
-  className: '',
+  className: null,
 };
 
 export default RelatedArticles;

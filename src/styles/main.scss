@@ -31,6 +31,7 @@
 @import 'atoms/lists';
 @import 'atoms/small_article_listing';
 @import 'atoms/table_of_contents_toggle';
+@import 'atoms/breadcrumbs';
 
 /** Molecules */
 @import 'molecules/mailchimp_single_line_input';
@@ -43,10 +44,6 @@
 @import 'molecules/h1_banner';
 @import 'molecules/related_articles';
 
-/**
-;
-@import 'molecules/breadcrumbs'; */
-
 /** Organisms */
 @import 'organisms/full_email_mat';
 @import 'organisms/site_footer';
@@ -55,3 +52,4 @@
 @import 'organisms/three_up_preview_section';
 @import 'organisms/above_the_fold';
 @import 'organisms/sidebar';
+@import 'organisms/article_header';

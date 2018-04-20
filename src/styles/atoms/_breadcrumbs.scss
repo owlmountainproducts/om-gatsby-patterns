@@ -1,0 +1,20 @@
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs li {
+  display: inline;
+  padding: 0 0.5rem 0 0;
+  font-size: $type3-point-size;
+  font-family: $secondary-font;
+  font-weight: bold;
+}
+
+.breadcrumbs li:last-child {
+  display: none;
+}
+
+.breadcrumbs li a {
+  @extend %text-color-link;
+}

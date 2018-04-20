@@ -73,7 +73,7 @@ MailchimpEmailInput.propTypes = {
 };
 
 MailchimpEmailInput.defaultProps = {
-  className: '',
+  className: null,
 };
 
 export default MailchimpEmailInput;

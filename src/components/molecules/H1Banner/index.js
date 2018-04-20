@@ -30,7 +30,7 @@ H1Banner.propTypes = {
 };
 
 H1Banner.defaultProps = {
-  children: '',
+  children: null,
 };
 
 export default H1Banner;
