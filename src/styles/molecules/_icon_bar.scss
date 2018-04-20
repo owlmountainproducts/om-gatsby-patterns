@@ -1,0 +1,11 @@
+.icon-bar {
+  display: flex;
+}
+
+.icon-bar-icon {
+  padding: 0 0.75rem;
+
+  &:last-child {
+    padding: 0 0 0 0.75rem;
+  }
+}

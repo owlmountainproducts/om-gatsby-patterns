@@ -43,11 +43,13 @@
 @import 'molecules/action_with_image_box';
 @import 'molecules/h1_banner';
 @import 'molecules/related_articles';
+@import 'molecules/icon_bar';
 
 /** Organisms */
 @import 'organisms/full_email_mat';
 @import 'organisms/site_footer';
 @import 'organisms/site_header';
+@import 'organisms/sticky_header';
 @import 'organisms/three_up_articles';
 @import 'organisms/three_up_preview_section';
 @import 'organisms/above_the_fold';

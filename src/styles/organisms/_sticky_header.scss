@@ -1,0 +1,9 @@
+.sticky-header {
+  border: 1px solid red;
+  height: $sticky-header-height;
+  padding: 1rem;
+}
+
+.sticky-header-inner {
+  display: flex;
+}

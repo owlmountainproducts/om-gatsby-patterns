@@ -6,6 +6,7 @@ import * as FontAwesome from 'react-icons/lib/fa';
 import ActionButton from '../../atoms/ActionButton';
 import CategoryNav from '../../atoms/CategoryNav';
 import IconWrapper from '../../atoms/IconWrapper';
+import IconBar from '../../molecules/IconBar';
 import MailchimpEmailInput from '../../molecules/MailchimpEmailInput';
 
 /**
@@ -61,28 +62,7 @@ class SiteHeader extends React.Component {
                 mailchimpUrl={this.props.mailchimpUrl}
               />
             </div>
-            <div className="header-right-icons">
-              <a className="fb-icon-link" href={this.props.fbUrl}>
-                <IconWrapper className="site-header-icon">
-                  <FontAwesome.FaFacebook />
-                </IconWrapper>
-              </a>
-              <a className="pinterest-icon-link" href={this.props.pinterestUrl}>
-                <IconWrapper className="site-header-icon">
-                  <FontAwesome.FaPinterestP />
-                </IconWrapper>
-              </a>
-              <a className="youtube-icon-link" href={this.props.youtubeUrl}>
-                <IconWrapper className="site-header-icon">
-                  <FontAwesome.FaYoutubePlay />
-                </IconWrapper>
-              </a>
-              <a className="search-icon-link" href="/search/">
-                <IconWrapper className="site-header-icon">
-                  <FontAwesome.FaSearch />
-                </IconWrapper>
-              </a>
-            </div>
+            <IconBar siteMeta={this.props.siteMeta} />
           </div>
         </div>
         <div
@@ -103,13 +83,9 @@ SiteHeader.propTypes = {
   /** The */
   logoImg: PropTypes.string.isRequired,
   /** The */
-  fbUrl: PropTypes.string.isRequired,
-  /** The */
-  pinterestUrl: PropTypes.string.isRequired,
-  /** The */
-  youtubeUrl: PropTypes.string.isRequired,
-  /** The */
   mailchimpUrl: PropTypes.string.isRequired,
+  /** The  */
+  siteMeta: PropTypes.arrayOf.isRequired,
   /** The */
   alt: PropTypes.string,
   /** The */

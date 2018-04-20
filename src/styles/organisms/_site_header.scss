@@ -65,20 +65,11 @@
   }
 }
 
-.header-right-icons {
-  display: 0;
+.site-header .icon-bar {
   display: none;
 
   @include breakpoint($header-right-visible-breakpoint) {
     display: flex;
-  }
-}
-
-.header-right-icons .site-header-icon {
-  padding: 0 0.75rem;
-
-  &:last-child {
-    padding: 0 0 0 0.75rem;
   }
 }
 
