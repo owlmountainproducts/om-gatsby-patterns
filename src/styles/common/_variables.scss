@@ -61,30 +61,10 @@ $topnav-font-size: 0.85rem;
 $primarynav-font-size: 1rem;
 $header-inner-padding: 0 4rem;
 
-/** Footer Logo */
+/** Footer */
 $footer-bg-color: $om-dark-grey;
+// Logo Size
 // Large is 80px;
 $footer-medium-break-pt-logo-height: 55px;
 // Large is -5px 0;
 $footer-medium-break-pt-logo-margins: 6px 0 0;
-
-/**
-// Typical is 55px;
-$medium-break-pt-logo-height: 60px;
-// Typical is 6px 0 0;
-$medium-break-pt-logo-margins: 6px 0 0;
-
-/** Three Up Cards
-$md-card-padding: 0 1rem;
-$lg-card-padding: 0 2rem;
-
-/** Search
-$search-form-max-width: 970px;
-
-/** Single
-$entry-content-max-width: 650px;
-$entry-comment-max-width: 680px;
-$entry-content-left-offset: 1.5rem;
-
-/** Page
-$page-width: 980px; */
