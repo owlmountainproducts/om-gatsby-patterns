@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
 
 import MailchimpEmailInput from '../../molecules/MailchimpEmailInput';
 
@@ -8,7 +9,7 @@ import MailchimpEmailInput from '../../molecules/MailchimpEmailInput';
  *
  */
 const ActionWithImageBox = ({
-  header, subheader, alt, img,
+  header, subheader, imageText, imageFiles,
 }) => (
   <div className="action-with-image-box">
     <div className="awib-text-wrapper">
@@ -21,7 +22,7 @@ const ActionWithImageBox = ({
         />
       </div>
     </div>
-    <img src={img} className="awib-img" alt={alt} />
+    <Img className="awib-img" sizes={imageFiles} alt={imageText} />
   </div>
 );
 
@@ -31,9 +32,9 @@ ActionWithImageBox.propTypes = {
   /** The */
   subheader: PropTypes.string,
   /** The */
-  img: PropTypes.string.isRequired,
+  imageFiles: PropTypes.object.isRequired,
   /** The */
-  alt: PropTypes.string.isRequired,
+  imageText: PropTypes.string.isRequired,
 };
 
 ActionWithImageBox.defaultProps = {

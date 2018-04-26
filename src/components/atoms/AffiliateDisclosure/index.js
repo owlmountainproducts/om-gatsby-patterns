@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
 
 /**
  * ATOM: The `<AffiliateDisclosure>` atom creates an Affiliate Disclosure block.
  * The disclosure text will remain the same from site to site.
  */
-const AffiliateDisclosure = ({ logoIcon, alt }) => (
+const AffiliateDisclosure = ({ imageFiles, imageText }) => (
   <section className="affiliate-disclosure-wrapper">
     <div className="disclosure-img">
-      <img src={logoIcon} alt={alt} />
+      <Img sizes={imageFiles} alt={imageText} />
     </div>
     <div className="disclosure-body">
       <h3 className="disclosure-title">Disclosure:</h3>
@@ -23,13 +24,13 @@ const AffiliateDisclosure = ({ logoIcon, alt }) => (
 
 AffiliateDisclosure.propTypes = {
   /** The Logo Img that gets inserted into disclosure. */
-  logoIcon: PropTypes.string.isRequired,
+  imageFiles: PropTypes.object.isRequired,
   /** The */
-  alt: PropTypes.string,
+  imageText: PropTypes.string,
 };
 
 AffiliateDisclosure.defaultProps = {
-  alt: 'website logo',
+  imageText: 'website logo',
 };
 
 export default AffiliateDisclosure;

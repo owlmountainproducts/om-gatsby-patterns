@@ -8,7 +8,6 @@ import EntryMeta from '../../atoms/EntryMeta';
 /**
  * MOLECULE: The `<ArticleListing>` molecule creates an article
  * listing with featured image, author, date, title and excerpt.
- * TODO: Use gatsby-image with all images, remove switch logic
  *
  */
 const ArticleListing = ({
@@ -25,9 +24,9 @@ const ArticleListing = ({
 }) => (
   <article id={id} className={`article-listing ${className}`}>
     <div className="article-listing-image-wrapper">
-        <Link to="/">
-          <Img sizes={imageFiles} alt={imageText} />
-        </Link>
+      <Link to="/">
+        <Img sizes={imageFiles} alt={imageText} />
+      </Link>
     </div>
     <div className="article-listing-text">
       {isFeaturedArticle && (

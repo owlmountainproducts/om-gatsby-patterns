@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 
 import { getCopyrightDate } from '../../../utils';
 import ListWithTitle from '../../atoms/ListWithTitle';
@@ -10,8 +11,8 @@ import ListWithTitle from '../../atoms/ListWithTitle';
  *
  */
 const SiteFooter = ({
-  src,
-  alt,
+  imageFiles,
+  imageText,
   addressLine01,
   addressLine02,
   mainEmail,
@@ -50,7 +51,7 @@ const SiteFooter = ({
       </div>
       <div className="footer-wrapper footer-wrapper-4">
         <Link to="/">
-          <img className="footer-logo" src={src} alt={alt} />
+          <Img className="footer-logo" sizes={imageFiles} alt={imageText} />
         </Link>
         <p>
           {addressLine01}
@@ -88,9 +89,9 @@ const SiteFooter = ({
 
 SiteFooter.propTypes = {
   /** The */
-  src: PropTypes.string.isRequired,
+  imageFiles: PropTypes.object.isRequired,
   /** The */
-  alt: PropTypes.string,
+  imageText: PropTypes.string,
   /** The */
   addressLine01: PropTypes.string.isRequired,
   /** The */
@@ -118,7 +119,7 @@ SiteFooter.propTypes = {
 };
 
 SiteFooter.defaultProps = {
-  alt: 'website logo',
+  imageText: 'website logo',
   hasMedicalDisclaimer: true,
 };
 

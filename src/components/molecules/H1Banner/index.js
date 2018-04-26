@@ -26,7 +26,7 @@ H1Banner.propTypes = {
   /** The background image */
   imageFiles: PropTypes.object.isRequired,
   /** The p text in the banner */
-  children: PropTypes.object,
+  children: PropTypes.string,
   /** The p text in the banner */
   imageText: PropTypes.string.isRequired,
 };
