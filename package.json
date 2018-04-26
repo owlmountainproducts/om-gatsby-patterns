@@ -1,9 +1,9 @@
 {
-  "name": "styleguide",
+  "name": "om-gatsby-patterns",
   "version": "0.0.1",
   "private": true,
   "description": "Gatsby example site demoing living-style-guide",
-  "author": "scott.eckenthal@gmail.com",
+  "author": "geoffrey@owlmountain.co",
   "dependencies": {
     "app-root-dir": "^1.0.2",
     "gatsby": "latest",
