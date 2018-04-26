@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /**
- * ATOM: The `<H1Banner>` atom creates a banner with an H1 header and p sub-header.
+ * MOLECULE: The `<H1Banner>` molecule creates a banner with an image background,
+ * an H1 header and sub-header.
  * NOTE: imageSizes prop is sizes object from gatsby-image.
  * See https://www.gatsbyjs.org/packages/gatsby-image/#sizes-queries
  */

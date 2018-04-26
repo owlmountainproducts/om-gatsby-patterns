@@ -5,7 +5,7 @@ import Link from 'gatsby-link';
 import MailchimpEmailInput from '../../molecules/MailchimpEmailInput';
 
 /**
- * MOLECULE: The `<FullEmailMat>` creates __.
+ * ORGANISM: The `<FullEmailMat>` creates __.
  *
  */
 const FullEmailMat = ({ header, audienceNumber, audienceDescriptor }) => (

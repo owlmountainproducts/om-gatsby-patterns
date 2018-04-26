@@ -6,7 +6,7 @@ import Breadcrumbs from '../../atoms/Breadcrumbs';
 import SocialShareButtons from '../../atoms/SocialShareButtons';
 
 /**
- * ATOM: The `<ArticleHeader>` creates ___.
+ * ORGANISM: The `<ArticleHeader>` creates ___.
  */
 const ArticleHeader = ({ categories, article }) => (
   <header className="article-header">

@@ -5,7 +5,7 @@ import Link from 'gatsby-link';
 import SocialShareButtons from '../../atoms/SocialShareButtons';
 
 /**
- * MOLECULE: The `<StickyHeader>` creates __.
+ * ORGANISM: The `<StickyHeader>` creates __.
  *
  */
 const StickyHeader = ({ article, siteMeta }) => (

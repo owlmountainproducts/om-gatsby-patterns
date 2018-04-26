@@ -5,7 +5,8 @@ import ArticleListing from '../../molecules/ArticleListing';
 import FullEmailMat from '../FullEmailMat';
 
 /**
- * MOLECULE: The `<AboveTheFold>` creates __.
+ * ORGANISM: The `<AboveTheFold>` organism combines the featured article with the full email mat.
+ * Typically used on overview or landing pages.
  *
  */
 const AboveTheFold = ({

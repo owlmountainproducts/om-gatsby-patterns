@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import ArticleListing from '../../molecules/ArticleListing';
 
 /**
- * ATOM: The `<ThreeUpArticles>` creates __.
+ * ORGANISM: The `<ThreeUpArticles>` creates __.
  *
  */
 const ThreeUpArticles = ({ articles }) => (

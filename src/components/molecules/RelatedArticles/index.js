@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import SmallArticleListing from '../../atoms/SmallArticleListing';
 
 /**
- * ATOM: The `<RelatedArticles>` creates __.
+ * MOLECULE: The `<RelatedArticles>` molecule creates a looping of
+ * Small Article Listing components. Used for Related Articles.
  *
  */
 const RelatedArticles = ({ relatedArticles, className }) => (

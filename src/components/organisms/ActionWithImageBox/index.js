@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import MailchimpEmailInput from '../../molecules/MailchimpEmailInput';
 
 /**
- * ATOM: The `<ActionWithImageBox>` atom creates ___.
+ * ORGANISM: The `<ActionWithImageBox>` organism creates ___.
  *
  */
 const ActionWithImageBox = ({

@@ -6,7 +6,7 @@ import { getCopyrightDate } from '../../../utils';
 import ListWithTitle from '../../atoms/ListWithTitle';
 
 /**
- * ATOM: The `<SiteFooter>` creates __.
+ * ORGANISM: The `<SiteFooter>` creates __.
  *
  */
 const SiteFooter = ({

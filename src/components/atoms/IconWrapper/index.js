@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /**
- * ATOM: The `<IconWrapper>` atom creates __.
+ * ATOM: The `<IconWrapper>` atom creates a wrapper around icons
+ * imported from third party libraries.
  *
  */
 const IconWrapper = ({ id, className, children }) => (

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 /**
  * ATOM: The `<AffiliateDisclosure>` atom creates an Affiliate Disclosure block.
+ * The disclosure text will remain the same from site to site.
  */
 const AffiliateDisclosure = ({ logoIcon, alt }) => (
   <section className="affiliate-disclosure-wrapper">

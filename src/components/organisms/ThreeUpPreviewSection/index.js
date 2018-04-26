@@ -5,7 +5,7 @@ import Link from 'gatsby-link';
 import ThreeUpArticles from '../ThreeUpArticles';
 
 /**
- * ATOM: The `<ThreeUpPreviewSection>` creates __.
+ * ORGANISM: The `<ThreeUpPreviewSection>` creates __.
  *
  */
 const ThreeUpPreviewSection = ({

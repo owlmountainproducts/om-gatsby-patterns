@@ -14,7 +14,8 @@ import {
 } from 'react-share';
 
 /**
- * ATOM: The `<SocialShareButtons>` atom creates ___.
+ * ATOM: The `<SocialShareButtons>` atom creates share buttons
+ * for Facebook, Pinterest, WhatsApp, and Email.
  * TODO: Format Share Counts Using Numeral.Js: http://numeraljs.com/#format
  *
  */

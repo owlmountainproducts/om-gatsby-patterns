@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
 /**
- * ATOM: The `<SmallArticleListing>` creates __.
+ * ATOM: The `<SmallArticleListing>` atom creates an abridged article listing.
+ * Usually used for related articles.
  *
  */
 const SmallArticleListing = ({

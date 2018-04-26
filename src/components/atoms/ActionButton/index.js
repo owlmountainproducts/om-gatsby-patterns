@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /**
- * ATOM: The `<ActionButton>` atom creates button for actions on forms and things.
+ * ATOM: The `<ActionButton>` atom creates a button element for actions on forms and things.
  *
  */
 const ActionButton = ({

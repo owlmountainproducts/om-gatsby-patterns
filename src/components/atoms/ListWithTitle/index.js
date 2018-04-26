@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
 /**
- * ATOM: The `<ListWithTitle>` creates __.
+ * ATOM: The `<ListWithTitle>` atom creates an unordered navigation list with an h3 header.
  *
  */
 const ListWithTitle = ({

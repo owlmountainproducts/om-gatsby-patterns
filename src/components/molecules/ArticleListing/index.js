@@ -6,7 +6,8 @@ import Link from 'gatsby-link';
 import EntryMeta from '../../atoms/EntryMeta';
 
 /**
- * MOLECULE: The `<ArticleListing>` creates __.
+ * MOLECULE: The `<ArticleListing>` molecule creates an article
+ * listing with featured image, author, date, title and excerpt.
  * TODO: Use gatsby-image with all images, remove switch logic
  *
  */

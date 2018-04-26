@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /**
- * ATOM: The `<InputField>` atom creates a link wrapper that
- * acts either like an internal or external link.
+ * ATOM: The `<InputField>` atom creates an input field.
  *
  */
 const InputField = ({

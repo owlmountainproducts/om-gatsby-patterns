@@ -4,7 +4,9 @@ import Link from 'gatsby-link';
 import slugify from 'slugify';
 
 /**
- * MOLECULE: The `<CategoryNav>` molecule creates ___.
+ * ATOM: The `<CategoryNav>` atom creates a menu of categories and only categories
+ * (because /category/ is built into the link structure)
+ * Typically used for primary site navigation.
  *
  */
 const CategoryNav = ({ id, className, navItems }) => (

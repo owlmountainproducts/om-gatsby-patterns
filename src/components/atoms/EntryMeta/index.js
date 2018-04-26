@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 import slugify from 'slugify';
 
 /**
- * MOLECULE: The `<EntryMeta>` is for displaying author and date information.
+ * ATOM: The `<EntryMeta>` atom displays author and date information for Articles.
  *
  */
 const EntryMeta = ({ author, lastUpdated, includeLink }) => (

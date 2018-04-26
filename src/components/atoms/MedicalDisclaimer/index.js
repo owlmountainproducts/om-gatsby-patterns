@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
 /**
- * MOLECULE: The `<MedicalDisclaimer>` creates a medical disclaimer block.
+ * ATOM: The `<MedicalDisclaimer>` atom creates a medical disclaimer block.
+ * The disclosure text will remain the same from site to site.
  *
  */
 const MedicalDisclaimer = ({ logoIcon, alt }) => (

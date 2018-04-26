@@ -5,7 +5,8 @@ import * as FontAwesome from 'react-icons/lib/fa';
 import IconWrapper from '../../atoms/IconWrapper';
 
 /**
- * MOLECULE: The `<IconBar>` creates __.
+ * MOLECULE: The `<IconBar>` molecule creates a string of icons.
+ * Typically used for Social Channel Icons.
  *
  */
 const IconBar = ({ siteMeta }) => (

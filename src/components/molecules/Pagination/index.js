@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
 /**
- * MOLECULE: The `<Pagination>` creates next and previous pagination buttons wiht page number below.
+ * MOLECULE: The `<Pagination>` molecule creates next and previous pagination
+ * buttons with page numbers below.
  *
  */
 const Pagination = ({
