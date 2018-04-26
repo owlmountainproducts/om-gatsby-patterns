@@ -15,7 +15,7 @@ const ThreeUpArticles = ({ articles }) => (
           className="article_listing_vertical"
           slug={article.node.slug}
           title={article.node.title}
-          imageFiles={article.node.featured_media.source_url}
+          imageFiles={article.node.featured_media.localFile.childImageSharp.sizes}
           imageText={article.node.featured_media.alt_text}
           authorName={article.node.author.name}
           lastUpdated={article.node.date}

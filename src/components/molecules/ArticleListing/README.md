@@ -5,7 +5,16 @@ An example ArticleListing Horizontal molecule.
   className="article_listing_horizontal"
   slug="/"
   title="Bug Out vs. Get Home Bags"
-  imageFiles="https://cdn1.backdoorsurvival.com/app/uploads/2018/04/11050003/Bug-Out-Vs.-Get-Home-Bags-wide.png"
+  imageFiles={
+    {
+      aspectRatio: 1.1205128205128205,
+      sizes: "(max-width: 1200px) 100vw, 1200px",
+      src: "/demo.jpg",
+      srcSet: "/demo300.jpg 300w,/demo600.jpg 600w,/demo1200.jpg 1200w,/demo1748.jpg 1748w",
+      srcSetWebp: "/demo300.webp 300w,/demo600.webp 600w,/demo1200.webp 1200w,/demo1748.webp 1748w",
+      srcWebp: "/demo.webp",
+    }
+  }
   imageText="Bug Out vs. Get Home Bags"
   authorName="SurvivalWoman"
   lastUpdated="April 23, 2018"
@@ -19,7 +28,16 @@ An example ArticleListing Vertical molecule.
   className="article_listing_vertical"
   slug="/"
   title="Bug Out vs. Get Home Bags"
-  imageFiles="https://cdn1.backdoorsurvival.com/app/uploads/2018/04/11050003/Bug-Out-Vs.-Get-Home-Bags-wide.png"
+  imageFiles={
+    {
+      aspectRatio: 1.1205128205128205,
+      sizes: "(max-width: 1200px) 100vw, 1200px",
+      src: "/demo.jpg",
+      srcSet: "/demo300.jpg 300w,/demo600.jpg 600w,/demo1200.jpg 1200w,/demo1748.jpg 1748w",
+      srcSetWebp: "/demo300.webp 300w,/demo600.webp 600w,/demo1200.webp 1200w,/demo1748.webp 1748w",
+      srcWebp: "/demo.webp",
+    }
+  }
   imageText="Bug Out vs. Get Home Bags"
   authorName="SurvivalWoman"
   lastUpdated="April 23, 2018"
@@ -33,7 +51,16 @@ An example ArticleListing Featured molecule.
   className="article_listing_featured"
   slug="/"
   title="The Best Survival Fishing Kits"
-  imageFiles="https://cdn1.backdoorsurvival.com/app/uploads/2018/02/27085612/The-Best-Survival-Fishing-Kits-wide.png"
+  imageFiles={
+    {
+      aspectRatio: 1.1205128205128205,
+      sizes: "(max-width: 1200px) 100vw, 1200px",
+      src: "/demo.jpg",
+      srcSet: "/demo300.jpg 300w,/demo600.jpg 600w,/demo1200.jpg 1200w,/demo1748.jpg 1748w",
+      srcSetWebp: "/demo300.webp 300w,/demo600.webp 600w,/demo1200.webp 1200w,/demo1748.webp 1748w",
+      srcWebp: "/demo.webp",
+    }
+  }
   imageText="best survival fishing kits"
   authorName="SurvivalWoman"
   lastUpdated="April 24, 2018"

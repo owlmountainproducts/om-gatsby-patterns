@@ -22,19 +22,12 @@ const ArticleListing = ({
   lastUpdated,
   excerpt,
   isFeaturedArticle,
-  useGatsbyImage,
 }) => (
   <article id={id} className={`article-listing ${className}`}>
     <div className="article-listing-image-wrapper">
-      {useGatsbyImage ? (
         <Link to="/">
           <Img sizes={imageFiles} alt={imageText} />
         </Link>
-      ) : (
-        <Link to={`/${slug}/`}>
-          <img src={imageFiles} alt={imageText} />
-        </Link>
-      )}
     </div>
     <div className="article-listing-text">
       {isFeaturedArticle && (
@@ -61,11 +54,15 @@ const ArticleListing = ({
 
 ArticleListing.propTypes = {
   /** The  */
+  id: PropTypes.bool,
+  /** The  */
+  className: PropTypes.string,
+  /** The  */
   slug: PropTypes.string.isRequired,
   /** The  */
   title: PropTypes.string.isRequired,
   /** The  */
-  imageFiles: PropTypes.string.isRequired,
+  imageFiles: PropTypes.object.isRequired,
   /** The  */
   imageText: PropTypes.string.isRequired,
   /** The  */
@@ -75,13 +72,7 @@ ArticleListing.propTypes = {
   /** The  */
   excerpt: PropTypes.string,
   /** The  */
-  className: PropTypes.string,
-  /** The  */
   isFeaturedArticle: PropTypes.bool,
-  /** The  */
-  useGatsbyImage: PropTypes.bool,
-  /** The  */
-  id: PropTypes.bool,
 };
 
 ArticleListing.defaultProps = {
@@ -89,7 +80,6 @@ ArticleListing.defaultProps = {
   className: null,
   excerpt: null,
   isFeaturedArticle: false,
-  useGatsbyImage: false,
 };
 
 export default ArticleListing;
