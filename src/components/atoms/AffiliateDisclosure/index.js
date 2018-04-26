@@ -24,7 +24,7 @@ const AffiliateDisclosure = ({ imageFiles, imageText }) => (
 
 AffiliateDisclosure.propTypes = {
   /** The Logo Img that gets inserted into disclosure. */
-  imageFiles: PropTypes.object.isRequired,
+  imageFiles: PropTypes.shape.isRequired,
   /** The */
   imageText: PropTypes.string,
 };

@@ -89,7 +89,7 @@ const SiteFooter = ({
 
 SiteFooter.propTypes = {
   /** The */
-  imageFiles: PropTypes.object.isRequired,
+  imageFiles: PropTypes.shape.isRequired,
   /** The */
   imageText: PropTypes.string,
   /** The */

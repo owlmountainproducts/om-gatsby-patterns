@@ -32,7 +32,7 @@ ActionWithImageBox.propTypes = {
   /** The */
   subheader: PropTypes.string,
   /** The */
-  imageFiles: PropTypes.object.isRequired,
+  imageFiles: PropTypes.shape.isRequired,
   /** The */
   imageText: PropTypes.string.isRequired,
 };

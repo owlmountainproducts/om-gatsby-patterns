@@ -2,9 +2,9 @@ An example ActionWithImageBox.
 
 ```
 <ActionWithImageBox
-header="We follow the cutting edge of wellness technology for the home and office."
-subheader="Let us keep you informed too.."
-imageFiles={
+  header="We follow the cutting edge of wellness technology for the home and office."
+  subheader="Let us keep you informed too.."
+  imageFiles={
     {
       aspectRatio: 1.1205128205128205,
       sizes: "(max-width: 1200px) 100vw, 1200px",
@@ -14,5 +14,6 @@ imageFiles={
       srcWebp: "/demo.webp",
     }
   }
-imageText="livingroom scene" />
+  imageText="livingroom scene"
+/>
 ```

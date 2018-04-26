@@ -11,5 +11,6 @@ An example medical disclaimer.
       srcSetWebp: "/demo300.webp 300w,/demo600.webp 600w,/demo1200.webp 1200w,/demo1748.webp 1748w",
       srcWebp: "/demo.webp",
     }
-  }/>
+  }
+/>
 ```

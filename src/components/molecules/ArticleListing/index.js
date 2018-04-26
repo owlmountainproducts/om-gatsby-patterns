@@ -61,7 +61,7 @@ ArticleListing.propTypes = {
   /** The  */
   title: PropTypes.string.isRequired,
   /** The  */
-  imageFiles: PropTypes.object.isRequired,
+  imageFiles: PropTypes.shape.isRequired,
   /** The  */
   imageText: PropTypes.string.isRequired,
   /** The  */

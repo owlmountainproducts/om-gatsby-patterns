@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 
 /**
  * ATOM: The `<SmallArticleListing>` atom creates an abridged article listing.
@@ -13,7 +14,7 @@ const SmallArticleListing = ({
   slug,
   title,
   featuredMedia,
-  src,
+  imageFiles,
   imageText,
   excerpt,
 }) => (
@@ -22,7 +23,7 @@ const SmallArticleListing = ({
     className={`small-article-listing ${className}`}
     to={`/${slug}/`}
   >
-    {featuredMedia && <img src={src} alt={imageText} />}
+    {featuredMedia && <Img sizes={imageFiles} alt={imageText} />}
     <h4>{title}</h4>
     <p>{excerpt}</p>
   </Link>
@@ -34,7 +35,7 @@ SmallArticleListing.propTypes = {
   /** The  */
   featuredMedia: PropTypes.bool,
   /** The  */
-  src: PropTypes.string.isRequired,
+  imageFiles: PropTypes.shape.isRequired,
   /** The  */
   imageText: PropTypes.string.isRequired,
   /** The  */

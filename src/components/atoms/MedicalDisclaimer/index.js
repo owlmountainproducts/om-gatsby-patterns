@@ -30,7 +30,7 @@ const MedicalDisclaimer = ({ imageFiles, imageText }) => (
 
 MedicalDisclaimer.propTypes = {
   /** The Logo Img that gets inserted into disclaimer. */
-  imageFiles: PropTypes.object.isRequired,
+  imageFiles: PropTypes.shape.isRequired,
   /** The */
   imageText: PropTypes.string,
 };

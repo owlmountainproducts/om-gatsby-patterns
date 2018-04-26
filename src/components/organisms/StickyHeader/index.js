@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 
 import SocialShareButtons from '../../atoms/SocialShareButtons';
 
@@ -12,7 +13,11 @@ const StickyHeader = ({ article, siteMeta }) => (
   <div className="sticky-header">
     <div className="sticky-header-inner">
       <Link to="/" className="logo-wrapper">
-        <img className="logo" src={siteMeta.logoSrc} alt={siteMeta.logoText} />
+        <Img
+          className="logo"
+          sizes={siteMeta.logoSrc}
+          alt={siteMeta.logoText}
+        />
       </Link>
       <p className="sticky-header-article-title">{article.title}</p>
       <SocialShareButtons

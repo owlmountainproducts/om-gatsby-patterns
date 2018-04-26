@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 import * as FontAwesome from 'react-icons/lib/fa';
 
 import ActionButton from '../../atoms/ActionButton';
@@ -50,9 +51,9 @@ class SiteHeader extends React.Component {
               </IconWrapper>
             </ActionButton>
             <Link to="/" className="logo-wrapper">
-              <img
+              <Img
                 className="logo"
-                src={this.props.siteMeta.logoSrc}
+                sizes={this.props.siteMeta.logoSrc}
                 alt={this.props.siteMeta.logoText}
               />
             </Link>

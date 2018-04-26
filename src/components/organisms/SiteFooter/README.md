@@ -2,7 +2,7 @@ An example SiteFooter.
 
 ```
 <SiteFooter
-   imageFiles={
+  imageFiles={
     {
       aspectRatio: 1.1205128205128205,
       sizes: "(max-width: 1200px) 100vw, 1200px",
