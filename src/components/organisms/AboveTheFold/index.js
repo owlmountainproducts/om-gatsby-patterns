@@ -19,14 +19,14 @@ const AboveTheFold = ({
     <div className="above-the-fold-article-listing">
       <ArticleListing
         className="article_listing_featured"
-        slug={featuredArticle.node.slug}
-        title={featuredArticle.node.title}
+        slug={featuredArticle.slug}
+        title={featuredArticle.title}
         imageFiles={
-          featuredArticle.node.featured_media.localFile.childImageSharp.sizes
+          featuredArticle.featured_media.localFile.childImageSharp.sizes
         }
-        imageText={featuredArticle.node.featured_media.alt_text}
-        authorName={featuredArticle.node.author.name}
-        lastUpdated={featuredArticle.node.date}
+        imageText={featuredArticle.featured_media.alt_text}
+        authorName={featuredArticle.author.name}
+        lastUpdated={featuredArticle.date}
         isFeaturedArticle
       />
     </div>

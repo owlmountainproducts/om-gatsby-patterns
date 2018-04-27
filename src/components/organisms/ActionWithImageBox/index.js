@@ -9,7 +9,11 @@ import MailchimpEmailInput from '../../molecules/MailchimpEmailInput';
  *
  */
 const ActionWithImageBox = ({
-  header, subheader, imageText, imageFiles,
+  header,
+  subheader,
+  imageText,
+  imageFiles,
+  mailchimpUrl,
 }) => (
   <div className="action-with-image-box">
     <div className="awib-text-wrapper">
@@ -18,7 +22,7 @@ const ActionWithImageBox = ({
         <p className="awib-subheader">{subheader}</p>
         <MailchimpEmailInput
           className="single-line-input"
-          mailchimpUrl="https://wellnessappliances.us2.list-manage.com/subscribe/post?u=10dbfb95b10b0055960e52187&amp;id=143b2e5389"
+          mailchimpUrl={mailchimpUrl}
         />
       </div>
     </div>
@@ -35,6 +39,8 @@ ActionWithImageBox.propTypes = {
   imageFiles: PropTypes.shape.isRequired,
   /** The */
   imageText: PropTypes.string.isRequired,
+  /** The */
+  mailchimpUrl: PropTypes.string.isRequired,
 };
 
 ActionWithImageBox.defaultProps = {

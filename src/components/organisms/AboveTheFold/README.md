@@ -4,7 +4,6 @@ An example AboveTheFold.
 <AboveTheFold
 featuredArticle={
     {
-      node: {
         id: 1,
         slug: 'best-essential-oil-brands-2',
         title: 'Best Essential Oil Brands—Reviews and Comparisons',
@@ -31,7 +30,6 @@ featuredArticle={
           metadesc:
             'Are you confused about what best essential oil brands to buy? We know it can be a frustrating and overwhelming experience with researching one site after...',
         },
-      },
     }
 }
 emailMatHeader="Want to Know the Latest in Wellness Tech?"
