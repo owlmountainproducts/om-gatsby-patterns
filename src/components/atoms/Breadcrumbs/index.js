@@ -13,15 +13,16 @@ const Breadcrumbs = ({ categories, title }) => (
         <span itemProp="title">Home »</span>
       </Link>
     </li>
-    {categories.map(category => (
-      <li
-        key={category.order}
-        itemScope
-        itemType="http://data-vocabulary.org/Breadcrumb"
-      >
-        <Link to={category.slug}>{category.title}</Link> »
-      </li>
-    ))}
+    {categories &&
+      categories.map(category => (
+        <li
+          key={category.order}
+          itemScope
+          itemType="http://data-vocabulary.org/Breadcrumb"
+        >
+          <Link to={`/category/${category.slug}`}>{category.name}</Link> »
+        </li>
+      ))}
     <li itemScope itemType="http://data-vocabulary.org/Breadcrumb">
       <span itemProp="title">{title}</span>
     </li>
@@ -30,9 +31,13 @@ const Breadcrumbs = ({ categories, title }) => (
 
 Breadcrumbs.propTypes = {
   /** The  */
-  categories: PropTypes.arrayOf.isRequired,
+  categories: PropTypes.arrayOf,
   /** The  */
   title: PropTypes.string.isRequired,
+};
+
+Breadcrumbs.defaultProps = {
+  categories: false,
 };
 
 export default Breadcrumbs;

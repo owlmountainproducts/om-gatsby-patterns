@@ -16,6 +16,8 @@ import {
 /**
  * ATOM: The `<SocialShareButtons>` atom creates share buttons
  * for Facebook, Pinterest, WhatsApp, and Email.
+ * CDN url is more stable to use for sharing images because
+ * the file paths to gatsby images change between builds.
  * TODO: Format Share Counts Using Numeral.Js: http://numeraljs.com/#format
  *
  */

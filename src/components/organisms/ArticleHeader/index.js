@@ -9,7 +9,7 @@ import SocialShareButtons from '../../atoms/SocialShareButtons';
  * ORGANISM: The `<ArticleHeader>` creates ___.
  */
 const ArticleHeader = ({
-  id, className, categories, article, isPost,
+  id, className, categories, article, isPost, url,
 }) => (
   <header id={id} className={`article-header ${className}`}>
     <Breadcrumbs categories={categories} title={article.title} />
@@ -25,7 +25,7 @@ const ArticleHeader = ({
       <SocialShareButtons
         className="top-social-buttons"
         title={article.title}
-        url={article.url}
+        url={url}
         featuredImage={article.featured_media.source_url}
       />
     </div>
@@ -43,6 +43,8 @@ ArticleHeader.propTypes = {
   article: PropTypes.arrayOf.isRequired,
   /** The  */
   isPost: PropTypes.bool.isRequired,
+  /** The  */
+  url: PropTypes.string.isRequired,
 };
 
 ArticleHeader.defaultProps = {
