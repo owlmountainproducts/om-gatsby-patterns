@@ -24,7 +24,7 @@ const ArticleListing = ({
 }) => (
   <article id={id} className={`article-listing ${className}`}>
     <div className="article-listing-image-wrapper">
-      <Link to="/">
+      <Link to={`/${slug}/`}>
         <Img sizes={imageFiles} alt={imageText} />
       </Link>
     </div>

@@ -34,7 +34,7 @@ const ThreeUpPreviewSection = ({
       <ThreeUpArticles articles={articlesList} />
       {!isPopularPosts && (
         <div className="more-in-category-button-wrapper">
-          <Link to={articlesList[0].node.categories[0].slug}>
+          <Link to={`/category/${articlesList[0].node.categories[0].slug}/`}>
             <p className="primary-button more-in-category-button">
               More {articlesList[0].node.categories[0].name}
             </p>

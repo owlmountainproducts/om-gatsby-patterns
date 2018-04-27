@@ -11,7 +11,7 @@ import IconBar from '../../molecules/IconBar';
 import MailchimpEmailInput from '../../molecules/MailchimpEmailInput';
 
 /**
- * Organism: The `<SiteHeader>` organism creates ___.
+ * ORGANISM: The `<SiteHeader>` organism creates ___.
  *
  */
 class SiteHeader extends React.Component {

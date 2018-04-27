@@ -18,10 +18,11 @@ const RelatedArticles = ({ relatedArticles, className }) => (
         <div key={relatedArticle.id} className="related-article-wrapper">
           <SmallArticleListing
             slug={relatedArticle.slug}
-            featuredMedia={relatedArticle.featured_media}
-            src={relatedArticle.featured_media.source_url}
-            imageText={relatedArticle.featured_media.alt_text}
             title={relatedArticle.title}
+            imageFiles={
+              relatedArticle.featured_media.localFile.childImageSharp.sizes
+            }
+            imageText={relatedArticle.featured_media.alt_text}
             excerpt={relatedArticle.yoast.metadesc}
           />
         </div>

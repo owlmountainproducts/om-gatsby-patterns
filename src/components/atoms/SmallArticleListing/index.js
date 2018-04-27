@@ -13,7 +13,6 @@ const SmallArticleListing = ({
   className,
   slug,
   title,
-  featuredMedia,
   imageFiles,
   imageText,
   excerpt,
@@ -23,7 +22,7 @@ const SmallArticleListing = ({
     className={`small-article-listing ${className}`}
     to={`/${slug}/`}
   >
-    {featuredMedia && <Img sizes={imageFiles} alt={imageText} />}
+    {imageFiles && <Img sizes={imageFiles} alt={imageText} />}
     <h4>{title}</h4>
     <p>{excerpt}</p>
   </Link>
@@ -32,8 +31,6 @@ const SmallArticleListing = ({
 SmallArticleListing.propTypes = {
   /** The  */
   slug: PropTypes.string.isRequired,
-  /** The  */
-  featuredMedia: PropTypes.bool,
   /** The  */
   imageFiles: PropTypes.shape.isRequired,
   /** The  */
@@ -49,7 +46,6 @@ SmallArticleListing.propTypes = {
 };
 
 SmallArticleListing.defaultProps = {
-  featuredMedia: false,
   excerpt: null,
   className: null,
   id: null,

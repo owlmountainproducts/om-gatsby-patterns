@@ -8,16 +8,20 @@ import SocialShareButtons from '../../atoms/SocialShareButtons';
 /**
  * ORGANISM: The `<ArticleHeader>` creates ___.
  */
-const ArticleHeader = ({ categories, article }) => (
-  <header className="article-header">
+const ArticleHeader = ({
+  id, className, categories, article, isPost,
+}) => (
+  <header id={id} className={`article-header ${className}`}>
     <Breadcrumbs categories={categories} title={article.title} />
     <h1>{article.title}</h1>
     <div className="info-share-bar">
-      <EntryMeta
-        author={article.author.name}
-        lastUpdated={article.modified}
-        includeLink
-      />
+      {isPost && (
+        <EntryMeta
+          author={article.author.name}
+          lastUpdated={article.modified}
+          includeLink
+        />
+      )}
       <SocialShareButtons
         className="top-social-buttons"
         title={article.title}
@@ -30,9 +34,20 @@ const ArticleHeader = ({ categories, article }) => (
 
 ArticleHeader.propTypes = {
   /** The  */
+  id: PropTypes.string,
+  /** The  */
+  className: PropTypes.string,
+  /** The  */
   categories: PropTypes.arrayOf.isRequired,
   /** The  */
   article: PropTypes.arrayOf.isRequired,
+  /** The  */
+  isPost: PropTypes.bool.isRequired,
+};
+
+ArticleHeader.defaultProps = {
+  id: null,
+  className: null,
 };
 
 export default ArticleHeader;
