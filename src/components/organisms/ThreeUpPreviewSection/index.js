@@ -5,7 +5,9 @@ import Link from 'gatsby-link';
 import ThreeUpArticles from '../ThreeUpArticles';
 
 /**
- * ORGANISM: The `<ThreeUpPreviewSection>` creates __.
+ * ORGANISM: The `<ThreeUpPreviewSection>` organism creates a header, and three-up-articles and a
+ * button below. Typically used for the latest three articles in a category and the button below
+ * to see more.
  *
  */
 const ThreeUpPreviewSection = ({

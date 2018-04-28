@@ -22,19 +22,19 @@ const ListWithTitle = ({
 );
 
 ListWithTitle.propTypes = {
-  /** The */
+  /** The id for a specific list with title */
+  id: PropTypes.string,
+  /** The className for a specific list with title */
   className: PropTypes.string,
   /** The */
   title: PropTypes.string.isRequired,
-  /** The */
-  id: PropTypes.string,
   /** The */
   listItems: PropTypes.arrayOf.isRequired,
 };
 
 ListWithTitle.defaultProps = {
-  className: null,
   id: null,
+  className: null,
 };
 
 export default ListWithTitle;

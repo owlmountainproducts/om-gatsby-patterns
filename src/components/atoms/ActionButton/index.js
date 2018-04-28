@@ -6,19 +6,12 @@ import PropTypes from 'prop-types';
  *
  */
 const ActionButton = ({
-  id,
-  className,
-  text,
-  type,
-  isDisabled,
-  children,
-  onClick,
+  id, className, text, type, children, onClick,
 }) => (
   <button
     id={id}
     className={`action-button ${className}`}
     type={type}
-    disabled={isDisabled}
     onClick={onClick}
   >
     {children || text}
@@ -26,28 +19,25 @@ const ActionButton = ({
 );
 
 ActionButton.propTypes = {
-  /** The */
+  /** The id for a specific button */
   id: PropTypes.string,
-  /** The */
+  /** The className for a specific button */
   className: PropTypes.string,
-  /** The */
-  children: PropTypes.string,
-  /** The */
+  /** Specifies the type of action button */
   type: PropTypes.string,
-  /** The */
-  isDisabled: PropTypes.bool,
-  /** The */
+  /** The elements within the button */
+  children: PropTypes.string,
+  /** The text withing the button */
   text: PropTypes.string,
-  /** The */
+  /** The action to be performed onClick */
   onClick: PropTypes.func,
 };
 
 ActionButton.defaultProps = {
-  className: null,
   id: null,
+  className: null,
   text: null,
   type: null,
-  isDisabled: false,
   children: null,
   onClick: null,
 };

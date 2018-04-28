@@ -4,8 +4,8 @@ import Link from 'gatsby-link';
 import slugify from 'slugify';
 
 /**
- * ATOM: The `<CategoryNav>` atom creates a menu of categories and only categories
- * (because /category/ is built into the link structure)
+ * ATOM: The `<CategoryNav>` atom creates a menu of categories (and only categories
+ * because '/category/' is built into the link structure)
  * Typically used for primary site navigation.
  *
  */
@@ -27,12 +27,12 @@ const CategoryNav = ({ id, className, navItems }) => (
 );
 
 CategoryNav.propTypes = {
+  /** The id for a specific navigation element */
+  id: PropTypes.string,
+  /** The className for a specific navigation element */
+  className: PropTypes.string.isRequired,
   /** The */
   navItems: PropTypes.arrayOf.isRequired,
-  /** The */
-  id: PropTypes.string,
-  /** The */
-  className: PropTypes.string.isRequired,
 };
 
 CategoryNav.defaultProps = {

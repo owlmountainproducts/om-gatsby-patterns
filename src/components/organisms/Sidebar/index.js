@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import RelatedArticles from '../../molecules/RelatedArticles';
 
 /**
- * ORGANSISM: The `<Sidebar>` creates __.
+ * ORGANSISM: The `<Sidebar>` organism creates a sidebar for articles.
  *
  */
 const Sidebar = ({ relatedArticles }) => (

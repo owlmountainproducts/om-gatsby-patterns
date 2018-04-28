@@ -5,7 +5,8 @@ import Img from 'gatsby-image';
 import MailchimpEmailInput from '../../molecules/MailchimpEmailInput';
 
 /**
- * ORGANISM: The `<ActionWithImageBox>` organism creates ___.
+ * ORGANISM: The `<ActionWithImageBox>` organism creates a text headline, subheader
+ * and email input next to a single image.
  *
  */
 const ActionWithImageBox = ({

@@ -6,7 +6,8 @@ import Breadcrumbs from '../../atoms/Breadcrumbs';
 import SocialShareButtons from '../../atoms/SocialShareButtons';
 
 /**
- * ORGANISM: The `<ArticleHeader>` creates ___.
+ * ORGANISM: The `<ArticleHeader>` organism creates the headline area of articles and pages.
+ * Includes breadcrumbs, share buttons, and if a post includes author and updated date.
  */
 const ArticleHeader = ({
   id, className, categories, article, isPost, url,

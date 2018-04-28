@@ -29,6 +29,10 @@ const SmallArticleListing = ({
 );
 
 SmallArticleListing.propTypes = {
+  /** The id for a specific small article listing */
+  id: PropTypes.string,
+  /** The className for a specific small article listing */
+  className: PropTypes.string,
   /** The  */
   slug: PropTypes.string.isRequired,
   /** The  */
@@ -39,16 +43,12 @@ SmallArticleListing.propTypes = {
   title: PropTypes.string.isRequired,
   /** The  */
   excerpt: PropTypes.string,
-  /** The  */
-  className: PropTypes.string,
-  /** The  */
-  id: PropTypes.string,
 };
 
 SmallArticleListing.defaultProps = {
-  excerpt: null,
-  className: null,
   id: null,
+  className: null,
+  excerpt: null,
 };
 
 export default SmallArticleListing;

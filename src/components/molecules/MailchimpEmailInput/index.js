@@ -37,7 +37,7 @@ const MailchimpEmailInput = ({ mailchimpUrl, className }) => (
             className="mailchimp-capture-box"
             id="mce-EMAIL"
             placeholder="ENTER YOUR EMAIL"
-            isrequired
+            isRequired
           />
         </div>
         {/* real people should not fill this in and expect good things -

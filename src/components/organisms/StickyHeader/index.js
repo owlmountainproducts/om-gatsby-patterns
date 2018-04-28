@@ -6,7 +6,8 @@ import Img from 'gatsby-image';
 import SocialShareButtons from '../../atoms/SocialShareButtons';
 
 /**
- * ORGANISM: The `<StickyHeader>` creates __.
+ * ORGANISM: The `<StickyHeader>` organism creates a minimal header bar to stay sticky when
+ * scrolling down a page.
  *
  */
 const StickyHeader = ({ article, siteMeta }) => (

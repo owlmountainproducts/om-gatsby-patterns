@@ -13,17 +13,17 @@ const IconWrapper = ({ id, className, children }) => (
 );
 
 IconWrapper.propTypes = {
-  /** The */
+  /** The id for a specific icon wrapper */
   id: PropTypes.string,
-  /** The */
+  /** The className for a specific icon wrapper */
   className: PropTypes.string,
   /** The */
   children: PropTypes.string,
 };
 
 IconWrapper.defaultProps = {
-  className: null,
   id: null,
+  className: null,
   children: null,
 };
 

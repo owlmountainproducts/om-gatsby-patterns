@@ -31,9 +31,9 @@ const Breadcrumbs = ({ categories, title }) => (
 
 Breadcrumbs.propTypes = {
   /** The  */
-  categories: PropTypes.arrayOf,
-  /** The  */
   title: PropTypes.string.isRequired,
+  /** The  */
+  categories: PropTypes.arrayOf,
 };
 
 Breadcrumbs.defaultProps = {

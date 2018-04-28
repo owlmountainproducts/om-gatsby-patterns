@@ -5,7 +5,8 @@ import Link from 'gatsby-link';
 import MailchimpEmailInput from '../../molecules/MailchimpEmailInput';
 
 /**
- * ORGANISM: The `<FullEmailMat>` creates __.
+ * ORGANISM: The `<FullEmailMat>` organism creates a colored block email signup with headline,
+ * subheader, and audience following number below.
  *
  */
 const FullEmailMat = ({ header, audienceNumber, audienceDescriptor }) => (

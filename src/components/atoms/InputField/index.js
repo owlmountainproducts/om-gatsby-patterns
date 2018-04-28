@@ -12,7 +12,7 @@ const InputField = ({
   defaultValue,
   name,
   placeholder,
-  isrequired,
+  isRequired,
 }) => (
   <input
     type={type}
@@ -21,11 +21,17 @@ const InputField = ({
     className={`input-field ${className}`}
     id={id}
     placeholder={placeholder}
-    isrequired={isrequired}
+    isrequired={isRequired}
   />
 );
 
 InputField.propTypes = {
+  /** The id for a specific input field */
+  id: PropTypes.string,
+  /** The className for a specific input field */
+  className: PropTypes.string,
+  /** The */
+  isRequired: PropTypes.bool.isRequired,
   /** The */
   type: PropTypes.string.isRequired,
   /** The */
@@ -33,18 +39,12 @@ InputField.propTypes = {
   /** The */
   name: PropTypes.string.isRequired,
   /** The */
-  isrequired: PropTypes.bool.isRequired,
-  /** The */
-  className: PropTypes.string,
-  /** The */
-  id: PropTypes.string,
-  /** The */
   placeholder: PropTypes.string,
 };
 
 InputField.defaultProps = {
-  className: null,
   id: null,
+  className: null,
   placeholder: null,
 };
 

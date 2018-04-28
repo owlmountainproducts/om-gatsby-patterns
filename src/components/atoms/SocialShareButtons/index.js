@@ -69,22 +69,22 @@ const SocialShareButtons = ({
 );
 
 SocialShareButtons.propTypes = {
+  /** The id for a specific row of social share buttons */
+  id: PropTypes.string,
+  /** The className for a specific row of social share buttons */
+  className: PropTypes.string,
   /** The */
   title: PropTypes.string.isRequired,
   /** The */
   url: PropTypes.string.isRequired,
   /** The */
   featuredImage: PropTypes.string,
-  /** The */
-  className: PropTypes.string,
-  /** The */
-  id: PropTypes.string,
 };
 
 SocialShareButtons.defaultProps = {
-  featuredImage: null,
-  className: null,
   id: null,
+  className: null,
+  featuredImage: null,
 };
 
 export default SocialShareButtons;
