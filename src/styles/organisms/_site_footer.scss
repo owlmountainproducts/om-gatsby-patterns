@@ -37,25 +37,16 @@
 .footer-wrapper-1 {
   @include makeColumn($size: 12, $offset: 0);
   @include makeColumn(md, $size: 2, $offset: 0);
-  @include makeColumn(lg, $size: 2, $offset: 0);
 }
 
 .footer-wrapper-2 {
   @include makeColumn($size: 12, $offset: 0);
-  @include makeColumn(md, $size: 3, $offset: 0);
-  @include makeColumn(lg, $size: 3, $offset: 0);
-}
-
-.footer-wrapper-3 {
-  @include makeColumn($size: 12, $offset: 0);
-  @include makeColumn(md, $size: 3, $offset: 0);
-  @include makeColumn(lg, $size: 3, $offset: 0);
+  @include makeColumn(md, $size: 6, $offset: 0);
 }
 
 .footer-wrapper-4 {
   @include makeColumn($size: 12, $offset: 0);
   @include makeColumn(md, $size: 4, $offset: 0);
-  @include makeColumn(lg, $size: 4, $offset: 0);
 
   margin: 1rem 0;
   border-top: 1px solid $text-on-dark;

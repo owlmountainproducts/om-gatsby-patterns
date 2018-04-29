@@ -23,12 +23,14 @@ const ArticleHeader = ({
           includeLink
         />
       )}
-      <SocialShareButtons
-        className="top-social-buttons"
-        title={article.title}
-        url={url}
-        featuredImage={article.featured_media.source_url}
-      />
+      {article.featured_media && (
+        <SocialShareButtons
+          className="top-social-buttons"
+          title={article.title}
+          url={url}
+          featuredImage={article.featured_media.source_url}
+        />
+      )}
     </div>
   </header>
 );

@@ -20,10 +20,8 @@ const SiteFooter = ({
   siteTitle,
   footer01Title,
   footer02Title,
-  footer03Title,
   footer01Items,
   footer02Items,
-  footer03Items,
   hasMedicalDisclaimer,
 }) => (
   <footer className="footer">
@@ -40,13 +38,6 @@ const SiteFooter = ({
           ClassName="footer-menu"
           title={footer02Title}
           listItems={footer02Items}
-        />
-      </div>
-      <div className="footer-wrapper footer-wrapper-3">
-        <ListWithTitle
-          ClassName="footer-menu"
-          title={footer03Title}
-          listItems={footer03Items}
         />
       </div>
       <div className="footer-wrapper footer-wrapper-4">
@@ -109,13 +100,9 @@ SiteFooter.propTypes = {
   /** The */
   footer02Items: PropTypes.arrayOf.isRequired,
   /** The */
-  footer03Items: PropTypes.arrayOf.isRequired,
-  /** The */
   footer01Title: PropTypes.arrayOf.isRequired,
   /** The */
   footer02Title: PropTypes.arrayOf.isRequired,
-  /** The */
-  footer03Title: PropTypes.arrayOf.isRequired,
 };
 
 SiteFooter.defaultProps = {

@@ -21,7 +21,6 @@ An example SiteFooter.
   hasMedicalDisclaimer={true}
   footer01Title="Resources"
   footer02Title="Popular Reads"
-  footer03Title="Categories"
   footer01Items={
     {
      items: [
@@ -52,19 +51,5 @@ An example SiteFooter.
       ]
     }
   }
-    footer03Items={
-    {
-     items: [
-        {
-          title: 'List Item 01',
-        },
-        {
-          title: 'List Item 02',
-        },
-        {
-          title: 'List Item 03',
-        },
-      ]
-    }
-  } />
+/>
 ```
