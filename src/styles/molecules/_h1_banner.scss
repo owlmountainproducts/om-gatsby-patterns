@@ -62,3 +62,8 @@
     color: #fff;
   }
 }
+
+.h1-banner-children a {
+  @extend %text-on-dark-link;
+  text-decoration: underline;
+}

@@ -1,38 +1,25 @@
 /** global */
-$site-max-width: 1240px;
 $global-code-background: #272a2b;
-$content-max-width: 1200px;
 $header-font: $secondary-font;
 // box model
 $spacer: 2rem;
 
-/** fixed colors */
-$black: #000;
-$white: #fff;
-$page-white: #fffffd;
-
-$om-light-grey: #ececec;
-$om-medium-light-grey: rgb(170, 170, 170);
-$om-medium-grey: rgb(131, 131, 131);
-$om-medium-dark-grey: #757575;
-$om-dark-grey: #272a2b;
-
 /** specific brand colors */
+$link-color: #2782d0;
 $text-color: #222;
 $text-on-dark: #f5f5f5;
 $link-hover-color: blue;
 $amazon-cta: #faa81a;
 
 /** button colors */
-$primary-button-color: rgb(0, 53, 0);
-$secondary-button-color: rgb(0, 110, 0);
-$tertiary-button-color: rgb(0, 175, 0);
-$action-button-color: rgb(0, 53, 0);
+$primary-button-color: #ea7317;
+$secondary-button-color: #ea7317;
+$tertiary-button-color: #ea7317;
+$action-button-color: #ea7317;
 
 /** disclosures */
-$disclosure-title: 1.05rem;
-$affiliate-disclosure-bk-color: $om-medium-light-grey;
-$medical-disclaimer-bk-color: $om-medium-light-grey;
+$affiliate-disclosure-bk-color: #f9f7f0;
+$medical-disclaimer-bk-color: $om-light-grey;
 
 /** email &input components */
 $placeholder-text-color: $om-medium-dark-grey;
@@ -42,7 +29,7 @@ $email-mat-bg-color: #2277ca;
 
 /** sidebar */
 $sidebar-top-bg-color: $om-medium-light-grey;
-$sidebar-border-color: green;
+$sidebar-border-color: $om-medium-light-grey;
 
 /** header colors */
 $top-nav-bg-color: $om-medium-light-grey;
