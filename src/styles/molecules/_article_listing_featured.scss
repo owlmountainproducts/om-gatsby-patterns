@@ -1,0 +1,52 @@
+.article_listing_featured {
+  @include makeRow($no-padding: true);
+
+  text-align: center;
+
+  .article-listing-image-wrapper {
+    @include makeColumn($size: 12, $offset: 0);
+    @include makeColumn(md, $size: 8, $offset: 0);
+  }
+
+  .article-listing-text {
+    @include makeColumn($size: 12, $offset: 0);
+    @include makeColumn(md, $size: 4, $offset: 0);
+
+    margin: 2rem 0 0;
+
+    @include breakpoint($medium) {
+      margin: 3.5rem 0 0;
+    }
+
+    @include breakpoint($large) {
+      margin: 4rem 0 0;
+    }
+  }
+
+  .article-listing-title {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    line-height: 1.5rem;
+
+    @include breakpoint($large) {
+      padding: 0 1rem;
+      margin: 0.9rem 0;
+      line-height: 2rem;
+    }
+  }
+
+  .featured-article-tag {
+    font-size: $type4-point-size;
+    margin: 0 auto;
+    padding: 0.4rem;
+    width: 5.6rem;
+    text-align: center;
+    font-family: $primary-font;
+    border: 2px solid lighten($email-mat-bg-color, 10%);
+    font-weight: bold;
+  }
+
+  .article-listing-title-link {
+    @extend %text-color-link;
+  }
+}

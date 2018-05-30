@@ -1,0 +1,27 @@
+.wp-caption,
+.aligncenter {
+  width: 110px !important;
+}
+
+table {
+  max-width: 25rem;
+  margin: 0 auto;
+}
+
+tr {
+  display: block;
+  margin: 1.5rem 0;
+
+  @include breakpoint($medium) {
+    display: table-row;
+  }
+
+  th,
+  td {
+    display: block;
+
+    @include breakpoint($medium) {
+      display: table-cell;
+    }
+  }
+}

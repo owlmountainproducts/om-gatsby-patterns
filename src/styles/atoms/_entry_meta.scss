@@ -1,0 +1,16 @@
+%entry-meta {
+  display: inline;
+  font-family: $secondary-font;
+  font-size: $type3-point-size;
+  font-weight: 800;
+}
+
+.date-updated,
+.byline {
+  @extend %entry-meta;
+
+  // In links.scss
+  a {
+    @extend %text-color-link;
+  }
+}

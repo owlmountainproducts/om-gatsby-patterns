@@ -1,0 +1,13 @@
+.icon-bar {
+  display: flex;
+}
+
+.icon-bar-icon {
+  padding: 0 0.75rem;
+  color: $header-icon-color;
+  font-size: 1.45rem;
+
+  &:last-child {
+    padding: 0 0 0 0.75rem;
+  }
+}

@@ -1,0 +1,16 @@
+.article_listing_vertical {
+  box-shadow: 0 2px 3px 1px $om-medium-grey;
+
+  .article-listing-text {
+    padding: 1rem;
+  }
+
+  .article-listing-title {
+    margin: 0.75rem 0;
+    font-weight: bold;
+  }
+
+  .article-listing-title-link {
+    @extend %text-color-link;
+  }
+}

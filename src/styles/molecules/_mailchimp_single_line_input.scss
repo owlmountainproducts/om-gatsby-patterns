@@ -1,0 +1,35 @@
+.single-line-input {
+  display: flex;
+  width: 100%;
+  min-width: 304px;
+
+  .email-input-field-wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  .email-envelope {
+    line-height: $email-input-height - 4;
+    border: 2px solid rgb(238, 238, 238);
+    border-right: none;
+    padding: 0 0 4px 0.25rem;
+    background-color: $white;
+  }
+
+  .mailchimp-capture-box {
+    height: $email-input-height;
+    border: 2px solid rgb(238, 238, 238);
+    border-left: none;
+    border-right: none;
+    flex-basis: 100%;
+  }
+
+  .email-submit-button {
+    @extend %secondary-button;
+
+    height: $email-input-height + 4;
+    width: 6rem;
+    font-size: $type2-point-size;
+    border-radius: 0;
+  }
+}

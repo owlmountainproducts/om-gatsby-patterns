@@ -1,121 +1,109 @@
-.site-header {
-  position: relative;
+%header-widths {
+  max-width: $header-sm-max-width;
+
+  @include breakpoint($medium) {
+    max-width: $header-md-max-width;
+  }
+
+  @include breakpoint($large) {
+    max-width: $header-lg-max-width;
+  }
 }
 
-// Both HeaderLayered and HeaderTucked use these
-.header-organism {
-  position: relative;
-  background-color: $secondary-color;
+.header-center-wrapper {
+  background-color: $header-center-bg-color;
   height: $header-height;
-  border-bottom: 1px solid $om-medium-grey;
+  border-bottom: $header-center-bottom-border;
 }
 
-.header-inner {
-  @extend %header-inner-widths;
-
-  margin: 0 auto;
-}
-
-.header-inner a {
-  line-height: 62px;
-}
-
-.header-right {
-  display: none;
-  height: $header-height;
-
-  @include breakpoint($header-right-visible-breakpoint) {
-    display: block;
-    float: right;
-  }
-}
-
-// Tucked Specific
-.tucked {
-  .header-organism {
-    border-bottom: 1px solid $om-light-grey;
-    box-shadow: 0 1px 7px $om-medium-grey;
-  }
-
-  .header-inner {
-    padding: 0;
-    position: relative;
-  }
-
-  .header-right {
-    @include breakpoint($header-right-visible-breakpoint) {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-  }
+.header-center-inner {
+  display: flex;
 }
 
 #menu-icon {
-  float: left;
-  padding: 0 0.5rem;
   font-size: 2.5rem;
   color: $header-icon-color;
   text-decoration: none;
+  line-height: $header-height - 5;
+  padding: 0 0.75rem 5px 0;
 
   @include breakpoint($header-visible-nav-breakpoint) {
     display: none;
   }
 }
 
-.logo {
-  float: left;
-  height: 55px;
-  margin: 6px 0 0;
+.logo-wrapper {
+  margin: auto 0;
+  height: $header-height - 10;
 
-  @include breakpoint($medium) {
-    max-width: none;
-    height: $medium-break-pt-logo-height;
-    margin: $medium-break-pt-logo-margins;
+  @include breakpoint($header-visible-nav-breakpoint) {
+    margin: $header-logo-wrapper-margin;
+    height: $header-logo-height;
   }
 }
 
-// Header Email
-.site-header .single-input-line {
-  display: inline-block;
-  margin: 0 1.75rem 0 0;
+.logo {
+  height: $header-height - 10;
+  max-width: 245px;
+  margin: auto 0;
+
+  @include breakpoint($header-visible-nav-breakpoint) {
+    height: $header-logo-height;
+  }
+
+  @include breakpoint($medium) {
+    max-width: none;
+  }
 }
 
-.site-header .email-input-line {
-  width: 323px;
+// Header Right Items. See W3C's recomended use of
+// margin-left: https://www.w3.org/TR/css-flexbox-1/#auto-margins
+.header-email-capture-wrapper {
+  margin: auto 0;
+  margin-left: auto;
+  display: none;
+
+  @include breakpoint($header-right-visible-breakpoint) {
+    display: block;
+  }
 }
 
-.site-header .email-capture-box {
-  width: 182px;
+.site-header .icon-bar {
+  display: none;
+
+  @include breakpoint($header-right-visible-breakpoint) {
+    display: flex;
+  }
 }
 
-.site-header .email-submit-button {
-  width: 94px;
-}
-
-// Header Right Icons
-.header-right-icons {
-  display: inline-block;
-}
-
-.header-search {
-  width: 160px;
+.site-header .icon-bar-icon {
   line-height: $header-height;
 }
 
-.fb-icon svg,
-.pinterest-icon svg,
-.youtube-icon svg,
-.search-icon svg {
-  color: $header-icon-color;
-  font-size: 1.45rem;
-  padding: 0 0.5rem;
+.top-nav-wrapper {
+  background-color: $top-nav-bg-color;
+  display: none;
+
+  @include breakpoint($header-visible-nav-breakpoint) {
+    display: block;
+  }
 }
 
-.fb-icon svg {
-  padding: 0 0.75rem 0 0;
+.primary-nav-wrapper {
+  background-color: $primary-nav-bg-color;
 }
 
-.search-icon svg {
-  padding: 0 0 0 0.75rem;
+.top-nav-wrapper .category-nav,
+.primary-nav-wrapper .category-nav,
+.header-center-inner {
+  @extend %header-widths;
+  margin: 0 auto;
+}
+
+.nav-responsive {
+  display: none;
+
+  @include breakpoint($header-visible-nav-breakpoint) {
+    display: block;
+  }
 }

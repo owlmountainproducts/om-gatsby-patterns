@@ -1,0 +1,41 @@
+.sticky-header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+// header-widths in organisms/site_header.scss
+.sticky-header-inner {
+  @extend %header-widths;
+
+  height: $sticky-header-height - 8;
+  padding: 0.25rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.sticky-header .logo {
+  max-height: $sticky-header-height - 16;
+  padding: 0.25rem 0;
+}
+
+.sticky-header-article-title {
+  margin: auto 0 auto 1.5rem;
+  padding: 0 0 0 1.5rem;
+  border-left: 1px solid $om-medium-grey;
+  font-weight: bold;
+  font-style: italic;
+  color: $text-color;
+}
+
+// if using icons
+.sticky-header .icon-bar {
+  margin-left: auto;
+}
+
+.sticky-header .icon-bar-icon {
+  line-height: $sticky-header-height - 8;
+}
+
+// if using share buttons
+.sticky-header .social-share-buttons {
+  margin: auto 0 auto auto;
+}

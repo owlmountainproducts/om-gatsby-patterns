@@ -1,122 +1,87 @@
 .footer {
-  background-color: $om-dark-grey;
+  background-color: $footer-bg-color;
   width: 100%;
+}
+
+.footer h3 {
+  color: $text-on-dark;
+  font-size: 1.1rem;
+}
+
+.footer p {
+  color: $text-on-dark;
+}
+
+// In atoms/links.scss
+.footer a {
+  @extend %text-on-dark-link;
 }
 
 .footer-inner {
   @include makeRow($no-padding: true);
-
-  width: 100%;
-  max-width: 1280px;
+  max-width: $site-max-width;
   margin: 0 auto;
+  width: 100%;
   padding: 2rem 3rem;
+  font-family: $secondary-font;
 
-  p,
-  h2,
-  h3,
-  a {
-    font-family: $secondary-font;
-    color: $text-on-dark;
+  @include breakpoint($large) {
+    padding: 2rem 0;
   }
+}
 
-  // In links.scss
-  a {
-    @extend %footer-links;
-  }
+.footer-wrapper {
+  padding: 0 1.25rem 0 0;
 }
 
 .footer-wrapper-1 {
   @include makeColumn($size: 12, $offset: 0);
   @include makeColumn(md, $size: 2, $offset: 0);
-  @include makeColumn(lg, $size: 2, $offset: 0);
-
-  padding: 1rem 1.25rem 0 0;
 }
 
 .footer-wrapper-2 {
   @include makeColumn($size: 12, $offset: 0);
-  @include makeColumn(md, $size: 3, $offset: 0);
-  @include makeColumn(lg, $size: 3, $offset: 0);
-
-  padding: 1rem 1.25rem 0 0;
-}
-
-.footer-wrapper-3 {
-  @include makeColumn($size: 12, $offset: 0);
-  @include makeColumn(md, $size: 3, $offset: 0);
-  @include makeColumn(lg, $size: 3, $offset: 0);
-
-  padding: 1rem 1.25rem 0 0;
+  @include makeColumn(md, $size: 6, $offset: 0);
 }
 
 .footer-wrapper-4 {
   @include makeColumn($size: 12, $offset: 0);
   @include makeColumn(md, $size: 4, $offset: 0);
-  @include makeColumn(lg, $size: 4, $offset: 0);
 
-  padding: 1rem 1.25rem 0 0;
   margin: 1rem 0;
   border-top: 1px solid $text-on-dark;
+  padding: 2rem 0 0;
 
   @include breakpoint($medium) {
-    padding: 1rem 0 0 2rem;
+    padding: 0 0 0 2rem;
     margin: 0;
     border-top: none;
     border-left: 1px solid $text-on-dark;
   }
 }
 
-.footer-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-list li {
-  color: $white;
-  display: block;
-}
-
-.footer-division {
-  padding-top: 1rem;
-  color: $white;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.footer-h3 {
-  color: $text-on-dark;
-}
-
-.footer-contact {
-  color: $text-on-dark;
-  margin: 0;
-}
-
 .footer-logo {
-  height: $footer-medium-break-pt-logo-height;
-  margin: $footer-medium-break-pt-logo-margins;
+  height: $footer-logo-height;
+  margin: $footer-logo-margin;
 }
 
 .legal-line-wrapper {
-  background-color: $om-dark-grey;
+  background-color: $footer-bg-color;
   width: 100%;
   border-top: 1px solid $text-on-dark;
 }
 
-.legal-line {
-  text-align: left;
-  max-width: 1184px;
+.legal-line-inner {
+  max-width: $site-max-width;
   margin: 0 auto;
+  text-align: left;
   padding: 1rem 3rem;
+}
 
-  p {
-    font-family: $secondary-font;
-    font-size: $small-point-size;
-    color: $text-on-dark;
-  }
+.legal-line-inner p {
+  font-size: $type2-point-size;
+}
 
-  // In links.scss
-  a {
-    @extend %footer-links;
-  }
+.legal-line-inner a {
+  text-decoration: underline;
 }

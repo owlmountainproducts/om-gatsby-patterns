@@ -1,0 +1,32 @@
+.article-header {
+  border-bottom: 3px solid $om-light-grey;
+
+  .date-updated,
+  .byline {
+    font-size: $type2-point-size;
+
+    // In links.scss
+    a {
+      color: $link-hover-color;
+    }
+  }
+
+  .info-share-bar {
+    margin: 0 0 1rem;
+
+    @include breakpoint($medium) {
+      margin: 1rem 0 1rem;
+    }
+  }
+}
+
+// If Post Article Header
+.post-article-header {
+  .info-share-bar {
+    display: flex;
+  }
+
+  .top-social-buttons {
+    margin-left: auto;
+  }
+}

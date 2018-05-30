@@ -1,0 +1,13 @@
+.above-the-fold {
+  @include makeRow($no-padding: true);
+}
+
+.above-the-fold-article-listing {
+  @include makeColumn($size: 12, $offset: 0);
+  @include makeColumn(md, $size: 9, $offset: 0);
+}
+
+.above-the-fold-article-email-mat {
+  @include makeColumn($size: 12, $offset: 0);
+  @include makeColumn(md, $size: 3, $offset: 0);
+}

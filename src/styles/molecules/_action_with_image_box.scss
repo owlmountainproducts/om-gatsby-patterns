@@ -1,0 +1,35 @@
+// TODO: Style for mobile. Currently just hiding image on mobile.
+.action-with-image-box {
+  display: flex;
+  height: 270px;
+}
+
+.awib-text-wrapper {
+  @include breakpoint($medium) {
+    padding: 1.25rem 0;
+  }
+}
+
+.awib-text-inner {
+  border: 8px solid #f5efd9;
+  padding: 1rem 2rem;
+  min-height: 181px;
+
+  @include breakpoint($medium) {
+    border-right: 0;
+  }
+}
+
+.awib-header {
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+.awib-img {
+  height: 270px;
+  display: none;
+
+  @include breakpoint($medium) {
+    display: flex;
+  }
+}

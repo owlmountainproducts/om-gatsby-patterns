@@ -1,0 +1,13 @@
+.three-up-articles-ul {
+  @include makeRow($no-padding: true);
+
+  margin-bottom: 0.25rem;
+  list-style: none;
+}
+
+.three-up-articles-li {
+  @include makeColumn($size: 12, $offset: 0);
+  @include makeColumn(md, $size: 4, $offset: 0);
+
+  margin: 0 0 1rem;
+}

@@ -1,16 +1,30 @@
-%home-header-links {
+a {
+  color: $link-color;
+}
+
+%text-color-link {
   color: $text-color;
+  text-decoration: none;
 
   &:hover {
     color: $link-hover-color;
   }
 }
 
-%footer-links {
+%text-on-dark-link {
   color: $text-on-dark;
   text-decoration: none;
 
   &:hover {
     color: $white;
+  }
+}
+
+%category-nav-link {
+  color: $category-nav-link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $category-nav-link-hover-color;
   }
 }

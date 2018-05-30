@@ -1,0 +1,25 @@
+.article_listing_horizontal {
+  @include makeRow($no-padding: true);
+
+  margin: 1.5rem 0;
+
+  .article-listing-image-wrapper {
+    @include makeColumn($size: 12, $offset: 0);
+    @include makeColumn(md, $size: 5, $offset: 0);
+  }
+
+  .article-listing-text {
+    @include makeColumn($size: 12, $offset: 0);
+    @include makeColumn(md, $size: 7, $offset: 0);
+  }
+
+  .article-listing-title {
+    @include breakpoint($medium) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .article-listing-title-link {
+    @extend %text-color-link;
+  }
+}

@@ -12,7 +12,6 @@
   text-decoration: none;
   text-rendering: optimizeLegibility;
   height: auto;
-  margin-bottom: 0.5rem;
   white-space: normal;
   border-radius: 2px;
   max-width: 20rem;
@@ -42,11 +41,23 @@
 /* --------  Extends Core Buttons  -------- */
 
 %primary-button {
-  @include coreButton($white, $cta-color, $cta-color);
+  @include coreButton($white, $primary-button-color, $primary-button-color);
+}
+
+%secondary-button {
+  @include coreButton($white, $secondary-button-color, $secondary-button-color);
+}
+
+%tertiary-button {
+  @include coreButton($white, $tertiary-button-color, $tertiary-button-color);
+}
+
+%action-button {
+  @include coreButton($white, $action-button-color, $action-button-color);
 }
 
 %amazon-button {
-  @include coreButton($white, $amazon-orange, $amazon-orange);
+  @include coreButton($white, $amazon-cta, $amazon-cta);
 
   padding: 0.6rem 2rem;
   display: list-item;
@@ -54,15 +65,57 @@
   margin: auto;
 }
 
-%secondary-button {
-  @include coreButton($white, $cta-color, $cta-color);
+/* --------  Base Button Classes  -------- */
+
+.primary-button {
+  @extend %primary-button;
 }
 
-%tertiary-button {
-  @include coreButton($cta-color, $white, $cta-color);
+.secondary-button {
+  @extend %secondary-button;
 }
 
-/* ----------  Mixins Icon Buttons  -------- */
+.tertiary-button {
+  @extend %tertiary-button;
+}
+
+.action-button {
+  @extend %action-button;
+}
+
+.amazon-button {
+  @extend %amazon-button;
+}
+
+.naked-button {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: inherit;
+  width: auto;
+  padding: 0;
+  cursor: pointer;
+  text-align: inherit;
+  align-items: flex-start;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  height: auto;
+  white-space: normal;
+  border-radius: none;
+  max-width: none;
+  font-weight: inherit;
+  outline: none;
+
+  &:hover,
+  &:active {
+    background-color: inherit;
+    border: none;
+    outline: none;
+  }
+}
+
+/* ----------  Mixins Icon Buttons  --------
 
 @mixin primary-icon-button($fa-icon-value) {
   @extend %primary-button;
@@ -81,3 +134,4 @@
 
   @include iconButton($fa-icon-value);
 }
+ ----------------------------------------- */
